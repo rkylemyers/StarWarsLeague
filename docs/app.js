@@ -1640,4 +1640,137 @@ function setupEventListeners() {
       renderRollupTable();
     });
   }
+
+  // ClickyDraft Importer listeners
+  const clickyImporterModal = document.getElementById('clicky-importer-modal');
+  const btnOpenClickyImporter = document.getElementById('btn-open-clicky-importer');
+  const btnCloseClickyImporter = document.getElementById('btn-close-clicky-importer');
+  const btnCancelClickyImport = document.getElementById('btn-cancel-clicky-import');
+  const btnRunClickyImport = document.getElementById('btn-run-clicky-import');
+  const clickyHtmlInput = document.getElementById('clicky-html-input');
+  const clickyImportStatus = document.getElementById('clicky-import-status');
+
+  if (btnOpenClickyImporter) {
+    btnOpenClickyImporter.addEventListener('click', (e) => {
+      e.preventDefault();
+      clickyHtmlInput.value = "";
+      clickyImportStatus.style.display = "none";
+      clickyImporterModal.classList.add('active');
+    });
+  }
+
+  const closeImporter = () => {
+    clickyImporterModal.classList.remove('active');
+  };
+
+  if (btnCloseClickyImporter) btnCloseClickyImporter.addEventListener('click', closeImporter);
+  if (btnCancelClickyImport) btnCancelClickyImport.addEventListener('click', closeImporter);
+  
+  const clickyOverlay = document.getElementById('clicky-importer-overlay');
+  if (clickyOverlay) clickyOverlay.addEventListener('click', closeImporter);
+
+  if (btnRunClickyImport) {
+    btnRunClickyImport.addEventListener('click', () => {
+      const htmlText = clickyHtmlInput.value;
+      if (!htmlText.trim()) {
+        clickyImportStatus.style.color = "var(--accent-coral)";
+        clickyImportStatus.textContent = "Please paste the HTML source code first.";
+        clickyImportStatus.style.display = "block";
+        return;
+      }
+
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(htmlText, 'text/html');
+      const anchors = doc.querySelectorAll('a');
+      
+      let count = 0;
+      let skippedPFFL = 0;
+      if (!config.draftBoards) {
+        config.draftBoards = {};
+      }
+
+      anchors.forEach(a => {
+        const href = a.getAttribute('href') || "";
+        const match = href.match(/\/draftapp\/board\/(\d+)/);
+        if (match) {
+          const boardId = match[1];
+          const text = (a.textContent || "").trim();
+          const textLower = text.toLowerCase();
+          
+          const isStarWars = textLower.includes('star wars') || textLower.includes('starwars') || textLower.includes('sw');
+          const isPFFL = textLower.includes('pffl');
+
+          if (isStarWars && !isPFFL) {
+            const yearMatch = text.match(/\b(20\d{2})\b/);
+            if (yearMatch) {
+              const year = yearMatch[1];
+              config.draftBoards[year] = `https://clickydraft.com/draftapp/board/${boardId}`;
+              count++;
+            } else {
+              let parent = a.parentElement;
+              let foundYear = null;
+              for (let i = 0; i < 3 && parent; i++) {
+                const parentText = (parent.textContent || "");
+                const parentYearMatch = parentText.match(/\b(20\d{2})\b/);
+                if (parentYearMatch) {
+                  foundYear = parentYearMatch[1];
+                  break;
+                }
+                parent = parent.parentElement;
+              }
+              if (foundYear) {
+                config.draftBoards[foundYear] = `https://clickydraft.com/draftapp/board/${boardId}`;
+                count++;
+              }
+            }
+          } else if (isPFFL) {
+            skippedPFFL++;
+          }
+        }
+      });
+
+      if (count === 0) {
+        const regex = /href="[^"]*?\/draftapp\/board\/(\d+)"[^>]*?>([\s\S]*?)<\/a>/gi;
+        let match;
+        while ((match = regex.exec(htmlText)) !== null) {
+          const boardId = match[1];
+          const text = match[2].trim();
+          const textLower = text.toLowerCase();
+          const isStarWars = textLower.includes('star wars') || textLower.includes('starwars') || textLower.includes('sw');
+          const isPFFL = textLower.includes('pffl');
+
+          if (isStarWars && !isPFFL) {
+            const yearMatch = text.match(/\b(20\d{2})\b/);
+            if (yearMatch) {
+              const year = yearMatch[1];
+              config.draftBoards[year] = `https://clickydraft.com/draftapp/board/${boardId}`;
+              count++;
+            }
+          } else if (isPFFL) {
+            skippedPFFL++;
+          }
+        }
+      }
+
+      if (count > 0) {
+        clickyImportStatus.style.color = "var(--accent-emerald)";
+        clickyImportStatus.textContent = `Successfully imported ${count} draft boards (skipped ${skippedPFFL} PFFL boards)! Click "Save & Apply" in the settings modal to save them.`;
+        clickyImportStatus.style.display = "block";
+        
+        const currentUrl = config.draftBoards[selectedYear];
+        const draftBoardUrlInput = document.getElementById('input-draft-board-url');
+        if (draftBoardUrlInput) {
+          draftBoardUrlInput.value = currentUrl || "";
+        }
+        
+        setTimeout(() => {
+          closeImporter();
+        }, 3000);
+      } else {
+        clickyImportStatus.style.color = "var(--accent-coral)";
+        clickyImportStatus.textContent = "No Star Wars draft boards found. Make sure you copied the correct page source containing your drafts list.";
+        clickyImportStatus.style.display = "block";
+      }
+    });
+  }
 }
