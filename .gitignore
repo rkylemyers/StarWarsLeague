@@ -16,4 +16,4 @@
 
 # Local custom binaries
 fleaflicker-cli
-transactions_cache.json
+/transactions_cache.json
