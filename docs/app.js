@@ -941,10 +941,9 @@ function buildYearTabs() {
   const mainTabs = yearList.slice(0, 3);
   mainTabs.forEach(year => {
     const btn = document.createElement('button');
-    btn.className = `year-tab-btn ${year.toString() === selectedYear && activeView === 'dues' ? 'active' : ''}`;
+    btn.className = `year-tab-btn ${year.toString() === selectedYear ? 'active' : ''}`;
     btn.textContent = year.toString() === yearList[0].toString() ? `${year} (Current)` : year.toString();
     btn.addEventListener('click', () => {
-      activeView = "dues";
       selectYearTab(year.toString());
     });
     yearTabsContainer.appendChild(btn);
@@ -958,21 +957,20 @@ function buildYearTabs() {
     wrap.id = "older-years-dropdown";
 
     const btn = document.createElement('button');
-    btn.className = `year-tab-btn ${olderTabs.map(String).includes(selectedYear) && activeView === 'dues' ? 'active' : ''}`;
     const isOlderSelected = olderTabs.map(String).includes(selectedYear);
-    btn.innerHTML = `${isOlderSelected && activeView === 'dues' ? selectedYear : 'Older Seasons'} ▾`;
+    btn.className = `year-tab-btn ${isOlderSelected ? 'active' : ''}`;
+    btn.innerHTML = `${isOlderSelected ? selectedYear : 'Older Seasons'} ▾`;
 
     const menu = document.createElement('div');
     menu.className = "year-dropdown-menu";
 
     olderTabs.forEach(year => {
       const item = document.createElement('button');
-      item.className = `year-dropdown-item ${year.toString() === selectedYear && activeView === 'dues' ? 'active' : ''}`;
+      item.className = `year-dropdown-item ${year.toString() === selectedYear ? 'active' : ''}`;
       item.textContent = year.toString();
       item.addEventListener('click', (e) => {
         e.stopPropagation();
         wrap.classList.remove('active');
-        activeView = "dues";
         selectYearTab(year.toString());
       });
       menu.appendChild(item);
@@ -993,12 +991,24 @@ function buildYearTabs() {
     yearTabsContainer.appendChild(wrap);
   }
 
-  // Add subtle separator and Rollup tab button
+  // Add subtle separator
   const sep = document.createElement('span');
   sep.className = "filter-separator";
   sep.textContent = "|";
   yearTabsContainer.appendChild(sep);
 
+  // Dues View button
+  const duesBtn = document.createElement('button');
+  duesBtn.className = `year-tab-btn ${activeView === 'dues' ? 'active' : ''}`;
+  duesBtn.textContent = "Dues";
+  duesBtn.addEventListener('click', () => {
+    activeView = "dues";
+    buildYearTabs();
+    recalculateAll();
+  });
+  yearTabsContainer.appendChild(duesBtn);
+
+  // Rollup View button
   const rollupBtn = document.createElement('button');
   rollupBtn.className = `year-tab-btn ${activeView === 'rollup' ? 'active' : ''}`;
   rollupBtn.textContent = "Rollup View";
