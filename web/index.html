@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars League - Dues & Transactions Dashboard</title>
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stars-bg"></div>
+  <div class="glow-orb glow-1"></div>
+  <div class="glow-orb glow-2"></div>
+
+  <div class="app-container">
+    <header class="app-header">
+      <div class="logo-area">
+        <span class="logo-badge">NFL League 111626</span>
+        <h1 id="league-title">STAR WARS LEAGUE</h1>
+        <p class="subtitle">Waiver Dues & Roster Transaction Ledger</p>
+      </div>
+      <div class="sync-info" id="sync-info-box">
+        <span class="pulse-dot"></span>
+        <span id="sync-time-label">Loading local cache...</span>
+      </div>
+    </header>
+
+    <!-- Metrics Section -->
+    <section class="metrics-grid">
+      <div class="metric-card" id="metric-pot">
+        <div class="card-bg"></div>
+        <div class="metric-info">
+          <span class="metric-label">Total Cash Pool</span>
+          <h2 class="metric-value" id="pot-value">$0.00</h2>
+          <span class="metric-sub" id="payout-split-info">Payout: 60/40 Split</span>
+        </div>
+      </div>
+      <div class="metric-card highlight-gold" id="metric-first">
+        <div class="card-bg"></div>
+        <div class="metric-info">
+          <span class="metric-label">🏆 Champion Payout</span>
+          <h2 class="metric-value" id="first-payout-value">$0.00</h2>
+          <span class="metric-sub" id="first-percent-label">60% of total pool</span>
+        </div>
+      </div>
+      <div class="metric-card highlight-silver" id="metric-second">
+        <div class="card-bg"></div>
+        <div class="metric-info">
+          <span class="metric-label">🥈 Runner-Up Payout</span>
+          <h2 class="metric-value" id="second-payout-value">$0.00</h2>
+          <span class="metric-sub" id="second-percent-label">40% of total pool</span>
+        </div>
+      </div>
+      <div class="metric-card" id="metric-pickups">
+        <div class="card-bg"></div>
+        <div class="metric-info">
+          <span class="metric-label">Total Transactions</span>
+          <h2 class="metric-value" id="total-pickups-value">0</h2>
+          <span class="metric-sub">Across all teams</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs-nav">
+      <button class="tab-btn active" id="tab-leaderboard-btn">Dues Leaderboard</button>
+      <button class="tab-btn" id="tab-breakdown-btn">Transaction Types</button>
+      <button class="tab-btn" id="tab-admin-btn">Admin Adjustments</button>
+    </nav>
+
+    <!-- Main Content Panels -->
+    <main class="main-panel">
+      <!-- 1. LEADERBOARD PANEL -->
+      <section class="tab-content active" id="panel-leaderboard">
+        <div class="panel-header">
+          <h2>Financial Standings</h2>
+          <p class="panel-desc">Totals calculated dynamically: Buy-In + ($5/pickup after 2 free) + Shared Costs + Adjustments</p>
+        </div>
+        <div class="table-container">
+          <table class="dues-table" id="dues-table-element">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Team Name</th>
+                <th>Buy-in</th>
+                <th>Paid Pickups</th>
+                <th>Shared Costs</th>
+                <th>Adjustments</th>
+                <th>Total Due</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="dues-tbody">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 2. TRANSACTION BREAKDOWN PANEL -->
+      <section class="tab-content" id="panel-breakdown">
+        <div class="panel-header">
+          <h2>Transaction Counts per Team</h2>
+          <p class="panel-desc">All-time league transaction classification breakdown (API import logs)</p>
+        </div>
+        <div class="table-container">
+          <table class="breakdown-table" id="breakdown-table-element">
+            <thead>
+              <tr>
+                <th>Team Name</th>
+                <th>Claims</th>
+                <th>Adds</th>
+                <th>Trades</th>
+                <th>Imports</th>
+                <th>Drops</th>
+                <th>Reserve</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="breakdown-tbody">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 3. ADMIN SETTINGS PANEL -->
+      <section class="tab-content" id="panel-admin">
+        <div class="panel-header">
+          <h2>Adjustments & Fee Controls</h2>
+          <p class="panel-desc">Modify the league parameters below. Changes apply instantly in the browser. You can export the config file to persist changes permanently.</p>
+        </div>
+        <div class="admin-grid">
+          <!-- Left Column: Parameters -->
+          <div class="admin-card params-card">
+            <h3>Fee Parameters</h3>
+            <div class="form-group">
+              <label for="input-buyin">Buy-In Fee ($)</label>
+              <input type="number" id="input-buyin" value="35" min="0" step="1">
+            </div>
+            <div class="form-group">
+              <label for="input-pickup-cost">Cost per Pickup ($)</label>
+              <input type="number" id="input-pickup-cost" value="5" min="0" step="0.5">
+            </div>
+            <div class="form-group">
+              <label for="input-free-pickups">Free Pickups Count</label>
+              <input type="number" id="input-free-pickups" value="2" min="0" step="1">
+            </div>
+            <div class="form-group">
+              <label for="input-first-split">Winner Payout (%)</label>
+              <input type="number" id="input-first-split" value="60" min="0" max="100" step="5">
+            </div>
+            <div class="form-group">
+              <label for="input-second-split">Runner-up Payout (%)</label>
+              <input type="number" id="input-second-split" value="40" min="0" max="100" step="5">
+            </div>
+          </div>
+
+          <!-- Middle Column: Shared Global Dues -->
+          <div class="admin-card shared-card">
+            <h3>Global Shared Dues (Split Equally)</h3>
+            <ul class="dues-list" id="global-dues-list">
+              <!-- Rendered dynamically -->
+            </ul>
+            <div class="add-item-row">
+              <input type="text" id="input-global-desc" placeholder="Trophy, Food, etc.">
+              <input type="number" id="input-global-amount" placeholder="$ Amount" min="0" step="1">
+              <button class="btn btn-secondary" id="btn-add-global">Add</button>
+            </div>
+          </div>
+
+          <!-- Right Column: Team Specific Adjustments -->
+          <div class="admin-card adjustments-card">
+            <h3>Team Adjustments & Overrides</h3>
+            <div class="form-group">
+              <label for="select-adj-team">Select Team</label>
+              <select id="select-adj-team">
+                <!-- Rendered dynamically -->
+              </select>
+            </div>
+            <div class="add-item-row">
+              <input type="text" id="input-adj-desc" placeholder="e.g. Injured Player Credit">
+              <input type="number" id="input-adj-amount" placeholder="$ Amount (use negative for credits)" step="1">
+              <button class="btn btn-secondary" id="btn-add-adj">Apply</button>
+            </div>
+            <ul class="dues-list list-small" id="team-adjustments-list">
+              <!-- Rendered dynamically -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="admin-actions">
+          <button class="btn btn-primary" id="btn-recalculate">Recalculate All</button>
+          <button class="btn btn-success" id="btn-export-config">Export config.json</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Details Modal for Audit -->
+    <div class="modal" id="audit-modal">
+      <div class="modal-overlay" id="modal-overlay"></div>
+      <div class="modal-content">
+        <header class="modal-header">
+          <div>
+            <h3 id="modal-team-title">Team Name</h3>
+            <p class="modal-subtitle" id="modal-team-owner">Owner Details</p>
+          </div>
+          <button class="close-btn" id="btn-close-modal">&times;</button>
+        </header>
+        <div class="modal-body">
+          <div class="audit-summary-grid">
+            <div class="audit-stat">
+              <span class="label">Total Pickups</span>
+              <span class="value" id="audit-total-pickups">0</span>
+            </div>
+            <div class="audit-stat">
+              <span class="label">Waiver Cost</span>
+              <span class="value" id="audit-waiver-cost">$0.00</span>
+            </div>
+            <div class="audit-stat">
+              <span class="label">Shared Costs</span>
+              <span class="value" id="audit-shared-cost">$0.00</span>
+            </div>
+            <div class="audit-stat">
+              <span class="label">Total Adjustments</span>
+              <span class="value" id="audit-adj-cost">$0.00</span>
+            </div>
+          </div>
+          <h4>Chronological Pickup Audit Log</h4>
+          <div class="audit-table-container">
+            <table class="audit-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Date/Time</th>
+                  <th>Type</th>
+                  <th>Player Added</th>
+                  <th>Player Dropped</th>
+                  <th>Charge</th>
+                </tr>
+              </thead>
+              <tbody id="audit-tbody">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

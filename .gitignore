@@ -1,0 +1,19 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built by `go test`
+*.test
+
+# Output of the go coverage tool, consumed by `go tool cover`
+*.out
+
+# Dependency directories (remove the comment below if it's a go tool chain or library project)
+# vendor/
+
+# Local custom binaries
+fleaflicker-cli
+transactions_cache.json

@@ -1,0 +1,35 @@
+{
+  "buyInCost": 35.0,
+  "pickupCost": 5.0,
+  "freePickupsCount": 2,
+  "payouts": {
+    "firstPlacePercent": 60.0,
+    "secondPlacePercent": 40.0
+  },
+  "globalDues": [
+    {
+      "description": "League Trophy",
+      "amount": 50.0
+    },
+    {
+      "description": "Draft Day Food Split",
+      "amount": 120.0
+    }
+  ],
+  "teamDues": {
+    "Wookie of the Year": [
+      {
+        "description": "Extra Draft Draft beer",
+        "amount": 15.0
+      }
+    ]
+  },
+  "teamAdjustments": {
+    "Ashoka Nightmare": [
+      {
+        "description": "Injured Player Credit",
+        "amount": -5.0
+      }
+    ]
+  }
+}
