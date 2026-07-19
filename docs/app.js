@@ -727,9 +727,9 @@ function renderTeamRow(team, rank) {
       <span style="font-size:0.8rem; color:var(--text-muted);">(${team.pickupCount} total)</span>
       <div style="font-size:0.8rem; color:var(--text-secondary);">$${team.pickupDues.toFixed(2)}</div>
     </td>
+    <td><span class="val-due">$${team.totalDue.toFixed(2)}</span></td>
     <td>${sparklineSVG}</td>
     <td><span class="${adjClass}">${sign}$${netAdjustments.toFixed(2)}</span></td>
-    <td><span class="val-due">$${team.totalDue.toFixed(2)}</span></td>
   `;
   duesTbody.appendChild(tr);
 }
