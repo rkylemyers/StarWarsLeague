@@ -218,6 +218,14 @@ func SyncTransactions(client *Client, cacheFile string) {
 
 	// Identify unique years/seasons from transaction items
 	yearsMap := make(map[string]bool)
+	
+	// Always include the current active season year
+	curYear := time.Now().Year()
+	if time.Now().Month() < time.May {
+		curYear--
+	}
+	yearsMap[strconv.Itoa(curYear)] = true
+
 	for _, item := range allItems {
 		milli, err := strconv.ParseInt(item.TimeEpochMilli, 10, 64)
 		if err == nil {

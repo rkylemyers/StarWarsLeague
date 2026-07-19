@@ -48,7 +48,7 @@ function initSpaceBg() {
       x: Math.random() * canvas.width - canvas.width / 2,
       y: Math.random() * canvas.height - canvas.height / 2,
       z: Math.random() * canvas.width,
-      color: `hsl(${Math.random() * 50 + 180}, 100%, ${Math.random() * 40 + 60}%)` // HSL ice-blue/white twinkle
+      color: `hsl(${Math.random() * 50 + 180}, 100%, ${Math.random() * 40 + 60}%)`
     });
   }
 
@@ -61,11 +61,9 @@ function resizeCanvas() {
 }
 
 function animateSpace() {
-  // Clear with semi-transparent background to create star trails during hyperspace jump
   ctx.fillStyle = `rgba(4, 6, 10, ${warpSpeed > 5 ? 0.15 : 0.4})`;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  // Transition speed smoothly
   warpSpeed += (targetWarpSpeed - warpSpeed) * 0.08;
 
   const cx = canvas.width / 2;
@@ -73,30 +71,23 @@ function animateSpace() {
 
   for (let i = 0; i < stars.length; i++) {
     const star = stars[i];
-    
-    // Move star closer
     star.z -= warpSpeed;
 
-    // Reset star if it moves past screen
     if (star.z <= 0) {
       star.x = Math.random() * canvas.width - cx;
       star.y = Math.random() * canvas.height - cy;
       star.z = canvas.width;
     }
 
-    // Perspective calculation
     const px = (star.x / star.z) * cx + cx;
     const py = (star.y / star.z) * cy + cy;
 
-    // Fade stars in as they get closer
     const alpha = Math.min(1, 1 - star.z / canvas.width);
     
-    // Draw star
     ctx.beginPath();
     ctx.strokeStyle = star.color;
     ctx.lineWidth = Math.min(3, (1 - star.z / canvas.width) * 3);
 
-    // If warp speed is high, draw star trails (warp lines)
     if (warpSpeed > 2) {
       const prevZ = star.z + warpSpeed * 2.5;
       const prevX = (star.x / prevZ) * cx + cx;
@@ -114,11 +105,10 @@ function animateSpace() {
   requestAnimationFrame(animateSpace);
 }
 
-// Trigger hyperspace jump animation
 function triggerHyperspaceJump() {
-  targetWarpSpeed = 25; // Accelerate!
+  targetWarpSpeed = 25;
   setTimeout(() => {
-    targetWarpSpeed = 0.5; // Decelerate back to normal drift
+    targetWarpSpeed = 0.5;
   }, 450);
 }
 
@@ -166,12 +156,14 @@ function processTransactionsBySeason() {
   rawData.items.forEach(item => {
     const year = getSeasonYear(item.TimeEpochMilli);
     
-    // Establish team structure
     let teamName = "";
+    let teamId = 0;
     if (item.transaction && item.transaction.team) {
       teamName = item.transaction.team.name;
+      teamId = item.transaction.team.id;
     } else if (item.reserveChange && item.reserveChange.team) {
       teamName = item.reserveChange.team.name;
+      teamId = item.reserveChange.team.id;
     }
 
     if (!teamName) return;
@@ -186,6 +178,7 @@ function processTransactionsBySeason() {
     const season = processedData[year];
     if (!season.teams[teamName]) {
       season.teams[teamName] = {
+        id: teamId,
         name: teamName,
         claims: 0,
         adds: 0,
@@ -228,18 +221,23 @@ function processTransactionsBySeason() {
     }
   });
 
-  // Calculate sorted year list
-  yearList = Object.keys(processedData).map(Number).sort((a, b) => b - a);
+  // Calculate sorted year list based on standings keys in cache
+  if (rawData.standings) {
+    yearList = Object.keys(rawData.standings).map(Number).sort((a, b) => b - a);
+  } else {
+    yearList = Object.keys(processedData).map(Number).sort((a, b) => b - a);
+  }
+
   if (yearList.length > 0) {
-    selectedYear = yearList[0].toString(); // default to latest
+    selectedYear = yearList[0].toString(); // default to latest (e.g. 2026)
   }
 }
 
 // ----------------------------------------------------
-// 3. WEEKLY NFL CALCULATOR
+// 3. WEEKLY NFL WEEK CALCULATOR
 // ----------------------------------------------------
 function getNFLStartThursday(year) {
-  let date = new Date(year, 8, 1); // Sept 1st
+  let date = new Date(year, 8, 1);
   let day = date.getDay();
   let firstMonday;
   if (day === 1) {
@@ -283,24 +281,71 @@ function getWeekName(weekInt) {
 function recalculateAll() {
   if (!selectedYear) return;
 
-  const season = processedData[selectedYear];
-  if (!season) return;
-
-  // Initialize elements
-  const teamsMap = season.teams;
+  const season = processedData[selectedYear] || { teams: {}, totalPickups: 0 };
+  const standings = rawData.standings && rawData.standings[selectedYear];
   const teamList = [];
 
-  // Shared Global costs split equally
+  // Build the master list of teams for this selected year
+  // We prioritize the standings map to ensure we have the exact roster of teams who played that year
+  const seasonTeams = {};
+  if (standings && standings.divisions) {
+    standings.divisions.forEach(div => {
+      div.teams.forEach(t => {
+        seasonTeams[t.name] = {
+          id: t.id,
+          name: t.name,
+          claims: 0,
+          adds: 0,
+          trades: 0,
+          drops: 0,
+          reserves: 0,
+          total: 0,
+          pickups: 0,
+          history: []
+        };
+      });
+    });
+  }
+
+  // Merge transaction data into the master team structures
+  if (season && season.teams) {
+    Object.entries(season.teams).forEach(([name, tData]) => {
+      if (!seasonTeams[name]) {
+        seasonTeams[name] = tData;
+      } else {
+        Object.assign(seasonTeams[name], {
+          id: tData.id,
+          claims: tData.claims,
+          adds: tData.adds,
+          trades: tData.trades,
+          drops: tData.drops,
+          reserves: tData.reserves,
+          total: tData.total,
+          pickups: tData.pickups,
+          history: tData.history
+        });
+      }
+    });
+  }
+
+  // If both standings and transactions are missing, exit
+  if (Object.keys(seasonTeams).length === 0) {
+    duesTbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">No data available for season ' + selectedYear + '</td></tr>';
+    return;
+  }
+
+  // Calculate Shared Global costs split equally
   const totalGlobalDuesSum = (config.globalDues || []).reduce((acc, curr) => acc + curr.amount, 0);
-  const totalTeams = Object.keys(teamsMap).length || 1;
+  const totalTeams = Object.keys(seasonTeams).length || 1;
   const sharedDuesPerTeam = totalGlobalDuesSum / totalTeams;
 
-  // Sort franchise transactions chronologically ascending to flag free waiver limits
-  Object.values(teamsMap).forEach(team => {
+  // Process details per team
+  Object.values(seasonTeams).forEach(team => {
+    // Sort transactions chronologically ascending
     team.history.sort((a, b) => parseInt(a.timeEpochMilli) - parseInt(b.timeEpochMilli));
 
     // Reset weekly counts
-    team.weeklyPickups = Array(20).fill(0); // 1-indexed for weeks 1-19
+    team.weeklyPickups = Array(20).fill(0);
 
     let pickupIndex = 0;
     team.history.forEach(item => {
@@ -344,7 +389,6 @@ function recalculateAll() {
       });
     }
 
-    // Final dues sum
     team.totalDue = config.buyInCost + team.pickupDues + team.sharedDues + team.specificDues + team.adjustments;
     teamList.push(team);
   });
@@ -363,98 +407,140 @@ function recalculateAll() {
   const secondPct = config.payouts.secondPlacePercent;
   payoutSplitInfo.textContent = `Champion Split: ${firstPct}% / ${secondPct}%`;
 
-  // Render Dues Leaderboard
-  renderDuesLeaderboard(teamList);
+  // Render Leaderboard Grouped by Division
+  renderDuesLeaderboardGrouped(teamList, standings);
 
   // Render Weekly Timeline Chart
   renderWeeklyChart(teamList);
 }
 
-// Render Dues Leaderboard Table
-function renderDuesLeaderboard(teamList) {
+// Render Dues Leaderboard grouped by Division
+function renderDuesLeaderboardGrouped(teamList, standings) {
   duesTbody.innerHTML = '';
 
-  teamList.forEach((team, index) => {
-    const tr = document.createElement('tr');
-    
-    // Sparkline points generation (19 values mapped inside 100x20 SVG)
-    let sparklineSVG = '';
-    if (team.weeklyPickups) {
-      const maxVal = Math.max(...team.weeklyPickups, 1);
-      const points = [];
-      for (let w = 1; w <= 19; w++) {
-        const val = team.weeklyPickups[w] || 0;
-        // x: 0 to 90, y: 18 to 2 (invert y axis)
-        const x = ((w - 1) / 18) * 90 + 5;
-        const y = 18 - (val / maxVal) * 16;
-        points.push(`${x},${y}`);
+  if (standings && standings.divisions && standings.divisions.length > 0) {
+    // Render grouped by divisions
+    standings.divisions.forEach(division => {
+      // Define Lightsaber color-themed styling for division row header
+      let divClass = "div-generic";
+      if (division.name.toLowerCase().includes("jedi")) {
+        divClass = "div-jedi";
+      } else if (division.name.toLowerCase().includes("sith")) {
+        divClass = "div-sith";
+      } else if (division.name.toLowerCase().includes("first order") || division.name.toLowerCase().includes("order")) {
+        divClass = "div-firstorder";
       }
 
-      sparklineSVG = `
-        <svg class="sparkline-svg" width="100" height="20">
-          <polyline class="sparkline-path" points="${points.join(' ')}"></polyline>
-          ${points.map((p, idx) => {
-            const val = team.weeklyPickups[idx + 1] || 0;
-            return val > 0 ? `<circle class="sparkline-dot" cx="${p.split(',')[0]}" cy="${p.split(',')[1]}" r="2"><title>Week ${idx+1}: ${val} pickups</title></circle>` : '';
-          }).join('')}
-        </svg>
-      `;
+      const headerTr = document.createElement('tr');
+      headerTr.className = `division-header-row ${divClass}`;
+      headerTr.innerHTML = `<td colspan="7"><span class="division-title">${division.name} Division</span></td>`;
+      duesTbody.appendChild(headerTr);
+
+      // Filter and sort teams in this division
+      const divTeamIds = new Set(division.teams.map(t => t.id));
+      const divTeams = teamList.filter(t => divTeamIds.has(t.id));
+
+      const getRank = (name) => {
+        const matched = division.teams.find(t => t.name === name);
+        return matched && matched.recordOverall ? matched.recordOverall.rank : 99;
+      };
+      divTeams.sort((a, b) => getRank(a.name) - getRank(b.name));
+
+      divTeams.forEach((team, index) => {
+        renderTeamRow(team, getRank(team.name));
+      });
+    });
+  } else {
+    // Fallback: render flat list if standings are missing
+    const headerTr = document.createElement('tr');
+    headerTr.className = "division-header-row div-generic";
+    headerTr.innerHTML = `<td colspan="7"><span class="division-title">All Franchises</span></td>`;
+    duesTbody.appendChild(headerTr);
+
+    teamList.forEach((team, index) => {
+      renderTeamRow(team, index + 1);
+    });
+  }
+}
+
+// Render a single team row in leaderboard
+function renderTeamRow(team, rank) {
+  const tr = document.createElement('tr');
+  
+  // Sparkline points generation (19 values mapped inside 100x20 SVG)
+  let sparklineSVG = '';
+  if (team.weeklyPickups) {
+    const maxVal = Math.max(...team.weeklyPickups, 1);
+    const points = [];
+    for (let w = 1; w <= 19; w++) {
+      const val = team.weeklyPickups[w] || 0;
+      const x = ((w - 1) / 18) * 90 + 5;
+      const y = 18 - (val / maxVal) * 16;
+      points.push(`${x},${y}`);
     }
 
-    const netAdjustments = team.adjustments + team.specificDues;
-    const sign = netAdjustments >= 0 ? '+' : '';
-    let adjClass = 'val-bold';
-    if (netAdjustments < 0) adjClass += ' val-adjust-neg';
-    else if (netAdjustments > 0) adjClass += ' val-adjust-pos';
-
-    // Get current record from standings response
-    let recordStr = "—";
-    const seasonStr = selectedYear;
-    if (rawData.standings && rawData.standings[seasonStr]) {
-      const divTeams = rawData.standings[seasonStr].divisions.flatMap(d => d.teams);
-      const matched = divTeams.find(t => t.name === team.name);
-      if (matched && matched.recordOverall) {
-        recordStr = `${matched.recordOverall.wins}-${matched.recordOverall.losses}`;
-        if (matched.recordOverall.ties > 0) {
-          recordStr += `-${matched.recordOverall.ties}`;
-        }
-        recordStr = `(Rank #${matched.recordOverall.rank}, ${recordStr})`;
-      }
-    }
-
-    // Get championships count
-    let championshipsHTML = '';
-    const stats = config.teamHistoricalStats && config.teamHistoricalStats[team.name];
-    if (stats && stats.championships > 0) {
-      championshipsHTML = ` <span style="cursor:help;" title="${stats.championships} championships">🏆 x${stats.championships}</span>`;
-    }
-
-    tr.innerHTML = `
-      <td><span class="val-bold">${index + 1}</span></td>
-      <td>
-        <span class="team-name-link" onclick="openAuditModal('${encodeURIComponent(team.name)}')">${team.name}</span>
-        ${championshipsHTML}
-        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.15rem;">${recordStr}</div>
-      </td>
-      <td>
-        <span class="val-bold">${team.paidPickupsCount}</span> 
-        <span style="font-size:0.8rem; color:var(--text-muted);">(${team.pickupCount} total)</span>
-        <div style="font-size:0.8rem; color:var(--text-secondary);">$${team.pickupDues.toFixed(2)}</div>
-      </td>
-      <td>${sparklineSVG}</td>
-      <td><span class="${adjClass}">${sign}$${netAdjustments.toFixed(2)}</span></td>
-      <td><span class="val-due">$${team.totalDue.toFixed(2)}</span></td>
-      <td style="text-align: right;">
-        <button class="audit-btn" onclick="openAuditModal('${encodeURIComponent(team.name)}')">Audit Log</button>
-      </td>
+    sparklineSVG = `
+      <svg class="sparkline-svg" width="100" height="20">
+        <polyline class="sparkline-path" points="${points.join(' ')}"></polyline>
+        ${points.map((p, idx) => {
+          const val = team.weeklyPickups[idx + 1] || 0;
+          return val > 0 ? `<circle class="sparkline-dot" cx="${p.split(',')[0]}" cy="${p.split(',')[1]}" r="2"><title>Week ${idx+1}: ${val} pickups</title></circle>` : '';
+        }).join('')}
+      </svg>
     `;
-    duesTbody.appendChild(tr);
-  });
+  }
+
+  const netAdjustments = team.adjustments + team.specificDues;
+  const sign = netAdjustments >= 0 ? '+' : '';
+  let adjClass = 'val-bold';
+  if (netAdjustments < 0) adjClass += ' val-adjust-neg';
+  else if (netAdjustments > 0) adjClass += ' val-adjust-pos';
+
+  // Get current record from standings response
+  let recordStr = "—";
+  if (rawData.standings && rawData.standings[selectedYear]) {
+    const divTeams = rawData.standings[selectedYear].divisions.flatMap(d => d.teams);
+    const matched = divTeams.find(t => t.name === team.name);
+    if (matched && matched.recordOverall) {
+      recordStr = `${matched.recordOverall.wins}-${matched.recordOverall.losses}`;
+      if (matched.recordOverall.ties > 0) {
+        recordStr += `-${matched.recordOverall.ties}`;
+      }
+      recordStr = `(Rank #${matched.recordOverall.rank}, ${recordStr})`;
+    }
+  }
+
+  // Get championships count
+  let championshipsHTML = '';
+  const stats = config.teamHistoricalStats && config.teamHistoricalStats[team.name];
+  if (stats && stats.championships > 0) {
+    championshipsHTML = ` <span style="cursor:help;" title="${stats.championships} championships">🏆 x${stats.championships}</span>`;
+  }
+
+  tr.innerHTML = `
+    <td><span class="val-bold">${rank}</span></td>
+    <td>
+      <span class="team-name-link" onclick="openAuditModal('${encodeURIComponent(team.name)}')">${team.name}</span>
+      ${championshipsHTML}
+      <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.15rem;">${recordStr}</div>
+    </td>
+    <td>
+      <span class="val-bold">${team.paidPickupsCount}</span> 
+      <span style="font-size:0.8rem; color:var(--text-muted);">(${team.pickupCount} total)</span>
+      <div style="font-size:0.8rem; color:var(--text-secondary);">$${team.pickupDues.toFixed(2)}</div>
+    </td>
+    <td>${sparklineSVG}</td>
+    <td><span class="${adjClass}">${sign}$${netAdjustments.toFixed(2)}</span></td>
+    <td><span class="val-due">$${team.totalDue.toFixed(2)}</span></td>
+    <td style="text-align: right;">
+      <button class="audit-btn" onclick="openAuditModal('${encodeURIComponent(team.name)}')">Audit Log</button>
+    </td>
+  `;
+  duesTbody.appendChild(tr);
 }
 
 // Render Weekly Timeline SVG Bar Chart
 function renderWeeklyChart(teamList) {
-  // Aggregate weekly stats (Week 1-19)
   const weeklyPickups = Array(20).fill(0);
   teamList.forEach(t => {
     if (t.weeklyPickups) {
@@ -466,43 +552,37 @@ function renderWeeklyChart(teamList) {
 
   const maxVal = Math.max(...weeklyPickups, 1);
   
-  // Build SVG bars
   let svgContent = `
     <svg width="100%" height="100%" viewBox="0 0 760 130" preserveAspectRatio="none">
       <defs>
         <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="var(--accent-cyan)" />
+          <stop offset="35%" stop-color="var(--accent-green)" />
+          <stop offset="70%" stop-color="var(--accent-coral)" />
           <stop offset="100%" stop-color="var(--accent-purple)" />
         </linearGradient>
       </defs>
-      <!-- Grid Lines -->
       <line class="chart-grid-line" x1="40" y1="15" x2="740" y2="15"></line>
       <line class="chart-grid-line" x1="40" y1="55" x2="740" y2="55"></line>
       <line class="chart-grid-line" x1="40" y1="95" x2="740" y2="95"></line>
   `;
 
-  // Left axis labels
   svgContent += `
     <text class="chart-text" x="10" y="20">${maxVal}</text>
     <text class="chart-text" x="10" y="60">${Math.floor(maxVal/2)}</text>
     <text class="chart-text" x="10" y="100">0</text>
   `;
 
-  // Generate 19 Columns
   const paddingX = 40;
   const colWidth = 28;
   const gap = 8;
 
   for (let w = 1; w <= 19; w++) {
     const val = weeklyPickups[w] || 0;
-    // Map height to 10px - 100px range
     const barHeight = val > 0 ? (val / maxVal) * 85 : 0;
     const x = paddingX + (w - 1) * (colWidth + gap);
     const y = 95 - barHeight;
 
-    // Calculate total additions ($5/pickup for transactions that are above baseline, but let's simplify:
-    // show count of pickups and total billable amount generated)
-    // To estimate additions: find how many pickups in this week were billed (meaning they occurred after team's 2nd free pickup)
     let weekAdditionsSum = 0;
     teamList.forEach(t => {
       let preWeekPickups = 0;
@@ -522,11 +602,8 @@ function renderWeeklyChart(teamList) {
 
     svgContent += `
       <g class="chart-bar-group" onmouseover="showChartTooltip(event, '${tooltipText}')" onmouseout="hideChartTooltip()">
-        <!-- Clickable transparent hover area -->
         <rect class="chart-hover-area" x="${x}" y="10" width="${colWidth}" height="100" fill="transparent" style="cursor:pointer;"></rect>
-        <!-- Bar element -->
         ${val > 0 ? `<rect class="chart-bar-rect" x="${x}" y="${y}" width="${colWidth}" height="${barHeight}"></rect>` : ''}
-        <!-- Label axis -->
         <text class="chart-text-week" x="${x + colWidth/2}" y="115">${weekLabel}</text>
       </g>
     `;
@@ -559,7 +636,7 @@ window.hideChartTooltip = function() {
 };
 
 // ----------------------------------------------------
-// 6. YEAR TABS GENERATOR
+// 6. YEAR TABS GENERATOR (DYNAMIC)
 // ----------------------------------------------------
 function buildYearTabs() {
   yearTabsContainer.innerHTML = '';
@@ -572,7 +649,7 @@ function buildYearTabs() {
   mainTabs.forEach(year => {
     const btn = document.createElement('button');
     btn.className = `year-tab-btn ${year.toString() === selectedYear ? 'active' : ''}`;
-    btn.textContent = year.toString();
+    btn.textContent = year.toString() === yearList[0].toString() ? `${year} (Current)` : year.toString();
     btn.addEventListener('click', () => selectYearTab(year.toString()));
     yearTabsContainer.appendChild(btn);
   });
@@ -586,7 +663,6 @@ function buildYearTabs() {
 
     const btn = document.createElement('button');
     btn.className = "year-tab-btn";
-    // Check if selected year is in the older years list to set active tab label
     const isOlderSelected = olderTabs.map(String).includes(selectedYear);
     btn.innerHTML = `${isOlderSelected ? selectedYear : 'Older Seasons'} ▾`;
     if (isOlderSelected) {
@@ -611,7 +687,6 @@ function buildYearTabs() {
     wrap.appendChild(btn);
     wrap.appendChild(menu);
 
-    // Toggle menu
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
       wrap.classList.toggle('active');
@@ -629,15 +704,13 @@ function selectYearTab(year) {
   if (selectedYear === year) return;
   selectedYear = year;
   
-  // Warp speed jump!
   triggerHyperspaceJump();
-
   buildYearTabs();
   recalculateAll();
 }
 
 // ----------------------------------------------------
-// 7. TEAM AUDIT LOG & modal
+// 7. TEAM AUDIT LOG & MODAL
 // ----------------------------------------------------
 let currentAuditTeam = "";
 let currentAuditFilter = "all";
@@ -647,7 +720,6 @@ window.openAuditModal = function(encodedTeamName) {
   currentAuditTeam = teamName;
   currentAuditFilter = "all";
 
-  // Reset filter buttons
   document.querySelectorAll('#audit-filter-buttons button').forEach(b => {
     b.classList.remove('active');
     if (b.getAttribute('data-filter') === 'all') b.classList.add('active');
@@ -658,19 +730,58 @@ window.openAuditModal = function(encodedTeamName) {
 };
 
 function populateAuditData() {
+  const standings = rawData.standings && rawData.standings[selectedYear];
+  
+  // Find team details
+  let team = null;
   const season = processedData[selectedYear];
-  if (!season) return;
+  if (season && season.teams[currentAuditTeam]) {
+    team = season.teams[currentAuditTeam];
+  } else if (standings) {
+    // If team has no transactions, create placeholder from standings list
+    const divTeams = standings.divisions.flatMap(d => d.teams);
+    const matched = divTeams.find(t => t.name === currentAuditTeam);
+    if (matched) {
+      team = {
+        id: matched.id,
+        name: matched.name,
+        claims: 0,
+        adds: 0,
+        trades: 0,
+        drops: 0,
+        reserves: 0,
+        total: 0,
+        pickups: 0,
+        paidPickupsCount: 0,
+        pickupDues: 0,
+        sharedDues: (config.globalDues || []).reduce((acc, curr) => acc + curr.amount, 0) / divTeams.length,
+        specificDues: 0,
+        adjustments: 0,
+        totalDue: config.buyInCost + ((config.globalDues || []).reduce((acc, curr) => acc + curr.amount, 0) / divTeams.length),
+        history: []
+      };
+      
+      // Merge specific dues/adjustments
+      if (config.teamDues && config.teamDues[team.name]) {
+        config.teamDues[team.name].forEach(item => team.totalDue += item.amount);
+      }
+      if (config.teamAdjustments && config.teamAdjustments[team.name]) {
+        config.teamAdjustments[team.name].forEach(item => {
+          team.adjustments += item.amount;
+          team.totalDue += item.amount;
+        });
+      }
+    }
+  }
 
-  const team = season.teams[currentAuditTeam];
   if (!team) return;
 
-  // Header Details
   modalTeamTitle.textContent = team.name;
 
-  // Standings Current Year Record
+  // Standings Record (Current Year)
   let recordStr = "Record: —";
-  if (rawData.standings && rawData.standings[selectedYear]) {
-    const divTeams = rawData.standings[selectedYear].divisions.flatMap(d => d.teams);
+  if (standings) {
+    const divTeams = standings.divisions.flatMap(d => d.teams);
     const matched = divTeams.find(t => t.name === team.name);
     if (matched && matched.recordOverall) {
       recordStr = `Record: ${matched.recordOverall.wins}-${matched.recordOverall.losses} (Rank #${matched.recordOverall.rank})`;
@@ -691,7 +802,6 @@ function populateAuditData() {
     document.getElementById('modal-championships-badge').style.display = 'none';
   }
 
-  // Add all synced standings to all-time stats dynamically
   if (rawData.standings) {
     Object.values(rawData.standings).forEach(std => {
       const allDivTeams = std.divisions.flatMap(d => d.teams);
@@ -714,7 +824,7 @@ function populateAuditData() {
   const adjEl = document.getElementById('audit-adj-cost');
   adjEl.textContent = `${netAdj >= 0 ? '+' : ''}$${netAdj.toFixed(2)}`;
   if (netAdj < 0) {
-    adjEl.style.color = 'var(--accent-emerald)';
+    adjEl.style.color = 'var(--accent-green)';
   } else if (netAdj > 0) {
     adjEl.style.color = 'var(--accent-coral)';
   } else {
@@ -723,7 +833,7 @@ function populateAuditData() {
 
   document.getElementById('audit-total-due').textContent = `$${team.totalDue.toFixed(2)}`;
 
-  // Populate chronological history (DESCENDING - most recent first)
+  // Populate chronological history log (newest first)
   const auditTbody = document.getElementById('audit-tbody');
   auditTbody.innerHTML = '';
 
@@ -739,7 +849,6 @@ function populateAuditData() {
     return false;
   });
 
-  // Reverse list to show newest transactions first
   const descHistory = [...filteredHistory].reverse();
 
   if (descHistory.length === 0) {
@@ -750,7 +859,7 @@ function populateAuditData() {
   descHistory.forEach((item, index) => {
     const tr = document.createElement('tr');
     
-    // Alternating week background colors
+    // Alternating week backgrounds
     const week = item.nflWeek || 1;
     tr.className = week % 2 === 0 ? 'week-bg-even' : 'week-bg-odd';
 
@@ -761,7 +870,6 @@ function populateAuditData() {
       dateStr = d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     }
 
-    // Action and Players
     let typeLabel = "Reserve Move";
     let pDetails = "—";
     let costLabel = "—";
@@ -814,7 +922,7 @@ function populateAuditData() {
 
     tr.innerHTML = `
       <td>${descHistory.length - index}</td>
-      <td style="font-family:var(--font-code); font-weight:700; color:var(--accent-yellow);">${getWeekName(week)}</td>
+      <td style="font-family:var(--font-code); font-weight:700; color:var(--accent-coral);">${getWeekName(week)}</td>
       <td style="color:var(--text-secondary);">${dateStr}</td>
       <td><span class="logo-badge" style="font-size:0.7rem; border-color:var(--border-color);">${typeLabel}</span></td>
       <td style="font-weight:600;">${pDetails}</td>
@@ -824,7 +932,6 @@ function populateAuditData() {
   });
 }
 
-// Close Modal
 function closeAuditModal() {
   auditModal.classList.remove('active');
 }
@@ -833,7 +940,6 @@ function closeAuditModal() {
 // 8. ADMIN SETTINGS OVERLAYS
 // ----------------------------------------------------
 function openSettingsModal() {
-  // Setup inputs
   inputBuyIn.value = config.buyInCost;
   inputPickupCost.value = config.pickupCost;
   inputFreePickups.value = config.freePickupsCount;
@@ -853,7 +959,17 @@ function closeSettingsModal() {
 
 function populateTeamSelector() {
   selectAdjTeam.innerHTML = '';
-  const sortedNames = Object.keys(processedData[selectedYear].teams).sort();
+  // Load list of all teams across any year
+  const allTeamNamesSet = new Set();
+  Object.values(rawData.standings || {}).forEach(std => {
+    std.divisions.flatMap(d => d.teams).forEach(t => allTeamNamesSet.add(t.name));
+  });
+  // fallback to transactions
+  Object.values(processedData).forEach(season => {
+    Object.keys(season.teams).forEach(name => allTeamNamesSet.add(name));
+  });
+
+  const sortedNames = Array.from(allTeamNamesSet).sort();
   sortedNames.forEach(name => {
     const opt = document.createElement('option');
     opt.value = name;
@@ -874,7 +990,6 @@ function loadSelectedTeamStats() {
   document.getElementById('input-stats-losses').value = stats.losses || 0;
 }
 
-// Render the list of global shared costs in Settings modal
 function renderGlobalDuesList() {
   globalDuesList.innerHTML = '';
   if (!config.globalDues) config.globalDues = [];
@@ -892,7 +1007,6 @@ function renderGlobalDuesList() {
   });
 }
 
-// Render team adjustments list in Settings modal
 function renderTeamAdjustmentsList() {
   teamAdjustmentsList.innerHTML = '';
   if (!config.teamAdjustments) config.teamAdjustments = {};
@@ -913,7 +1027,6 @@ function renderTeamAdjustmentsList() {
   });
 }
 
-// Delete item actions
 window.deleteGlobalDue = function(index) {
   config.globalDues.splice(index, 1);
   renderGlobalDuesList();
@@ -931,7 +1044,6 @@ window.deleteTeamAdjustment = function(teamName, index) {
 // 9. LISTENERS SETUP
 // ----------------------------------------------------
 function setupEventListeners() {
-  // Modal togglers
   document.getElementById('btn-open-settings').addEventListener('click', openSettingsModal);
   document.getElementById('btn-close-settings').addEventListener('click', closeSettingsModal);
   document.getElementById('settings-modal-overlay').addEventListener('click', closeSettingsModal);
@@ -946,7 +1058,6 @@ function setupEventListeners() {
     }
   });
 
-  // Settings subtabs navigation
   const subTabs = [
     { buttonId: 'sub-tab-adjust', panelId: 'sub-panel-adjust' },
     { buttonId: 'sub-tab-stats', panelId: 'sub-panel-stats' }
@@ -962,7 +1073,6 @@ function setupEventListeners() {
     });
   });
 
-  // Dropdown team change listener to load stats
   selectAdjTeam.addEventListener('change', loadSelectedTeamStats);
 
   // Save Stats button
@@ -980,7 +1090,6 @@ function setupEventListeners() {
     alert(`Saved historical stats for ${team}!`);
   });
 
-  // Add global due
   btnAddGlobal.addEventListener('click', () => {
     const desc = inputGlobalDesc.value.trim();
     const amount = parseFloat(inputGlobalAmount.value);
@@ -993,7 +1102,6 @@ function setupEventListeners() {
     }
   });
 
-  // Add team override adjustment
   btnAddAdj.addEventListener('click', () => {
     const team = selectAdjTeam.value;
     const desc = inputAdjDesc.value.trim();
@@ -1008,15 +1116,12 @@ function setupEventListeners() {
     }
   });
 
-  // Recalculate
   btnRecalculate.addEventListener('click', () => {
     recalculateAll();
     closeSettingsModal();
   });
 
-  // Export JSON configuration file
   btnExportConfig.addEventListener('click', () => {
-    // Generate clean JSON payload of current values
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(config, null, 2));
     const dlAnchorElem = document.createElement('a');
     dlAnchorElem.setAttribute("href",     dataStr     );
@@ -1024,7 +1129,6 @@ function setupEventListeners() {
     dlAnchorElem.click();
   });
 
-  // Audit filter chip triggers
   document.querySelectorAll('#audit-filter-buttons button').forEach(btn => {
     btn.addEventListener('click', (e) => {
       document.querySelectorAll('#audit-filter-buttons button').forEach(b => b.classList.remove('active'));

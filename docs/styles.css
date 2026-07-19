@@ -14,11 +14,11 @@
   --text-muted: #5b6a85;
   
   /* Galactic/Star Wars Palettes */
-  --accent-cyan: #00f0ff;       /* Lightsaber Blue/Cyan */
-  --accent-purple: #9d4edd;     /* Mace Windu Purple */
+  --accent-cyan: #00f0ff;       /* Lightsaber Blue */
+  --accent-green: #00ff66;      /* Lightsaber Green */
+  --accent-coral: #ff1e27;      /* Lightsaber Red */
+  --accent-purple: #a626ff;     /* Lightsaber Purple */
   --accent-yellow: #ffe300;     /* Star Wars Title Yellow */
-  --accent-emerald: #00e676;    /* Yoda Green */
-  --accent-coral: #ff3838;      /* Sith Red */
   
   --font-display: 'Orbitron', sans-serif;
   --font-body: 'Outfit', sans-serif;
@@ -966,4 +966,59 @@ input:focus, select:focus {
   .admin-actions button {
     width: 100%;
   }
+}
+
+/* Division Header Rows - Lightsaber Themed Glows */
+.division-header-row {
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.division-header-row td {
+  padding: 0.8rem 1rem !important;
+}
+
+.division-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Skywalker / Jedi division - Cyan lightsaber glow */
+.div-jedi {
+  border-left: 5px solid var(--accent-cyan);
+  background: linear-gradient(90deg, rgba(0, 240, 255, 0.12) 0%, transparent 100%) !important;
+}
+.div-jedi .division-title {
+  color: var(--accent-cyan);
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+}
+
+/* Sith division - Red lightsaber glow */
+.div-sith {
+  border-left: 5px solid var(--accent-coral);
+  background: linear-gradient(90deg, rgba(255, 30, 39, 0.12) 0%, transparent 100%) !important;
+}
+.div-sith .division-title {
+  color: var(--accent-coral);
+  text-shadow: 0 0 10px rgba(255, 30, 39, 0.6);
+}
+
+/* First Order division - Purple lightsaber glow */
+.div-firstorder {
+  border-left: 5px solid var(--accent-purple);
+  background: linear-gradient(90deg, rgba(166, 38, 255, 0.12) 0%, transparent 100%) !important;
+}
+.div-firstorder .division-title {
+  color: var(--accent-purple);
+  text-shadow: 0 0 10px rgba(166, 38, 255, 0.6);
+}
+
+.div-generic {
+  border-left: 5px solid var(--text-secondary);
+}
+.div-generic .division-title {
+  color: var(--text-secondary);
 }
