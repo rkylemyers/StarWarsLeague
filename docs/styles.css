@@ -467,13 +467,13 @@ td {
 
 /* Micro Sparkline Graphics */
 .sparkline-svg {
-  width: 180px;
-  height: 28px;
+  width: 100%;
+  max-width: 520px;
+  height: 40px;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 4px;
-  padding: 2px;
+  padding: 2px 0;
   display: block;
-  margin: 0 auto;
 }
 
 .sparkline-path {
@@ -1184,28 +1184,43 @@ input:focus, select:focus {
 /* Mobile Table Scrolling Safeguards */
 .dues-table th, .dues-table td,
 .audit-table th, .audit-table td {
+  padding: 0.55rem 0.6rem;
+  font-size: 0.85rem;
+}
+
+.dues-table th:nth-child(1), .dues-table td:nth-child(1) {
+  width: 5%;
+  min-width: 40px;
   white-space: nowrap;
 }
 
 .dues-table th:nth-child(2), .dues-table td:nth-child(2) {
-  min-width: 170px; /* Franchise name link columns */
+  width: 25%;
+  min-width: 140px;
+  white-space: normal; /* wrap long franchise name */
 }
 
 .dues-table th:nth-child(3), .dues-table td:nth-child(3) {
-  min-width: 140px; /* Pickups Breakdown */
+  width: 15%;
+  min-width: 90px;
+  white-space: nowrap;
 }
 
 .dues-table th:nth-child(4), .dues-table td:nth-child(4) {
-  min-width: 520px; /* Weekly Trend Chart - Twice as wide to show all weeks */
-  width: 520px;
+  width: 12%;
+  min-width: 80px;
+  white-space: nowrap;
 }
 
 .dues-table th:nth-child(5), .dues-table td:nth-child(5) {
-  min-width: 110px; /* Adjustments */
+  width: 33%;
+  min-width: 220px; /* scalable sparkline! */
 }
 
 .dues-table th:nth-child(6), .dues-table td:nth-child(6) {
-  min-width: 100px; /* Total Due */
+  width: 10%;
+  min-width: 80px;
+  white-space: nowrap;
 }
 
 /* Two-row Header Filters styling */
@@ -1259,7 +1274,4 @@ input:focus, select:focus {
   font-weight: 700;
 }
 
-.sparkline-svg {
-  width: 520px !important;
-  min-width: 520px !important;
-}
+

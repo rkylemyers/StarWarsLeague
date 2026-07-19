@@ -568,10 +568,10 @@ function renderTableHeader() {
       <tr>
         <th>Rank</th>
         <th>Franchise Name</th>
-        <th>Pickups Breakdown</th>
-        <th style="width: 260px; text-align: center;">Weekly Trend</th>
-        <th>Adjustments</th>
+        <th>Pickups</th>
         <th>Total Due</th>
+        <th>Weekly Trend</th>
+        <th>Adjustments</th>
       </tr>
     `;
   }
@@ -641,7 +641,7 @@ function renderTeamRow(team, rank) {
     const barsHTML = [];
     for (let w = 1; w <= 19; w++) {
       const val = team.weeklyPickups[w] || 0;
-      const barHeight = val > 0 ? (val / maxVal) * 34 : 2.5; // 2.5px minimum height for zero values
+      const barHeight = val > 0 ? Math.max((val / maxVal) * 30, 6) : 2.5; // 2.5px placeholder for zero, min 6px for >= 1
       const x = paddingX + (w - 1) * (colWidth + gap);
       const y = 38 - barHeight;
       
@@ -674,7 +674,7 @@ function renderTeamRow(team, rank) {
     }
 
     sparklineSVG = `
-      <svg class="sparkline-svg" width="520" height="40">
+      <svg class="sparkline-svg" viewBox="0 0 520 40" width="100%" height="40">
         ${barsHTML.join('')}
       </svg>
     `;
