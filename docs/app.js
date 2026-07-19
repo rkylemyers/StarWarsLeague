@@ -340,7 +340,6 @@ function recalculateAll() {
         seasonTeams[name] = tData;
       } else {
         Object.assign(seasonTeams[name], {
-          id: tData.id,
           claims: tData.claims,
           adds: tData.adds,
           trades: tData.trades,
@@ -350,6 +349,10 @@ function recalculateAll() {
           pickups: tData.pickups,
           history: tData.history
         });
+        // Do not overwrite valid standings ID with 0 or undefined
+        if (!seasonTeams[name].id && tData.id) {
+          seasonTeams[name].id = tData.id;
+        }
       }
     });
   }
@@ -437,8 +440,8 @@ function recalculateAll() {
   const payoutPills = document.getElementById('payout-pills');
   if (payoutPills) {
     payoutPills.innerHTML = `
-      <span class="payout-pill champ-pill">🏆 Champ: $${champAmt.toFixed(2)} (${firstPct}%)</span>
-      <span class="payout-pill runner-pill">🥈 Runner-up: $${runnerAmt.toFixed(2)} (${secondPct}%)</span>
+      <div class="payout-row champ-text">🏆 Champ: $${champAmt.toFixed(2)} (${firstPct}%)</div>
+      <div class="payout-row runner-text">🥈 Runner-up: $${runnerAmt.toFixed(2)} (${secondPct}%)</div>
     `;
   }
 
@@ -502,20 +505,20 @@ function renderDuesLeaderboardGrouped(teamList, standings) {
 function renderTeamRow(team, rank) {
   const tr = document.createElement('tr');
   
-  // Sparkline points generation (19 values mapped inside 100x20 SVG)
+  // Sparkline points generation (19 values mapped inside 180x28 SVG)
   let sparklineSVG = '';
   if (team.weeklyPickups) {
     const maxVal = Math.max(...team.weeklyPickups, 1);
     const points = [];
     for (let w = 1; w <= 19; w++) {
       const val = team.weeklyPickups[w] || 0;
-      const x = ((w - 1) / 18) * 90 + 5;
-      const y = 18 - (val / maxVal) * 16;
+      const x = ((w - 1) / 18) * 170 + 5;
+      const y = 25 - (val / maxVal) * 22;
       points.push(`${x},${y}`);
     }
 
     sparklineSVG = `
-      <svg class="sparkline-svg" width="100" height="20">
+      <svg class="sparkline-svg" width="180" height="28">
         <polyline class="sparkline-path" points="${points.join(' ')}"></polyline>
         ${points.map((p, idx) => {
           const val = team.weeklyPickups[idx + 1] || 0;
@@ -598,8 +601,7 @@ function renderWeeklyChart(teamList) {
       <defs>
         <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="var(--accent-cyan)" />
-          <stop offset="35%" stop-color="var(--accent-green)" />
-          <stop offset="70%" stop-color="var(--accent-purple)" />
+          <stop offset="50%" stop-color="var(--accent-purple)" />
           <stop offset="100%" stop-color="var(--accent-coral)" />
         </linearGradient>
       </defs>
@@ -857,11 +859,11 @@ function populateAuditData() {
   document.getElementById('modal-team-record-alltime').textContent = `All-Time Record: ${totalWins}-${totalLosses}-${totalTies}`;
 
   // Money breakdown cards
-  document.getElementById('audit-buy-in').textContent = `$${config.buyInCost.toFixed(2)}`;
-  document.getElementById('audit-waiver-cost').textContent = `$${team.pickupDues.toFixed(2)}`;
-  document.getElementById('audit-shared-cost').textContent = `$${team.sharedDues.toFixed(2)}`;
+  document.getElementById('audit-buy-in').textContent = `$${(config.buyInCost || 0).toFixed(2)}`;
+  document.getElementById('audit-waiver-cost').textContent = `$${(team.pickupDues || 0).toFixed(2)}`;
+  document.getElementById('audit-shared-cost').textContent = `$${(team.sharedDues || 0).toFixed(2)}`;
   
-  const netAdj = team.adjustments + team.specificDues;
+  const netAdj = (team.adjustments || 0) + (team.specificDues || 0);
   const adjEl = document.getElementById('audit-adj-cost');
   adjEl.textContent = `${netAdj >= 0 ? '+' : ''}$${netAdj.toFixed(2)}`;
   if (netAdj < 0) {
@@ -872,7 +874,7 @@ function populateAuditData() {
     adjEl.style.color = 'var(--text-primary)';
   }
 
-  document.getElementById('audit-total-due').textContent = `$${team.totalDue.toFixed(2)}`;
+  document.getElementById('audit-total-due').textContent = `$${(team.totalDue || 0).toFixed(2)}`;
 
   // Populate chronological history log (newest first)
   const auditTbody = document.getElementById('audit-tbody');
