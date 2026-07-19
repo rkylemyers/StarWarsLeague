@@ -1118,15 +1118,15 @@ function buildYearTabs() {
   });
   viewSelectorContainer.appendChild(rollupBtn);
 
-  // If a draft board URL exists for this year, render a beautiful purple glowing button next to them!
+  // If a draft board URL exists for this year, render it next to them!
   const draftUrl = draftBoards && draftBoards[selectedYear];
   if (draftUrl) {
-    const draftBtn = document.createElement('a');
+    const draftBtn = document.createElement('button');
     draftBtn.className = "year-tab-btn draft-board-link-btn";
-    draftBtn.href = draftUrl;
-    draftBtn.target = "_blank";
     draftBtn.innerHTML = "⚔️ Draft Board";
-    draftBtn.style.marginLeft = "1.5rem";
+    draftBtn.addEventListener('click', () => {
+      window.open(draftUrl, '_blank');
+    });
     viewSelectorContainer.appendChild(draftBtn);
   }
 }
