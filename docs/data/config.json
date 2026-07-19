@@ -1,35 +1,26 @@
 {
-  "buyInCost": 35.0,
+  "buyInCost": 25.0,
   "pickupCost": 5.0,
   "freePickupsCount": 2,
   "payouts": {
     "firstPlacePercent": 60.0,
     "secondPlacePercent": 40.0
   },
-  "globalDues": [
-    {
-      "description": "League Trophy",
-      "amount": 50.0
-    },
-    {
-      "description": "Draft Day Food Split",
-      "amount": 120.0
-    }
-  ],
-  "teamDues": {
-    "Wookie of the Year": [
-      {
-        "description": "Extra Draft Draft beer",
-        "amount": 15.0
-      }
-    ]
-  },
-  "teamAdjustments": {
-    "Ashoka Nightmare": [
-      {
-        "description": "Injured Player Credit",
-        "amount": -5.0
-      }
-    ]
+  "globalDues": [],
+  "teamDues": {},
+  "teamAdjustments": {},
+  "teamHistoricalStats": {
+    "Wookie of the Year": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "Thrawn's Blue Balls": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "Army": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "Jedi Mind Tricks": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "Java the BUTT": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "Ashoka Nightmare": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "Darth Bane": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "Mandalorian Mudhorns": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "Finn’s Football Force": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "macejaydu": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "Jar Jar Skywalker": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
+    "The Death Carr": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 }
   }
 }

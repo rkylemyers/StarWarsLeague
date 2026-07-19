@@ -216,12 +216,44 @@ func SyncTransactions(client *Client, cacheFile string) {
 	}
 	fmt.Println("\nDone fetching.")
 
-	err := SaveCache(cacheFile, client.LeagueID, string(client.Sport), allItems)
+	// Identify unique years/seasons from transaction items
+	yearsMap := make(map[string]bool)
+	for _, item := range allItems {
+		milli, err := strconv.ParseInt(item.TimeEpochMilli, 10, 64)
+		if err == nil {
+			t := time.UnixMilli(milli)
+			yearVal := t.Year()
+			if t.Month() < time.May {
+				yearVal--
+			}
+			yearsMap[strconv.Itoa(yearVal)] = true
+		}
+	}
+
+	// Fetch standings for each unique year/season
+	standingsMap := make(map[string]*StandingsResponse)
+	originalSeason := client.Season
+	for yearStr := range yearsMap {
+		fmt.Printf("Fetching standings for season %s...\n", yearStr)
+		yearInt, _ := strconv.Atoi(yearStr)
+		client.Season = yearInt
+
+		standings, err := client.FetchStandings()
+		if err != nil {
+			fmt.Printf("Warning: failed to fetch standings for season %s: %v\n", yearStr, err)
+			continue
+		}
+		standingsMap[yearStr] = standings
+		time.Sleep(150 * time.Millisecond) // Rate limit safety
+	}
+	client.Season = originalSeason // Restore client season config
+
+	err := SaveCache(cacheFile, client.LeagueID, string(client.Sport), allItems, standingsMap)
 	if err != nil {
 		fmt.Printf("Error saving transactions to cache file %s: %v\n", cacheFile, err)
 		return
 	}
-	fmt.Printf("Successfully saved %d transaction items to %s.\n", len(allItems), cacheFile)
+	fmt.Printf("Successfully saved %d transaction items and %d seasons standings to %s.\n", len(allItems), len(standingsMap), cacheFile)
 }
 
 type TransactionStats struct {

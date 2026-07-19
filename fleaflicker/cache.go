@@ -7,19 +7,21 @@ import (
 )
 
 type Cache struct {
-	LeagueID int            `json:"league_id"`
-	Sport    string         `json:"sport"`
-	SyncedAt time.Time      `json:"synced_at"`
-	Items    []ActivityItem `json:"items"`
+	LeagueID  int                           `json:"league_id"`
+	Sport     string                        `json:"sport"`
+	SyncedAt  time.Time                     `json:"synced_at"`
+	Items     []ActivityItem                `json:"items"`
+	Standings map[string]*StandingsResponse `json:"standings"`
 }
 
-// SaveCache writes the transaction items to a local JSON cache file
-func SaveCache(filename string, leagueID int, sport string, items []ActivityItem) error {
+// SaveCache writes the transaction items and standings to a local JSON cache file
+func SaveCache(filename string, leagueID int, sport string, items []ActivityItem, standings map[string]*StandingsResponse) error {
 	cache := Cache{
-		LeagueID: leagueID,
-		Sport:    sport,
-		SyncedAt: time.Now(),
-		Items:    items,
+		LeagueID:  leagueID,
+		Sport:     sport,
+		SyncedAt:  time.Now(),
+		Items:     items,
+		Standings: standings,
 	}
 
 	data, err := json.MarshalIndent(cache, "", "  ")
