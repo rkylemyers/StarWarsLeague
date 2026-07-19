@@ -26,12 +26,12 @@ jobs:
 
       - name: Sync Transaction Cache
         run: |
-          ./fleaflicker-cli -cache web/data/transactions_cache.json sync
+          ./fleaflicker-cli -cache docs/data/transactions_cache.json sync
 
       - name: Commit and Push Cache
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add web/data/transactions_cache.json
+          git add docs/data/transactions_cache.json
           git diff-index --quiet HEAD || git commit -m "Auto-sync transactions data cache"
           git push
