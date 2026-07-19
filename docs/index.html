@@ -17,13 +17,17 @@
   <div class="app-container">
     <header class="app-header">
       <div class="logo-area">
-        <span class="logo-badge">STAR WARS FANTASY LEAGUE</span>
         <h1 id="league-title">STAR WARS LEAGUE</h1>
       </div>
       
       <!-- Global Controls Header (obvious at top) -->
-      <div class="global-controls-header" id="year-tabs-container">
-        <!-- Rendered dynamically: e.g. 2026, 2025, 2024, etc. | Dues | Rollup View -->
+      <div class="global-controls-header">
+        <div class="year-tabs-row" id="year-selector-container">
+          <!-- Years rendered dynamically -->
+        </div>
+        <div class="view-tabs-row" id="view-selector-container">
+          <!-- View modes (Dues / Rollup View) rendered dynamically -->
+        </div>
       </div>
 
       <!-- Minimized settings & sync -->
@@ -96,7 +100,7 @@
               <th>Rank</th>
               <th>Franchise Name</th>
               <th>Pickups Breakdown</th>
-              <th style="width: 140px; text-align: center;">Weekly Trend</th>
+               <th style="text-align: center;">Weekly Trend</th>
               <th>Adjustments</th>
               <th>Total Due</th>
             </tr>

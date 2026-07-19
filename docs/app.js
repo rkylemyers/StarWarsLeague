@@ -15,7 +15,7 @@ let warpSpeed = 0.5;
 let targetWarpSpeed = 0.5;
 
 // DOM Elements
-let syncTimeLabel, potValue, totalPickupsValue, duesTbody, yearTabsContainer, timelineChartElement, duesTableElement;
+let syncTimeLabel, potValue, totalPickupsValue, duesTbody, timelineChartElement, duesTableElement;
 let auditModal, settingsModal;
 let inputBuyIn, inputPickupCost, inputFreePickups, inputFirstSplit, inputSecondSplit;
 let globalDuesList, teamAdjustmentsList, selectAdjTeam;
@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   potValue = document.getElementById('pot-value');
   totalPickupsValue = document.getElementById('total-pickups-value');
   duesTbody = document.getElementById('dues-tbody');
-  yearTabsContainer = document.getElementById('year-tabs-container');
   timelineChartElement = document.getElementById('timeline-chart-element');
   duesTableElement = document.getElementById('dues-table-element');
   
@@ -521,8 +520,8 @@ function recalculateAll() {
   const payoutPills = document.getElementById('payout-pills');
   if (payoutPills) {
     payoutPills.innerHTML = `
-      <div class="payout-row champ-text">1st: $${champAmt.toFixed(2)}</div>
-      <div class="payout-row runner-text">2nd: $${runnerAmt.toFixed(2)}</div>
+      <div class="payout-row champ-text" style="font-size: 1.15rem; font-weight: 800;">$${champAmt.toFixed(2)}</div>
+      <div class="payout-row runner-text" style="font-size: 0.85rem; font-weight: 600; opacity: 0.8; margin-top: 0.15rem;">$${runnerAmt.toFixed(2)}</div>
     `;
   }
 
@@ -634,10 +633,10 @@ function renderTeamRow(team, rank) {
   let sparklineSVG = '';
   if (team.weeklyPickups) {
     const maxVal = Math.max(...team.weeklyPickups, 1);
-    const colWidth = 9;
-    const gap = 3;
-    const totalW = 19 * (colWidth + gap) - gap; // 19 * 12 - 3 = 225
-    const paddingX = (260 - totalW) / 2;
+    const colWidth = 20; // twice as wide to show all weeks
+    const gap = 6;      // twice as wide to show all weeks
+    const totalW = 19 * (colWidth + gap) - gap; // 19 * 26 - 6 = 488px
+    const paddingX = (520 - totalW) / 2;       // (520 - 488) / 2 = 16px
     
     const barsHTML = [];
     for (let w = 1; w <= 19; w++) {
@@ -675,7 +674,7 @@ function renderTeamRow(team, rank) {
     }
 
     sparklineSVG = `
-      <svg class="sparkline-svg" width="260" height="40">
+      <svg class="sparkline-svg" width="520" height="40">
         ${barsHTML.join('')}
       </svg>
     `;
@@ -1017,12 +1016,17 @@ window.hideChartTooltip = function() {
 // 7. YEAR TABS GENERATOR (DYNAMIC)
 // ----------------------------------------------------
 function buildYearTabs() {
-  yearTabsContainer.innerHTML = '';
+  const yearSelectorContainer = document.getElementById('year-selector-container');
+  const viewSelectorContainer = document.getElementById('view-selector-container');
+  
+  if (!yearSelectorContainer || !viewSelectorContainer) return;
+  
+  yearSelectorContainer.innerHTML = '';
+  viewSelectorContainer.innerHTML = '';
 
   if (yearList.length === 0) return;
 
-  // Tabs layout:
-  // Leftmost 3 tabs are the 3 most recent years
+  // Render year selectors into yearSelectorContainer
   const mainTabs = yearList.slice(0, 3);
   mainTabs.forEach(year => {
     const btn = document.createElement('button');
@@ -1031,7 +1035,7 @@ function buildYearTabs() {
     btn.addEventListener('click', () => {
       selectYearTab(year.toString());
     });
-    yearTabsContainer.appendChild(btn);
+    yearSelectorContainer.appendChild(btn);
   });
 
   // Older years are grouped into a dropdown tab
@@ -1073,16 +1077,10 @@ function buildYearTabs() {
       wrap.classList.remove('active');
     });
 
-    yearTabsContainer.appendChild(wrap);
+    yearSelectorContainer.appendChild(wrap);
   }
 
-  // Add subtle separator
-  const sep = document.createElement('span');
-  sep.className = "filter-separator";
-  sep.textContent = "|";
-  yearTabsContainer.appendChild(sep);
-
-  // Dues View button
+  // Render view selectors (Dues / Rollup View) into viewSelectorContainer
   const duesBtn = document.createElement('button');
   duesBtn.className = `year-tab-btn ${activeView === 'dues' ? 'active' : ''}`;
   duesBtn.textContent = "Dues";
@@ -1091,9 +1089,8 @@ function buildYearTabs() {
     buildYearTabs();
     recalculateAll();
   });
-  yearTabsContainer.appendChild(duesBtn);
+  viewSelectorContainer.appendChild(duesBtn);
 
-  // Rollup View button
   const rollupBtn = document.createElement('button');
   rollupBtn.className = `year-tab-btn ${activeView === 'rollup' ? 'active' : ''}`;
   rollupBtn.textContent = "Rollup View";
@@ -1102,7 +1099,7 @@ function buildYearTabs() {
     buildYearTabs();
     recalculateAll();
   });
-  yearTabsContainer.appendChild(rollupBtn);
+  viewSelectorContainer.appendChild(rollupBtn);
 }
 
 function selectYearTab(year) {

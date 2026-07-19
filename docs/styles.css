@@ -973,14 +973,22 @@ input:focus, select:focus {
   }
   .global-controls-header {
     width: 100%;
-    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
   }
-  .year-tabs {
+  .year-tabs-row {
     flex-wrap: nowrap !important;
     overflow-x: auto;
     width: 100%;
-    justify-content: flex-start;
-    padding-bottom: 0.3rem;
+    justify-content: center;
+    padding-bottom: 0.15rem;
+  }
+  .view-tabs-row {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 0.15rem;
   }
   .header-right-minimized {
     justify-content: center;
@@ -1188,7 +1196,8 @@ input:focus, select:focus {
 }
 
 .dues-table th:nth-child(4), .dues-table td:nth-child(4) {
-  min-width: 260px; /* Weekly Trend Chart */
+  min-width: 520px; /* Weekly Trend Chart - Twice as wide to show all weeks */
+  width: 520px;
 }
 
 .dues-table th:nth-child(5), .dues-table td:nth-child(5) {
@@ -1197,4 +1206,60 @@ input:focus, select:focus {
 
 .dues-table th:nth-child(6), .dues-table td:nth-child(6) {
   min-width: 100px; /* Total Due */
+}
+
+/* Two-row Header Filters styling */
+.global-controls-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.year-tabs-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  flex-wrap: nowrap !important;
+}
+
+.view-tabs-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  white-space: nowrap;
+  flex-wrap: nowrap !important;
+  margin-top: 0.1rem;
+}
+
+/* Small Year Tabs sizing */
+.year-tabs-row .year-tab-btn {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+}
+
+.year-tabs-row .year-dropdown-wrap .year-tab-btn {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+}
+
+.year-tabs-row .year-dropdown-item {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.65rem;
+}
+
+/* Large View Tabs sizing */
+.view-tabs-row .year-tab-btn {
+  font-size: 0.95rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.sparkline-svg {
+  width: 520px !important;
+  min-width: 520px !important;
 }
