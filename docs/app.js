@@ -811,11 +811,16 @@ function renderRollupTable() {
     if (!query) return true;
     
     const teamName = (item.teamName || "").toLowerCase();
+    const weekVal = item.nflWeek || 1;
+    const weekName = getWeekName(weekVal).toLowerCase(); // e.g. "week 17"
+    const weekNumStr = weekVal.toString();
     
-    let dateStr = "";
+    let dateFinal = "";
     if (item.timeEpochMilli) {
       const d = new Date(parseInt(item.timeEpochMilli));
-      dateStr = (d.toLocaleDateString() + ' ' + d.toLocaleTimeString()).toLowerCase();
+      const dateLongStr = d.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }).toLowerCase();
+      const dateShortStr = d.toLocaleDateString().toLowerCase();
+      dateFinal = `${dateShortStr} ${dateLongStr} ${d.toLocaleTimeString()}`.toLowerCase();
     }
     
     let actionLabel = "other";
@@ -841,7 +846,9 @@ function renderRollupTable() {
 
     return (
       teamName.includes(query) ||
-      dateStr.includes(query) ||
+      weekName.includes(query) ||
+      weekNumStr === query ||
+      dateFinal.includes(query) ||
       actionLabel.includes(query) ||
       playerDetails.includes(query)
     );
