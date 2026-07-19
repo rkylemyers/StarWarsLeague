@@ -13,7 +13,7 @@ let warpSpeed = 0.5;
 let targetWarpSpeed = 0.5;
 
 // DOM Elements
-let syncTimeLabel, potValue, payoutSplitInfo, totalPickupsValue, duesTbody, yearTabsContainer, timelineChartElement;
+let syncTimeLabel, potValue, totalPickupsValue, duesTbody, yearTabsContainer, timelineChartElement;
 let auditModal, settingsModal;
 let inputBuyIn, inputPickupCost, inputFreePickups, inputFirstSplit, inputSecondSplit;
 let globalDuesList, teamAdjustmentsList, selectAdjTeam;
@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Bind elements to variables
   syncTimeLabel = document.getElementById('sync-time-label');
   potValue = document.getElementById('pot-value');
-  payoutSplitInfo = document.getElementById('payout-split-info');
   totalPickupsValue = document.getElementById('total-pickups-value');
   duesTbody = document.getElementById('dues-tbody');
   yearTabsContainer = document.getElementById('year-tabs-container');
@@ -432,7 +431,16 @@ function recalculateAll() {
 
   const firstPct = config.payouts.firstPlacePercent;
   const secondPct = config.payouts.secondPlacePercent;
-  payoutSplitInfo.textContent = `Champion Split: ${firstPct}% / ${secondPct}%`;
+  const champAmt = grandTotalPot * (firstPct / 100);
+  const runnerAmt = grandTotalPot * (secondPct / 100);
+
+  const payoutPills = document.getElementById('payout-pills');
+  if (payoutPills) {
+    payoutPills.innerHTML = `
+      <span class="payout-pill champ-pill">🏆 Champ: $${champAmt.toFixed(2)} (${firstPct}%)</span>
+      <span class="payout-pill runner-pill">🥈 Runner-up: $${runnerAmt.toFixed(2)} (${secondPct}%)</span>
+    `;
+  }
 
   // Render Leaderboard Grouped by Division
   renderDuesLeaderboardGrouped(teamList, standings);
@@ -460,7 +468,7 @@ function renderDuesLeaderboardGrouped(teamList, standings) {
 
       const headerTr = document.createElement('tr');
       headerTr.className = `division-header-row ${divClass}`;
-      headerTr.innerHTML = `<td colspan="7"><span class="division-title">${division.name} Division</span></td>`;
+      headerTr.innerHTML = `<td colspan="6"><span class="division-title">${division.name} Division</span></td>`;
       duesTbody.appendChild(headerTr);
 
       // Filter and sort teams in this division
@@ -481,7 +489,7 @@ function renderDuesLeaderboardGrouped(teamList, standings) {
     // Fallback: render flat list if standings are missing
     const headerTr = document.createElement('tr');
     headerTr.className = "division-header-row div-generic";
-    headerTr.innerHTML = `<td colspan="7"><span class="division-title">All Franchises</span></td>`;
+    headerTr.innerHTML = `<td colspan="6"><span class="division-title">All Franchises</span></td>`;
     duesTbody.appendChild(headerTr);
 
     teamList.forEach((team, index) => {
@@ -511,7 +519,8 @@ function renderTeamRow(team, rank) {
         <polyline class="sparkline-path" points="${points.join(' ')}"></polyline>
         ${points.map((p, idx) => {
           const val = team.weeklyPickups[idx + 1] || 0;
-          return val > 0 ? `<circle class="sparkline-dot" cx="${p.split(',')[0]}" cy="${p.split(',')[1]}" r="2"><title>Week ${idx+1}: ${val} pickups</title></circle>` : '';
+          const tooltipText = `${getWeekName(idx+1)}: ${val} pickups`;
+          return val > 0 ? `<circle class="sparkline-dot" cx="${p.split(',')[0]}" cy="${p.split(',')[1]}" r="2" onmouseover="showChartTooltip(event, '${tooltipText}')" onmouseout="hideChartTooltip()"><title>${tooltipText}</title></circle>` : '';
         }).join('')}
       </svg>
     `;
@@ -544,10 +553,18 @@ function renderTeamRow(team, rank) {
     championshipsHTML = ` <span style="cursor:help;" title="${stats.championships} championships">🏆 x${stats.championships}</span>`;
   }
 
+  // Prepend Trophy for Rank 1 / Butt for Rank 12
+  let trophyOrButt = '';
+  if (rank === 1) {
+    trophyOrButt = '<span style="font-size: 1.15rem; margin-right: 0.35rem; vertical-align: middle;" title="1st Place (Championship)">🏆</span>';
+  } else if (rank === 12) {
+    trophyOrButt = '<span style="font-size: 1.15rem; margin-right: 0.35rem; vertical-align: middle;" title="12th Place (Toilet Bowl)">🍑</span>';
+  }
+
   tr.innerHTML = `
     <td><span class="val-bold">${rank}</span></td>
     <td>
-      <span class="team-name-link" onclick="openAuditModal('${encodeURIComponent(team.name)}')">${team.name}</span>
+      ${trophyOrButt}<span class="team-name-link" onclick="openAuditModal('${encodeURIComponent(team.name).replace(/'/g, "%27")}')">${team.name}</span>
       ${championshipsHTML}
       <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.15rem;">${recordStr}</div>
     </td>
@@ -559,9 +576,6 @@ function renderTeamRow(team, rank) {
     <td>${sparklineSVG}</td>
     <td><span class="${adjClass}">${sign}$${netAdjustments.toFixed(2)}</span></td>
     <td><span class="val-due">$${team.totalDue.toFixed(2)}</span></td>
-    <td style="text-align: right;">
-      <button class="audit-btn" onclick="openAuditModal('${encodeURIComponent(team.name)}')">Audit Log</button>
-    </td>
   `;
   duesTbody.appendChild(tr);
 }

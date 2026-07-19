@@ -3,8 +3,8 @@
   "pickupCost": 5.0,
   "freePickupsCount": 2,
   "payouts": {
-    "firstPlacePercent": 60.0,
-    "secondPlacePercent": 40.0
+    "firstPlacePercent": 50.0,
+    "secondPlacePercent": 50.0
   },
   "globalDues": [],
   "teamDues": {},

@@ -2,6 +2,14 @@
 
 Welcome to the **Star Wars League (ID 111626)** waiver dues tracking system. This project consists of a high-performance Go CLI tool and an interactive web dashboard that automates your league's waiver wire billing logic.
 
+### 🌟 Dashboard Features & Visual Design
+*   **Galactic Aesthetic:** Deep space backdrop with dynamic HTML5 canvas stars that accelerate to warp speed when changing seasons.
+*   **Lightsaber Gradient:** Fluid color schema flowing from lightsaber Blue (Jedi) ➔ Purple (Mace Windu) ➔ Red (Sith).
+*   **Division Groupings:** Dues leaderboard grouped into **Jedi**, **Sith**, and **First Order** divisions, with division headers using customized glows matching their lightsabers.
+*   **Weekly Trend Sparklines:** Inline SVG sparklines displaying weekly pickups trends per franchise with hover tooltips.
+*   **Standings Rank Indicators:** Pre-pended championship trophy (`🏆`) for the 1st overall seed and a toilet bowl peach (`🍑`) for the 12th place seed.
+*   **Interactive Audits:** Click on any franchise name to view a detailed modal tracking base buy-ins, waiver claims, global costs, custom overrides, and a reverse-chronological transaction history grouped and color-coded by NFL weeks.
+
 ---
 
 ## 🚀 How the System Works (Auto-Updates)

@@ -1022,3 +1022,46 @@ input:focus, select:focus {
 .div-generic .division-title {
   color: var(--text-secondary);
 }
+
+/* Split metric layout */
+.metric-info-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.metric-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-right-payouts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: flex-end;
+  font-size: 0.8rem;
+  font-family: var(--font-code);
+}
+
+.payout-pill {
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.03);
+  white-space: nowrap;
+}
+
+.champ-pill {
+  border-color: rgba(0, 255, 102, 0.3);
+  color: var(--accent-green);
+  text-shadow: 0 0 5px rgba(0, 255, 102, 0.2);
+}
+
+.runner-pill {
+  border-color: rgba(166, 38, 255, 0.3);
+  color: var(--accent-purple);
+  text-shadow: 0 0 5px rgba(166, 38, 255, 0.2);
+}

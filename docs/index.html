@@ -35,10 +35,14 @@
       <!-- Left side: Summary numbers -->
       <div class="summary-cards-stack">
         <div class="metric-card" id="metric-pot">
-          <div class="metric-info">
-            <span class="metric-label">Total Cash Pool</span>
-            <h2 class="metric-value" id="pot-value">$0.00</h2>
-            <span class="metric-sub" id="payout-split-info">Payout: 60/40 Split</span>
+          <div class="metric-info-split">
+            <div class="metric-left">
+              <span class="metric-label">Total Cash Pool</span>
+              <h2 class="metric-value" id="pot-value">$0.00</h2>
+            </div>
+            <div class="metric-right-payouts" id="payout-pills">
+              <!-- Rendered dynamically: champ & runner-up payouts -->
+            </div>
           </div>
         </div>
         <div class="metric-card" id="metric-pickups">
@@ -83,7 +87,6 @@
               <th style="width: 140px; text-align: center;">Weekly Trend</th>
               <th>Adjustments</th>
               <th>Total Due</th>
-              <th style="text-align: right;">Action</th>
             </tr>
           </thead>
           <tbody id="dues-tbody">
