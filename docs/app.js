@@ -5,6 +5,7 @@ let selectedYear = "";
 let processedData = {}; // year -> teamsMap
 let yearList = [];
 let activeView = "dues"; // "dues" or "rollup"
+let rollupFilter = "all"; // filter filter state for rollup view
 
 // Canvas Warp Speed Variables
 let canvas, ctx;
@@ -224,7 +225,10 @@ function processTransactionsBySeason() {
 
     if (item.transaction) {
       team.total++;
-      const type = item.transaction.type || "TRANSACTION_ADD";
+      let type = item.transaction.type || "";
+      if (type === "") {
+        type = "TRANSACTION_ADD"; // Default empty types to Free Agent additions
+      }
       switch (type) {
         case "TRANSACTION_CLAIM":
           team.claims++;
@@ -303,41 +307,56 @@ function getWeekName(weekInt) {
   return `Week ${weekInt}`;
 }
 
-// Helper to return thematic lightsaber icons
-function getActionLightsaberIcon(item) {
+// Helper to return thematic lightsaber icons with optional text label beside it
+function getActionLightsaberIcon(item, showLabel = false) {
   if (!item.transaction) return '—';
   
-  const type = item.transaction.type || "";
+  let type = item.transaction.type || "";
+  if (type === "") {
+    type = "TRANSACTION_ADD";
+  }
+  
+  let label = "Other";
+  let svg = "";
+  
   if (type === "TRANSACTION_CLAIM" || type === "TRANSACTION_ADD") {
-    // crossing blue and green lightsabers forming a +
-    return `
-      <span class="lightsaber-icon-wrapper" title="Addition / Claim">
-        <svg width="16" height="16" viewBox="0 0 16 16">
-          <line x1="2" y1="8" x2="14" y2="8" stroke="#00ff66" stroke-width="2" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #00ff66);"></line>
-          <line x1="8" y1="2" x2="8" y2="14" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #00f0ff);"></line>
-        </svg>
-      </span>
-    `;
+    label = type === "TRANSACTION_CLAIM" ? "Waiver Claim" : "Free Agent Add";
+    svg = `<svg width="16" height="16" viewBox="0 0 16 16">
+      <line x1="2" y1="8" x2="14" y2="8" stroke="#00ff66" stroke-width="2.5" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #00ff66);"></line>
+      <line x1="8" y1="2" x2="8" y2="14" stroke="#00f0ff" stroke-width="2.5" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #00f0ff);"></line>
+    </svg>`;
   } else if (type === "TRANSACTION_DROP") {
-    // horizontal red lightsaber forming a -
+    label = "Drop";
+    svg = `<svg width="16" height="16" viewBox="0 0 16 16">
+      <line x1="2" y1="8" x2="14" y2="8" stroke="#ff1e27" stroke-width="3" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #ff1e27);"></line>
+    </svg>`;
+  } else if (type === "TRANSACTION_TRADE") {
+    label = "Trade";
+    svg = `<svg width="16" height="16" viewBox="0 0 16 16">
+      <path d="M3,8 L13,8 M3,8 L6,5 M3,8 L6,11 M13,8 L10,5 M13,8 L10,11" fill="none" stroke="#a626ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 3px #a626ff);"></path>
+    </svg>`;
+  } else if (type === "TRANSACTION_IMPORT") {
+    label = "Import";
+    svg = `<svg width="16" height="16" viewBox="0 0 16 16">
+      <path d="M3,8 L13,8 M3,8 L6,5 M3,8 L6,11 M13,8 L10,5 M13,8 L10,11" fill="none" stroke="#a626ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 3px #a626ff);"></path>
+    </svg>`;
+  } else if (type === "TRANSACTION_DRAFT") {
+    label = "Draft Pick";
+    svg = `<svg width="16" height="16" viewBox="0 0 16 16">
+      <path d="M3,8 L13,8 M3,8 L6,5 M3,8 L6,11 M13,8 L10,5 M13,8 L10,11" fill="none" stroke="#a626ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 3px #a626ff);"></path>
+    </svg>`;
+  }
+  
+  if (showLabel) {
     return `
-      <span class="lightsaber-icon-wrapper" title="Drop / Cut">
-        <svg width="16" height="16" viewBox="0 0 16 16">
-          <line x1="2" y1="8" x2="14" y2="8" stroke="#ff1e27" stroke-width="2.5" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #ff1e27);"></line>
-        </svg>
-      </span>
-    `;
-  } else if (type === "TRANSACTION_TRADE" || type === "TRANSACTION_IMPORT" || type === "TRANSACTION_DRAFT") {
-    // double purple arrow lightsaber representing exchange/import
-    return `
-      <span class="lightsaber-icon-wrapper" title="Trade / Import / Draft">
-        <svg width="16" height="16" viewBox="0 0 16 16">
-          <path d="M3,8 L13,8 M3,8 L6,5 M3,8 L6,11 M13,8 L10,5 M13,8 L10,11" fill="none" stroke="#a626ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 3px #a626ff);"></path>
-        </svg>
-      </span>
+      <div style="display: flex; align-items: center; gap: 0.5rem; justify-content: flex-start;">
+        <span class="lightsaber-icon-wrapper">${svg}</span>
+        <span style="font-size: 0.85rem; font-weight: 500; color: var(--text-primary);">${label}</span>
+      </div>
     `;
   }
-  return '—';
+  
+  return `<span class="lightsaber-icon-wrapper" title="${label}">${svg}</span>`;
 }
 
 // ----------------------------------------------------
@@ -395,7 +414,7 @@ function recalculateAll() {
     });
   }
 
-  // Save the computed map back to processedData so details persist across years
+  // Save the computed map back to processedData so details persist across clicks/years
   if (processedData[selectedYear]) {
     processedData[selectedYear].teams = seasonTeams;
   }
@@ -424,7 +443,10 @@ function recalculateAll() {
       item.charge = 0.00;
 
       if (item.transaction) {
-        const type = item.transaction.type || "TRANSACTION_ADD";
+        let type = item.transaction.type || "";
+        if (type === "") {
+          type = "TRANSACTION_ADD";
+        }
         if (type === "TRANSACTION_CLAIM" || type === "TRANSACTION_ADD") {
           item.isPickup = true;
           pickupIndex++;
@@ -480,8 +502,8 @@ function recalculateAll() {
   const payoutPills = document.getElementById('payout-pills');
   if (payoutPills) {
     payoutPills.innerHTML = `
-      <div class="payout-row champ-text">🏆 Champ: $${champAmt.toFixed(2)} (${firstPct}%)</div>
-      <div class="payout-row runner-text">🥈 Runner-up: $${runnerAmt.toFixed(2)} (${secondPct}%)</div>
+      <div class="payout-row champ-text">1st: $${champAmt.toFixed(2)}</div>
+      <div class="payout-row runner-text">2nd: $${runnerAmt.toFixed(2)}</div>
     `;
   }
 
@@ -494,9 +516,18 @@ function recalculateAll() {
 
 function renderActiveView(teamList, standings) {
   renderTableHeader();
+  const rollupFilterContainer = document.getElementById('rollup-filters-container');
+  
   if (activeView === "rollup") {
+    if (rollupFilterContainer) {
+      rollupFilterContainer.style.display = "flex";
+      buildRollupFilters();
+    }
     renderRollupTable();
   } else {
+    if (rollupFilterContainer) {
+      rollupFilterContainer.style.display = "none";
+    }
     renderDuesLeaderboardGrouped(teamList, standings);
   }
 }
@@ -509,7 +540,7 @@ function renderTableHeader() {
         <th>NFL Week</th>
         <th>Timestamp</th>
         <th>Franchise</th>
-        <th style="text-align: center;">Action</th>
+        <th style="text-align: left; width: 180px;">Action</th>
         <th>Player Details</th>
         <th>Cost</th>
       </tr>
@@ -576,30 +607,41 @@ function renderDuesLeaderboardGrouped(teamList, standings) {
   }
 }
 
-// Render a single team row in leaderboard
+// Render a single team row in leaderboard showing a column bar style chart sparkline
 function renderTeamRow(team, rank) {
   const tr = document.createElement('tr');
   
-  // Sparkline points generation (19 values mapped inside 260x40 SVG)
+  // Column bar style sparkline generation (19 values mapped inside 260x40 SVG)
   let sparklineSVG = '';
   if (team.weeklyPickups) {
     const maxVal = Math.max(...team.weeklyPickups, 1);
-    const points = [];
+    const colWidth = 9;
+    const gap = 3;
+    const totalW = 19 * (colWidth + gap) - gap; // 19 * 12 - 3 = 225
+    const paddingX = (260 - totalW) / 2;
+    
+    const barsHTML = [];
     for (let w = 1; w <= 19; w++) {
       const val = team.weeklyPickups[w] || 0;
-      const x = ((w - 1) / 18) * 240 + 10;
-      const y = 35 - (val / maxVal) * 30;
-      points.push(`${x},${y}`);
+      const barHeight = val > 0 ? (val / maxVal) * 34 : 2.5; // 2.5px minimum height for zero values
+      const x = paddingX + (w - 1) * (colWidth + gap);
+      const y = 38 - barHeight;
+      const tooltipText = `${getWeekName(w)}: ${val} pickups`;
+      
+      const rectColor = val > 0 ? 'var(--accent-cyan)' : 'rgba(255, 255, 255, 0.12)';
+      const shadowFilter = val > 0 ? 'filter: drop-shadow(0 0 2px var(--accent-cyan));' : '';
+      
+      barsHTML.push(`
+        <g>
+          <rect class="sparkbar-rect" x="${x}" y="${y}" width="${colWidth}" height="${barHeight}" fill="${rectColor}" rx="1.5" style="${shadowFilter} transition: all 0.2s;"></rect>
+          <rect class="sparkbar-hover-area" x="${x}" y="2" width="${colWidth}" height="36" fill="transparent" style="cursor:pointer;" onmouseover="showChartTooltip(event, '${tooltipText}')" onmouseout="hideChartTooltip()"><title>${tooltipText}</title></rect>
+        </g>
+      `);
     }
 
     sparklineSVG = `
       <svg class="sparkline-svg" width="260" height="40">
-        <polyline class="sparkline-path" points="${points.join(' ')}"></polyline>
-        ${points.map((p, idx) => {
-          const val = team.weeklyPickups[idx + 1] || 0;
-          const tooltipText = `${getWeekName(idx+1)}: ${val} pickups`;
-          return `<circle class="sparkline-dot" cx="${p.split(',')[0]}" cy="${p.split(',')[1]}" r="2.5" onmouseover="showChartTooltip(event, '${tooltipText}')" onmouseout="hideChartTooltip()"><title>${tooltipText}</title></circle>`;
-        }).join('')}
+        ${barsHTML.join('')}
       </svg>
     `;
   }
@@ -661,6 +703,32 @@ function renderTeamRow(team, rank) {
 // ----------------------------------------------------
 // 5. ROLLUP VIEW RENDERING
 // ----------------------------------------------------
+function buildRollupFilters() {
+  const container = document.getElementById('rollup-filter-buttons');
+  if (!container) return;
+  
+  container.innerHTML = `
+    <button class="filter-chip ${rollupFilter === 'all' ? 'active' : ''}" data-filter="all">All</button>
+    <span class="filter-separator">|</span>
+    <button class="filter-chip ${rollupFilter === 'Additions' ? 'active' : ''}" data-filter="Additions">Additions</button>
+    <button class="filter-chip ${rollupFilter === 'Drops' ? 'active' : ''}" data-filter="Drops">Drops</button>
+    <button class="filter-chip ${rollupFilter === 'Imports' ? 'active' : ''}" data-filter="Imports">Imports</button>
+    <span class="filter-separator">|</span>
+    <button class="filter-chip ${rollupFilter === 'Claims' ? 'active' : ''}" data-filter="Claims">Claims</button>
+    <button class="filter-chip ${rollupFilter === 'Adds' ? 'active' : ''}" data-filter="Adds">Adds</button>
+    <button class="filter-chip ${rollupFilter === 'Trades' ? 'active' : ''}" data-filter="Trades">Trades</button>
+  `;
+  
+  // Bind click handlers to rebuild rollup on filter selection
+  container.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      rollupFilter = e.target.getAttribute('data-filter');
+      buildRollupFilters();
+      renderRollupTable();
+    });
+  });
+}
+
 function renderRollupTable() {
   duesTbody.innerHTML = '';
   const allTx = [];
@@ -678,11 +746,34 @@ function renderRollupTable() {
     });
   }
 
-  // Sort descending by timestamp (newest first)
-  allTx.sort((a, b) => parseInt(b.timeEpochMilli) - parseInt(a.timeEpochMilli));
+  // Filter rollup list
+  const filteredTx = allTx.filter(item => {
+    if (rollupFilter === 'all') return true;
+    if (!item.transaction) return false;
 
-  if (allTx.length === 0) {
-    duesTbody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">No transaction rollup logs for season ' + selectedYear + '</td></tr>';
+    let type = item.transaction.type || "";
+    if (type === "") {
+      type = "TRANSACTION_ADD";
+    }
+
+    // Chunk 2: Groupings
+    if (rollupFilter === 'Additions') return type === 'TRANSACTION_CLAIM' || type === 'TRANSACTION_ADD';
+    if (rollupFilter === 'Drops') return type === 'TRANSACTION_DROP';
+    if (rollupFilter === 'Imports') return type === 'TRANSACTION_IMPORT';
+
+    // Chunk 3: Specific Actions
+    if (rollupFilter === 'Claims') return type === 'TRANSACTION_CLAIM';
+    if (rollupFilter === 'Adds') return type === 'TRANSACTION_ADD';
+    if (rollupFilter === 'Trades') return type === 'TRANSACTION_TRADE';
+    
+    return false;
+  });
+
+  // Sort descending by timestamp (newest first)
+  filteredTx.sort((a, b) => parseInt(b.timeEpochMilli) - parseInt(a.timeEpochMilli));
+
+  if (filteredTx.length === 0) {
+    duesTbody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">No transaction rollup logs found for this filter</td></tr>';
     return;
   }
 
@@ -690,7 +781,7 @@ function renderRollupTable() {
   let currentWeekVal = null;
   let weekColorToggle = false;
 
-  allTx.forEach(item => {
+  filteredTx.forEach(item => {
     const tr = document.createElement('tr');
     const week = item.nflWeek || 1;
 
@@ -734,7 +825,7 @@ function renderRollupTable() {
       <td>
         <span class="team-name-link" onclick="openAuditModal('${encodeURIComponent(item.teamName).replace(/'/g, "%27")}')">${item.teamName}</span>
       </td>
-      <td style="text-align:center;">${getActionLightsaberIcon(item)}</td>
+      <td style="text-align:left;">${getActionLightsaberIcon(item, true)}</td>
       <td style="font-weight:600;">${pDetails}</td>
       <td><span class="${costClass}">${costLabel}</span></td>
     `;
@@ -1071,8 +1162,11 @@ function populateAuditData() {
     if (currentAuditFilter === 'all') return true;
     if (!item.transaction) return false; // Exclude reserves from filter chips
 
-    const type = item.transaction.type || "";
-    
+    let type = item.transaction.type || "";
+    if (type === "") {
+      type = "TRANSACTION_ADD";
+    }
+
     // Chunk 2: Groupings
     if (currentAuditFilter === 'Additions') return type === 'TRANSACTION_CLAIM' || type === 'TRANSACTION_ADD';
     if (currentAuditFilter === 'Drops') return type === 'TRANSACTION_DROP';
@@ -1127,7 +1221,10 @@ function populateAuditData() {
         pDetails = `${p.nameFull} (${p.position}, ${p.proTeamAbbreviation})`;
       }
 
-      const type = item.transaction.type || "TRANSACTION_ADD";
+      let type = item.transaction.type || "";
+      if (type === "") {
+        type = "TRANSACTION_ADD";
+      }
       if (type === 'TRANSACTION_CLAIM' || type === 'TRANSACTION_ADD') {
         if (item.charge > 0) {
           costLabel = `$${item.charge.toFixed(2)}`;
@@ -1143,7 +1240,7 @@ function populateAuditData() {
       <td>${descHistory.length - index}</td>
       <td style="font-family:var(--font-code); font-weight:700; color:var(--text-primary);">${getWeekName(week)}</td>
       <td style="color:var(--text-secondary);">${dateStr}</td>
-      <td style="text-align: center;">${getActionLightsaberIcon(item)}</td>
+      <td style="text-align: center;">${getActionLightsaberIcon(item, false)}</td>
       <td style="font-weight:600;">${pDetails}</td>
       <td><span class="${costClass}">${costLabel}</span></td>
     `;
