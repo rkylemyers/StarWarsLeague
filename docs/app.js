@@ -1107,6 +1107,18 @@ function buildYearTabs() {
     recalculateAll();
   });
   viewSelectorContainer.appendChild(rollupBtn);
+
+  // If a draft board URL exists for this year, render a beautiful purple glowing button next to them!
+  const draftUrl = config.draftBoards && config.draftBoards[selectedYear];
+  if (draftUrl) {
+    const draftBtn = document.createElement('a');
+    draftBtn.className = "year-tab-btn draft-board-link-btn";
+    draftBtn.href = draftUrl;
+    draftBtn.target = "_blank";
+    draftBtn.innerHTML = "⚔️ Draft Board";
+    draftBtn.style.marginLeft = "1.5rem";
+    viewSelectorContainer.appendChild(draftBtn);
+  }
 }
 
 function selectYearTab(year) {
@@ -1403,6 +1415,15 @@ function openSettingsModal() {
   inputFirstSplit.value = config.payouts.firstPlacePercent;
   inputSecondSplit.value = config.payouts.secondPlacePercent;
 
+  const draftBoardUrlInput = document.getElementById('input-draft-board-url');
+  const labelDraftBoardSeason = document.getElementById('label-draft-board-season');
+  if (draftBoardUrlInput) {
+    draftBoardUrlInput.value = (config.draftBoards && config.draftBoards[selectedYear]) || "";
+  }
+  if (labelDraftBoardSeason) {
+    labelDraftBoardSeason.textContent = `ClickyDraft Board URL (for ${selectedYear})`;
+  }
+
   renderGlobalDuesList();
   renderTeamAdjustmentsList();
   populateTeamSelector();
@@ -1572,6 +1593,26 @@ function setupEventListeners() {
   });
 
   btnRecalculate.addEventListener('click', () => {
+    config.buyInCost = parseFloat(inputBuyIn.value) || 0;
+    config.pickupCost = parseFloat(inputPickupCost.value) || 0;
+    config.freePickupsCount = parseInt(inputFreePickups.value) || 0;
+    config.payouts.firstPlacePercent = parseInt(inputFirstSplit.value) || 0;
+    config.payouts.secondPlacePercent = parseInt(inputSecondSplit.value) || 0;
+    
+    // Save draft board url for selected year
+    if (!config.draftBoards) {
+      config.draftBoards = {};
+    }
+    const draftBoardUrlInput = document.getElementById('input-draft-board-url');
+    if (draftBoardUrlInput) {
+      const url = draftBoardUrlInput.value.trim();
+      if (url) {
+        config.draftBoards[selectedYear] = url;
+      } else {
+        delete config.draftBoards[selectedYear];
+      }
+    }
+
     recalculateAll();
     closeSettingsModal();
   });

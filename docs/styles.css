@@ -1274,4 +1274,25 @@ input:focus, select:focus {
   font-weight: 700;
 }
 
+/* ClickyDraft Board link button */
+.draft-board-link-btn {
+  text-decoration: none;
+  background: linear-gradient(135deg, rgba(166, 38, 255, 0.2) 0%, rgba(166, 38, 255, 0.05) 100%) !important;
+  border: 1px solid rgba(166, 38, 255, 0.5) !important;
+  color: #d896ff !important;
+  box-shadow: 0 0 10px rgba(166, 38, 255, 0.2);
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.draft-board-link-btn:hover {
+  background: linear-gradient(135deg, rgba(166, 38, 255, 0.4) 0%, rgba(166, 38, 255, 0.15) 100%) !important;
+  border-color: #a626ff !important;
+  box-shadow: 0 0 15px rgba(166, 38, 255, 0.5);
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
 
