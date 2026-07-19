@@ -77,10 +77,15 @@
       </div>
 
       <!-- Rollup filters row -->
-      <div class="rollup-filters-row" id="rollup-filters-container" style="display: none; margin-bottom: 1.25rem; align-items: center; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 8px; padding: 0.5rem 0.8rem; width: fit-content;">
-        <span class="filter-label" style="font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-right: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em;">Filter Rollup:</span>
-        <div class="filter-buttons" id="rollup-filter-buttons" style="margin: 0;">
+      <div class="rollup-filters-row" id="rollup-filters-container" style="display: none; margin-bottom: 1.25rem; align-items: center; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 8px; padding: 0.5rem 0.8rem; width: fit-content; flex-wrap: nowrap; overflow-x: auto;">
+        <span class="filter-label" style="font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-right: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; white-space: nowrap;">Filter Rollup:</span>
+        <div class="filter-buttons" id="rollup-filter-buttons" style="margin: 0; white-space: nowrap;">
           <!-- Dynamically generated -->
+        </div>
+        <span class="filter-separator">|</span>
+        <div class="rollup-search-box" style="display: flex; align-items: center; gap: 0.5rem; white-space: nowrap;">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.03em;">Search:</span>
+          <input type="text" id="rollup-search-input" placeholder="Search rollup..." style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); border-radius: 4px; padding: 0.35rem 0.6rem; color: #fff; font-size: 0.85rem; font-family: var(--font-display); width: 180px; outline: none; transition: border-color 0.2s;" />
         </div>
       </div>
 

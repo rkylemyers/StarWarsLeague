@@ -73,6 +73,14 @@ body {
   padding-bottom: 1.2rem;
 }
 
+.logo-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  white-space: nowrap;
+}
+
 .logo-area h1 {
   font-family: var(--font-display);
   font-size: 2.2rem;
@@ -81,7 +89,7 @@ body {
   background: linear-gradient(90deg, var(--accent-cyan) 0%, var(--accent-purple) 50%, var(--accent-coral) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 0.3rem;
+  margin: 0;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
@@ -266,7 +274,7 @@ body {
 .chart-tooltip {
   background: var(--bg-tertiary);
   border: 1px solid var(--accent-cyan);
-  padding: 0.4rem 0.6rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 4px;
   font-size: 0.75rem;
   color: #fff;
@@ -275,6 +283,8 @@ body {
   z-index: 10;
   display: none;
   box-shadow: var(--shadow-glow);
+  white-space: pre-line;
+  line-height: 1.4;
 }
 
 /* Main Panel Layout (League Dues) */
@@ -307,6 +317,10 @@ body {
   display: flex;
   gap: 0.6rem;
   align-items: center;
+  white-space: nowrap;
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .year-tab-btn {
@@ -947,7 +961,12 @@ input:focus, select:focus {
     position: relative;
   }
   .logo-area {
+    flex-direction: column;
     align-items: center;
+    gap: 0.4rem;
+  }
+  .logo-area h1 {
+    font-size: 1.8rem;
   }
   .logo-badge {
     align-self: center;
@@ -957,10 +976,11 @@ input:focus, select:focus {
     justify-content: center;
   }
   .year-tabs {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.4rem;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
     width: 100%;
+    justify-content: flex-start;
+    padding-bottom: 0.3rem;
   }
   .header-right-minimized {
     justify-content: center;

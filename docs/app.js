@@ -645,7 +645,23 @@ function renderTeamRow(team, rank) {
       const barHeight = val > 0 ? (val / maxVal) * 34 : 2.5; // 2.5px minimum height for zero values
       const x = paddingX + (w - 1) * (colWidth + gap);
       const y = 38 - barHeight;
-      const tooltipText = `${getWeekName(w)}: ${val} pickups`;
+      
+      // Collect specific player pickups made during this week
+      const weeklyPlayers = team.history
+        .filter(item => item.nflWeek === w && item.isPickup)
+        .map(item => {
+          if (item.transaction && item.transaction.player && item.transaction.player.proPlayer) {
+            const p = item.transaction.player.proPlayer;
+            return `+ ${p.nameFull} - ${p.position} - ${p.proTeamAbbreviation}`;
+          }
+          return "";
+        })
+        .filter(Boolean);
+
+      let tooltipText = `${getWeekName(w)}: ${val} pickups`;
+      if (weeklyPlayers.length > 0) {
+        tooltipText += `\n` + weeklyPlayers.join(`\n`);
+      }
       
       const rectColor = val > 0 ? 'var(--accent-cyan)' : 'rgba(255, 255, 255, 0.12)';
       const shadowFilter = val > 0 ? 'filter: drop-shadow(0 0 2px var(--accent-cyan));' : '';
@@ -653,7 +669,7 @@ function renderTeamRow(team, rank) {
       barsHTML.push(`
         <g>
           <rect class="sparkbar-rect" x="${x}" y="${y}" width="${colWidth}" height="${barHeight}" fill="${rectColor}" rx="1.5" style="${shadowFilter} transition: all 0.2s;"></rect>
-          <rect class="sparkbar-hover-area" x="${x}" y="2" width="${colWidth}" height="36" fill="transparent" style="cursor:pointer;" onmouseover="showChartTooltip(event, '${tooltipText}')" onmouseout="hideChartTooltip()"><title>${tooltipText}</title></rect>
+          <rect class="sparkbar-hover-area" x="${x}" y="2" width="${colWidth}" height="36" fill="transparent" style="cursor:pointer;" data-tooltip="${tooltipText.replace(/'/g, "&apos;").replace(/"/g, "&quot;")}" onmouseover="showChartTooltipFromData(event)" onmouseout="hideChartTooltip()"></rect>
         </g>
       `);
     }
@@ -788,11 +804,55 @@ function renderRollupTable() {
     return false;
   });
 
-  // Sort descending by timestamp (newest first)
-  filteredTx.sort((a, b) => parseInt(b.timeEpochMilli) - parseInt(a.timeEpochMilli));
+  // Real-time search query matching
+  const searchInput = document.getElementById('rollup-search-input');
+  const query = searchInput ? searchInput.value.trim().toLowerCase() : "";
+  
+  const searchedTx = filteredTx.filter(item => {
+    if (!query) return true;
+    
+    const teamName = (item.teamName || "").toLowerCase();
+    
+    let dateStr = "";
+    if (item.timeEpochMilli) {
+      const d = new Date(parseInt(item.timeEpochMilli));
+      dateStr = (d.toLocaleDateString() + ' ' + d.toLocaleTimeString()).toLowerCase();
+    }
+    
+    let actionLabel = "other";
+    let type = item.transaction.type || "";
+    if (type === "") type = "TRANSACTION_ADD";
+    if (type === "TRANSACTION_CLAIM" || type === "TRANSACTION_ADD") {
+      actionLabel = type === "TRANSACTION_CLAIM" ? "claim" : "add";
+    } else if (type === "TRANSACTION_DROP") {
+      actionLabel = "drop";
+    } else if (type === "TRANSACTION_TRADE") {
+      actionLabel = "trade";
+    } else if (type === "TRANSACTION_IMPORT") {
+      actionLabel = "import";
+    } else if (type === "TRANSACTION_DRAFT") {
+      actionLabel = "draft";
+    }
 
-  if (filteredTx.length === 0) {
-    duesTbody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">No transaction rollup logs found for this filter</td></tr>';
+    let playerDetails = "";
+    if (item.transaction.player && item.transaction.player.proPlayer) {
+      const p = item.transaction.player.proPlayer;
+      playerDetails = `${p.nameFull} ${p.position} ${p.proTeamAbbreviation}`.toLowerCase();
+    }
+
+    return (
+      teamName.includes(query) ||
+      dateStr.includes(query) ||
+      actionLabel.includes(query) ||
+      playerDetails.includes(query)
+    );
+  });
+
+  // Sort descending by timestamp (newest first)
+  searchedTx.sort((a, b) => parseInt(b.timeEpochMilli) - parseInt(a.timeEpochMilli));
+
+  if (searchedTx.length === 0) {
+    duesTbody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">No transaction rollup logs found for this search</td></tr>';
     return;
   }
 
@@ -800,7 +860,7 @@ function renderRollupTable() {
   let currentWeekVal = null;
   let weekColorToggle = false;
 
-  filteredTx.forEach(item => {
+  searchedTx.forEach(item => {
     const tr = document.createElement('tr');
     const week = item.nflWeek || 1;
 
@@ -820,7 +880,11 @@ function renderRollupTable() {
       dateStr = d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     }
 
-    let pDetails = getPlayerDetailsFormatted(item);
+    let pDetails = "—";
+    if (item.transaction.player && item.transaction.player.proPlayer) {
+      const p = item.transaction.player.proPlayer;
+      pDetails = `${p.nameFull} (${p.position}, ${p.proTeamAbbreviation})`;
+    }
 
     let costLabel = "—";
     let costClass = "";
@@ -931,10 +995,16 @@ window.showChartTooltip = function(event, text) {
     chartTooltipEl.className = 'chart-tooltip';
     document.body.appendChild(chartTooltipEl);
   }
-  chartTooltipEl.textContent = text;
+  chartTooltipEl.innerHTML = text.replace(/\\n/g, '<br>').replace(/\n/g, '<br>');
   chartTooltipEl.style.display = 'block';
   chartTooltipEl.style.left = (event.pageX + 10) + 'px';
   chartTooltipEl.style.top = (event.pageY - 30) + 'px';
+};
+
+window.showChartTooltipFromData = function(event) {
+  const target = event.currentTarget;
+  const tooltipText = target.getAttribute('data-tooltip') || "";
+  showChartTooltip(event, tooltipText);
 };
 
 window.hideChartTooltip = function() {
@@ -1283,7 +1353,10 @@ function populateAuditData() {
     let costClass = "";
 
     if (item.transaction) {
-      pDetails = getPlayerDetailsFormatted(item);
+      if (item.transaction.player && item.transaction.player.proPlayer) {
+        const p = item.transaction.player.proPlayer;
+        pDetails = `${p.nameFull} (${p.position}, ${p.proTeamAbbreviation})`;
+      }
 
       let type = item.transaction.type || "";
       if (type === "") {
@@ -1515,4 +1588,11 @@ function setupEventListeners() {
       populateAuditData();
     });
   });
+
+  const searchInput = document.getElementById('rollup-search-input');
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      renderRollupTable();
+    });
+  }
 }
