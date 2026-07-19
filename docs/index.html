@@ -19,14 +19,17 @@
       <div class="logo-area">
         <span class="logo-badge">STAR WARS FANTASY LEAGUE</span>
         <h1 id="league-title">STAR WARS LEAGUE</h1>
-        <p class="subtitle">Waiver wire ledger & dynamic dues portal</p>
       </div>
-      <div class="header-right">
-        <div class="sync-info" id="sync-info-box">
-          <span class="pulse-dot"></span>
-          <span id="sync-time-label">Loading local cache...</span>
-        </div>
-        <button class="btn btn-secondary btn-settings-icon" id="btn-open-settings">⚙️ Settings</button>
+      
+      <!-- Global Controls Header (obvious at top) -->
+      <div class="global-controls-header" id="year-tabs-container">
+        <!-- Rendered dynamically: e.g. 2026, 2025, 2024, etc. | Dues | Rollup View -->
+      </div>
+
+      <!-- Minimized settings & sync -->
+      <div class="header-right-minimized">
+        <span id="sync-time-label">Loading local cache...</span>
+        <button id="btn-open-settings" title="Open Settings">⚙️</button>
       </div>
     </header>
 
@@ -70,11 +73,7 @@
     <!-- Main Panel: Dues Leaderboard -->
     <main class="main-panel">
       <div class="panel-header-row">
-        <h2>League Dues</h2>
-        <!-- Year Tabs Selector -->
-        <div class="year-tabs" id="year-tabs-container">
-          <!-- Rendered dynamically: e.g. 2025, 2024, 2023, and Older Seasons Dropdown -->
-        </div>
+        <h2>League Leaderboard</h2>
       </div>
 
       <!-- Rollup filters row -->

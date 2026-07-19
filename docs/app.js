@@ -307,6 +307,25 @@ function getWeekName(weekInt) {
   return `Week ${weekInt}`;
 }
 
+// Format player details as "+ Marvin Harrison Jr - WR - Ari"
+function getPlayerDetailsFormatted(item) {
+  if (!item.transaction || !item.transaction.player || !item.transaction.player.proPlayer) {
+    return "—";
+  }
+  const p = item.transaction.player.proPlayer;
+  let sign = "⇄";
+  let type = item.transaction.type || "";
+  if (type === "") {
+    type = "TRANSACTION_ADD";
+  }
+  if (type === "TRANSACTION_CLAIM" || type === "TRANSACTION_ADD") {
+    sign = "+";
+  } else if (type === "TRANSACTION_DROP") {
+    sign = "-";
+  }
+  return `${sign} ${p.nameFull} - ${p.position} - ${p.proTeamAbbreviation}`;
+}
+
 // Helper to return thematic lightsaber icons with optional text label beside it
 function getActionLightsaberIcon(item, showLabel = true) {
   if (!item.transaction) return '—';
@@ -801,11 +820,7 @@ function renderRollupTable() {
       dateStr = d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     }
 
-    let pDetails = "—";
-    if (item.transaction.player && item.transaction.player.proPlayer) {
-      const p = item.transaction.player.proPlayer;
-      pDetails = `${p.nameFull} (${p.position}, ${p.proTeamAbbreviation})`;
-    }
+    let pDetails = getPlayerDetailsFormatted(item);
 
     let costLabel = "—";
     let costClass = "";
@@ -1118,19 +1133,61 @@ function populateAuditData() {
     totalTies = hist.ties || 0;
   }
 
+  // Get owner info for current audit team to track name changes
+  let currentOwnerIds = new Set();
+  let currentOwnerNames = new Set();
+  
+  if (rawData.standings && rawData.standings[selectedYear]) {
+    const allDivTeams = rawData.standings[selectedYear].divisions.flatMap(d => d.teams);
+    const matched = allDivTeams.find(t => t.name === team.name);
+    if (matched && matched.owners) {
+      matched.owners.forEach(ow => {
+        if (ow.id) currentOwnerIds.add(ow.id);
+        if (ow.displayName) currentOwnerNames.add(ow.displayName.toLowerCase());
+      });
+    }
+  }
+
   // Count finishes where standing rank was 1 (championships) dynamically in cache
   let standingsChampionships = 0;
   if (rawData.standings) {
     Object.values(rawData.standings).forEach(std => {
       const allDivTeams = std.divisions.flatMap(d => d.teams);
-      const m = allDivTeams.find(t => t.name === team.name);
-      if (m && m.recordOverall) {
-        totalWins += m.recordOverall.wins;
-        totalLosses += m.recordOverall.losses;
-        totalTies += m.recordOverall.ties;
-        // Verify completed seasons (under 2026) where rank is 1
-        if (m.recordOverall.rank === 1 && std.season < 2026) {
-          standingsChampionships++;
+      
+      // Match current team by owner ID or name to add wins/losses for all-time record
+      const matched = allDivTeams.find(t => {
+        if (t.owners) {
+          return t.owners.some(ow => 
+            (ow.id && currentOwnerIds.has(ow.id)) || 
+            (ow.displayName && currentOwnerNames.has(ow.displayName.toLowerCase()))
+          );
+        }
+        return t.name === team.name;
+      });
+
+      if (matched && matched.recordOverall) {
+        totalWins += matched.recordOverall.wins;
+        totalLosses += matched.recordOverall.losses;
+        totalTies += matched.recordOverall.ties;
+      }
+
+      // Check champion of the season (Rank 1)
+      if (std.season < 2026) {
+        const champTeam = allDivTeams.find(t => t.recordOverall && t.recordOverall.rank === 1);
+        if (champTeam) {
+          let isOwnerMatch = false;
+          if (champTeam.owners) {
+            isOwnerMatch = champTeam.owners.some(ow => 
+              (ow.id && currentOwnerIds.has(ow.id)) || 
+              (ow.displayName && currentOwnerNames.has(ow.displayName.toLowerCase()))
+            );
+          }
+          if (!isOwnerMatch && currentOwnerIds.size === 0 && champTeam.name === team.name) {
+            isOwnerMatch = true;
+          }
+          if (isOwnerMatch) {
+            standingsChampionships++;
+          }
         }
       }
     });
@@ -1226,10 +1283,7 @@ function populateAuditData() {
     let costClass = "";
 
     if (item.transaction) {
-      if (item.transaction.player && item.transaction.player.proPlayer) {
-        const p = item.transaction.player.proPlayer;
-        pDetails = `${p.nameFull} (${p.position}, ${p.proTeamAbbreviation})`;
-      }
+      pDetails = getPlayerDetailsFormatted(item);
 
       let type = item.transaction.type || "";
       if (type === "") {

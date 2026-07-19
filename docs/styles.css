@@ -67,7 +67,7 @@ body {
 .app-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 1.2rem;
@@ -930,37 +930,45 @@ input:focus, select:focus {
   }
   .summary-cards-stack {
     flex-direction: row;
+    gap: 1rem;
   }
   .metric-card {
     flex: 1;
   }
 }
 
-@media (max-width: 600px) {
-  .logo-area h1 {
-    font-size: 1.6rem;
-  }
+@media (max-width: 768px) {
   .app-header {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+    padding-bottom: 1.5rem;
+    position: relative;
   }
-  .header-right {
+  .logo-area {
+    align-items: center;
+  }
+  .logo-badge {
+    align-self: center;
+  }
+  .global-controls-header {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+  }
+  .year-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+  }
+  .header-right-minimized {
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.2rem;
   }
   .summary-cards-stack {
     flex-direction: column;
-  }
-  .panel-header-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  .year-tabs {
-    width: 100%;
-    overflow-x: auto;
-    padding-bottom: 0.3rem;
   }
   .admin-actions {
     flex-direction: column;
@@ -969,6 +977,8 @@ input:focus, select:focus {
     width: 100%;
   }
 }
+
+
 
 /* Division Header Rows - Lightsaber Themed Glows */
 .division-header-row {
@@ -1114,4 +1124,57 @@ input:focus, select:focus {
   border: 1px solid rgba(255, 255, 255, 0.06);
   padding: 4px;
   border-radius: 4px;
+}
+
+/* Minimized Header Controls */
+.header-right-minimized {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.header-right-minimized button {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1.1rem;
+  opacity: 0.6;
+  transition: opacity 0.2s, transform 0.2s;
+  padding: 0;
+  margin: 0;
+}
+
+.header-right-minimized button:hover {
+  opacity: 1;
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+/* Mobile Table Scrolling Safeguards */
+.dues-table th, .dues-table td,
+.audit-table th, .audit-table td {
+  white-space: nowrap;
+}
+
+.dues-table th:nth-child(2), .dues-table td:nth-child(2) {
+  min-width: 170px; /* Franchise name link columns */
+}
+
+.dues-table th:nth-child(3), .dues-table td:nth-child(3) {
+  min-width: 140px; /* Pickups Breakdown */
+}
+
+.dues-table th:nth-child(4), .dues-table td:nth-child(4) {
+  min-width: 260px; /* Weekly Trend Chart */
+}
+
+.dues-table th:nth-child(5), .dues-table td:nth-child(5) {
+  min-width: 110px; /* Adjustments */
+}
+
+.dues-table th:nth-child(6), .dues-table td:nth-child(6) {
+  min-width: 100px; /* Total Due */
 }
