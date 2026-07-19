@@ -1063,5 +1063,55 @@ input:focus, select:focus {
 
 .runner-text {
   color: var(--accent-purple);
-  text-shadow: 0 0 5px rgba(166, 38, 255, 0.2);
+  text-shadow: 0 0 8px rgba(166, 38, 255, 0.25);
+}
+
+/* Alternating grouped week backgrounds */
+.week-bg-color-a {
+  background-color: rgba(0, 240, 255, 0.015) !important;
+  border-left: 4px solid var(--accent-cyan);
+}
+.week-bg-color-a td {
+  border-bottom: 1px solid rgba(0, 240, 255, 0.08);
+}
+
+.week-bg-color-b {
+  background-color: rgba(166, 38, 255, 0.015) !important;
+  border-left: 4px solid var(--accent-purple);
+}
+.week-bg-color-b td {
+  border-bottom: 1px solid rgba(166, 38, 255, 0.08);
+}
+
+/* Filter separators */
+.filter-separator {
+  color: var(--text-muted);
+  font-family: var(--font-code);
+  font-size: 0.8rem;
+  margin: 0 0.5rem;
+  user-select: none;
+}
+
+/* Payout row texts inside summary card */
+.payout-row {
+  font-size: 0.78rem;
+  font-family: var(--font-code);
+  font-weight: 600;
+  margin: 4px 0;
+  white-space: nowrap;
+}
+.champ-text {
+  color: var(--accent-cyan);
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.25);
+}
+
+/* Lightsaber Action Icon styling */
+.lightsaber-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 4px;
+  border-radius: 4px;
 }

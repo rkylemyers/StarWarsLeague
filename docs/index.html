@@ -143,12 +143,22 @@
           <div class="filter-controls">
             <span class="filter-label">Filter:</span>
             <div class="filter-buttons" id="audit-filter-buttons">
+              <!-- Chunk 1: All-Time Rollup -->
               <button class="filter-chip active" data-filter="all">All</button>
+              
+              <span class="filter-separator">|</span>
+              
+              <!-- Chunk 2: Action Groupings -->
+              <button class="filter-chip" data-filter="Additions">Additions</button>
+              <button class="filter-chip" data-filter="Drops">Drops</button>
+              <button class="filter-chip" data-filter="Imports">Imports</button>
+              
+              <span class="filter-separator">|</span>
+              
+              <!-- Chunk 3: Individual Specific Transactions -->
               <button class="filter-chip" data-filter="Claims">Claims</button>
               <button class="filter-chip" data-filter="Adds">Adds</button>
               <button class="filter-chip" data-filter="Trades">Trades</button>
-              <button class="filter-chip" data-filter="Drops">Drops</button>
-              <button class="filter-chip" data-filter="Reserves">Reserves</button>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ let rawData = {};
 let selectedYear = "";
 let processedData = {}; // year -> teamsMap
 let yearList = [];
+let activeView = "dues"; // "dues" or "rollup"
 
 // Canvas Warp Speed Variables
 let canvas, ctx;
@@ -13,7 +14,7 @@ let warpSpeed = 0.5;
 let targetWarpSpeed = 0.5;
 
 // DOM Elements
-let syncTimeLabel, potValue, totalPickupsValue, duesTbody, yearTabsContainer, timelineChartElement;
+let syncTimeLabel, potValue, totalPickupsValue, duesTbody, yearTabsContainer, timelineChartElement, duesTableElement;
 let auditModal, settingsModal;
 let inputBuyIn, inputPickupCost, inputFreePickups, inputFirstSplit, inputSecondSplit;
 let globalDuesList, teamAdjustmentsList, selectAdjTeam;
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   duesTbody = document.getElementById('dues-tbody');
   yearTabsContainer = document.getElementById('year-tabs-container');
   timelineChartElement = document.getElementById('timeline-chart-element');
+  duesTableElement = document.getElementById('dues-table-element');
   
   auditModal = document.getElementById('audit-modal');
   settingsModal = document.getElementById('settings-modal');
@@ -255,7 +257,7 @@ function processTransactionsBySeason() {
   }
 
   if (yearList.length > 0) {
-    selectedYear = yearList[0].toString(); // default to latest (e.g. 2026)
+    selectedYear = yearList[0].toString(); // default to latest
   }
 }
 
@@ -301,6 +303,43 @@ function getWeekName(weekInt) {
   return `Week ${weekInt}`;
 }
 
+// Helper to return thematic lightsaber icons
+function getActionLightsaberIcon(item) {
+  if (!item.transaction) return '—';
+  
+  const type = item.transaction.type || "";
+  if (type === "TRANSACTION_CLAIM" || type === "TRANSACTION_ADD") {
+    // crossing blue and green lightsabers forming a +
+    return `
+      <span class="lightsaber-icon-wrapper" title="Addition / Claim">
+        <svg width="16" height="16" viewBox="0 0 16 16">
+          <line x1="2" y1="8" x2="14" y2="8" stroke="#00ff66" stroke-width="2" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #00ff66);"></line>
+          <line x1="8" y1="2" x2="8" y2="14" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #00f0ff);"></line>
+        </svg>
+      </span>
+    `;
+  } else if (type === "TRANSACTION_DROP") {
+    // horizontal red lightsaber forming a -
+    return `
+      <span class="lightsaber-icon-wrapper" title="Drop / Cut">
+        <svg width="16" height="16" viewBox="0 0 16 16">
+          <line x1="2" y1="8" x2="14" y2="8" stroke="#ff1e27" stroke-width="2.5" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #ff1e27);"></line>
+        </svg>
+      </span>
+    `;
+  } else if (type === "TRANSACTION_TRADE" || type === "TRANSACTION_IMPORT" || type === "TRANSACTION_DRAFT") {
+    // double purple arrow lightsaber representing exchange/import
+    return `
+      <span class="lightsaber-icon-wrapper" title="Trade / Import / Draft">
+        <svg width="16" height="16" viewBox="0 0 16 16">
+          <path d="M3,8 L13,8 M3,8 L6,5 M3,8 L6,11 M13,8 L10,5 M13,8 L10,11" fill="none" stroke="#a626ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 3px #a626ff);"></path>
+        </svg>
+      </span>
+    `;
+  }
+  return '—';
+}
+
 // ----------------------------------------------------
 // 4. CHART & LEADERBOARD RENDERING
 // ----------------------------------------------------
@@ -311,8 +350,7 @@ function recalculateAll() {
   const standings = rawData.standings && rawData.standings[selectedYear];
   const teamList = [];
 
-  // Build the master list of teams for this selected year
-  // We prioritize the standings map to ensure we have the exact roster of teams who played that year
+  // Build the master list of teams for this selected year from standings
   const seasonTeams = {};
   if (standings && standings.divisions) {
     standings.divisions.forEach(div => {
@@ -357,9 +395,14 @@ function recalculateAll() {
     });
   }
 
+  // Save the computed map back to processedData so details persist across years
+  if (processedData[selectedYear]) {
+    processedData[selectedYear].teams = seasonTeams;
+  }
+
   // If both standings and transactions are missing, exit
   if (Object.keys(seasonTeams).length === 0) {
-    duesTbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">No data available for season ' + selectedYear + '</td></tr>';
+    duesTbody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">No data available for season ' + selectedYear + '</td></tr>';
     return;
   }
 
@@ -370,10 +413,7 @@ function recalculateAll() {
 
   // Process details per team
   Object.values(seasonTeams).forEach(team => {
-    // Sort transactions chronologically ascending
     team.history.sort((a, b) => parseInt(a.timeEpochMilli) - parseInt(b.timeEpochMilli));
-
-    // Reset weekly counts
     team.weeklyPickups = Array(20).fill(0);
 
     let pickupIndex = 0;
@@ -445,11 +485,47 @@ function recalculateAll() {
     `;
   }
 
-  // Render Leaderboard Grouped by Division
-  renderDuesLeaderboardGrouped(teamList, standings);
+  // Render Dues Leaderboard or Rollup View
+  renderActiveView(teamList, standings);
 
   // Render Weekly Timeline Chart
   renderWeeklyChart(teamList);
+}
+
+function renderActiveView(teamList, standings) {
+  renderTableHeader();
+  if (activeView === "rollup") {
+    renderRollupTable();
+  } else {
+    renderDuesLeaderboardGrouped(teamList, standings);
+  }
+}
+
+function renderTableHeader() {
+  const thead = duesTableElement.querySelector('thead');
+  if (activeView === 'rollup') {
+    thead.innerHTML = `
+      <tr>
+        <th>NFL Week</th>
+        <th>Timestamp</th>
+        <th>Franchise</th>
+        <th style="text-align: center;">Action</th>
+        <th>Player Details</th>
+        <th>Cost</th>
+      </tr>
+    `;
+  } else {
+    thead.innerHTML = `
+      <tr>
+        <th>Rank</th>
+        <th>Franchise Name</th>
+        <th>Pickups Breakdown</th>
+        <th style="width: 260px; text-align: center;">Weekly Trend</th>
+        <th>Adjustments</th>
+        <th>Total Due</th>
+      </tr>
+    `;
+  }
 }
 
 // Render Dues Leaderboard grouped by Division
@@ -459,7 +535,6 @@ function renderDuesLeaderboardGrouped(teamList, standings) {
   if (standings && standings.divisions && standings.divisions.length > 0) {
     // Render grouped by divisions
     standings.divisions.forEach(division => {
-      // Define Lightsaber color-themed styling for division row header
       let divClass = "div-generic";
       if (division.name.toLowerCase().includes("jedi")) {
         divClass = "div-jedi";
@@ -505,25 +580,25 @@ function renderDuesLeaderboardGrouped(teamList, standings) {
 function renderTeamRow(team, rank) {
   const tr = document.createElement('tr');
   
-  // Sparkline points generation (19 values mapped inside 180x28 SVG)
+  // Sparkline points generation (19 values mapped inside 260x40 SVG)
   let sparklineSVG = '';
   if (team.weeklyPickups) {
     const maxVal = Math.max(...team.weeklyPickups, 1);
     const points = [];
     for (let w = 1; w <= 19; w++) {
       const val = team.weeklyPickups[w] || 0;
-      const x = ((w - 1) / 18) * 170 + 5;
-      const y = 25 - (val / maxVal) * 22;
+      const x = ((w - 1) / 18) * 240 + 10;
+      const y = 35 - (val / maxVal) * 30;
       points.push(`${x},${y}`);
     }
 
     sparklineSVG = `
-      <svg class="sparkline-svg" width="180" height="28">
+      <svg class="sparkline-svg" width="260" height="40">
         <polyline class="sparkline-path" points="${points.join(' ')}"></polyline>
         ${points.map((p, idx) => {
           const val = team.weeklyPickups[idx + 1] || 0;
           const tooltipText = `${getWeekName(idx+1)}: ${val} pickups`;
-          return val > 0 ? `<circle class="sparkline-dot" cx="${p.split(',')[0]}" cy="${p.split(',')[1]}" r="2" onmouseover="showChartTooltip(event, '${tooltipText}')" onmouseout="hideChartTooltip()"><title>${tooltipText}</title></circle>` : '';
+          return `<circle class="sparkline-dot" cx="${p.split(',')[0]}" cy="${p.split(',')[1]}" r="2.5" onmouseover="showChartTooltip(event, '${tooltipText}')" onmouseout="hideChartTooltip()"><title>${tooltipText}</title></circle>`;
         }).join('')}
       </svg>
     `;
@@ -559,9 +634,9 @@ function renderTeamRow(team, rank) {
   // Prepend Trophy for Rank 1 / Butt for Rank 12
   let trophyOrButt = '';
   if (rank === 1) {
-    trophyOrButt = '<span style="font-size: 1.15rem; margin-right: 0.35rem; vertical-align: middle;" title="1st Place (Championship)">🏆</span>';
+    trophyOrButt = '<span style="font-size: 1.15rem; margin-right: 0.35rem; vertical-align: middle; cursor: help;" title="Champ!">🏆</span>';
   } else if (rank === 12) {
-    trophyOrButt = '<span style="font-size: 1.15rem; margin-right: 0.35rem; vertical-align: middle;" title="12th Place (Toilet Bowl)">🍑</span>';
+    trophyOrButt = '<span style="font-size: 1.15rem; margin-right: 0.35rem; vertical-align: middle; cursor: help;" title="🫱( ‿ * ‿ )🫲">🍑</span>';
   }
 
   tr.innerHTML = `
@@ -581,6 +656,90 @@ function renderTeamRow(team, rank) {
     <td><span class="val-due">$${team.totalDue.toFixed(2)}</span></td>
   `;
   duesTbody.appendChild(tr);
+}
+
+// ----------------------------------------------------
+// 5. ROLLUP VIEW RENDERING
+// ----------------------------------------------------
+function renderRollupTable() {
+  duesTbody.innerHTML = '';
+  const allTx = [];
+
+  const season = processedData[selectedYear];
+  if (season && season.teams) {
+    Object.values(season.teams).forEach(team => {
+      team.history.forEach(item => {
+        if (item.transaction) {
+          // Clone item to attach teamName safely
+          const txItem = { ...item, teamName: team.name };
+          allTx.push(txItem);
+        }
+      });
+    });
+  }
+
+  // Sort descending by timestamp (newest first)
+  allTx.sort((a, b) => parseInt(b.timeEpochMilli) - parseInt(a.timeEpochMilli));
+
+  if (allTx.length === 0) {
+    duesTbody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">No transaction rollup logs for season ' + selectedYear + '</td></tr>';
+    return;
+  }
+
+  // Alternating week background colors
+  let currentWeekVal = null;
+  let weekColorToggle = false;
+
+  allTx.forEach(item => {
+    const tr = document.createElement('tr');
+    const week = item.nflWeek || 1;
+
+    if (currentWeekVal === null) {
+      currentWeekVal = week;
+      weekColorToggle = true;
+    } else if (currentWeekVal !== week) {
+      currentWeekVal = week;
+      weekColorToggle = !weekColorToggle;
+    }
+
+    tr.className = weekColorToggle ? 'week-bg-color-a' : 'week-bg-color-b';
+
+    let dateStr = "—";
+    if (item.timeEpochMilli) {
+      const d = new Date(parseInt(item.timeEpochMilli));
+      dateStr = d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+
+    let pDetails = "—";
+    if (item.transaction.player && item.transaction.player.proPlayer) {
+      const p = item.transaction.player.proPlayer;
+      pDetails = `${p.nameFull} (${p.position}, ${p.proTeamAbbreviation})`;
+    }
+
+    let costLabel = "—";
+    let costClass = "";
+    if (item.isPickup) {
+      if (item.charge > 0) {
+        costLabel = `$${item.charge.toFixed(2)}`;
+        costClass = "val-bold";
+      } else {
+        costLabel = "FREE (Initial)";
+        costClass = "audit-charge-free";
+      }
+    }
+
+    tr.innerHTML = `
+      <td style="font-family:var(--font-code); font-weight:700; color:var(--text-primary);">${getWeekName(week)}</td>
+      <td style="color:var(--text-secondary);">${dateStr}</td>
+      <td>
+        <span class="team-name-link" onclick="openAuditModal('${encodeURIComponent(item.teamName).replace(/'/g, "%27")}')">${item.teamName}</span>
+      </td>
+      <td style="text-align:center;">${getActionLightsaberIcon(item)}</td>
+      <td style="font-weight:600;">${pDetails}</td>
+      <td><span class="${costClass}">${costLabel}</span></td>
+    `;
+    duesTbody.appendChild(tr);
+  });
 }
 
 // Render Weekly Timeline SVG Bar Chart
@@ -657,7 +816,7 @@ function renderWeeklyChart(teamList) {
 }
 
 // ----------------------------------------------------
-// 5. INTERACTIVE TIMELINE TOOLTIPS
+// 6. INTERACTIVE TIMELINE TOOLTIPS
 // ----------------------------------------------------
 let chartTooltipEl;
 window.showChartTooltip = function(event, text) {
@@ -679,7 +838,7 @@ window.hideChartTooltip = function() {
 };
 
 // ----------------------------------------------------
-// 6. YEAR TABS GENERATOR (DYNAMIC)
+// 7. YEAR TABS GENERATOR (DYNAMIC)
 // ----------------------------------------------------
 function buildYearTabs() {
   yearTabsContainer.innerHTML = '';
@@ -691,9 +850,12 @@ function buildYearTabs() {
   const mainTabs = yearList.slice(0, 3);
   mainTabs.forEach(year => {
     const btn = document.createElement('button');
-    btn.className = `year-tab-btn ${year.toString() === selectedYear ? 'active' : ''}`;
+    btn.className = `year-tab-btn ${year.toString() === selectedYear && activeView === 'dues' ? 'active' : ''}`;
     btn.textContent = year.toString() === yearList[0].toString() ? `${year} (Current)` : year.toString();
-    btn.addEventListener('click', () => selectYearTab(year.toString()));
+    btn.addEventListener('click', () => {
+      activeView = "dues";
+      selectYearTab(year.toString());
+    });
     yearTabsContainer.appendChild(btn);
   });
 
@@ -705,23 +867,21 @@ function buildYearTabs() {
     wrap.id = "older-years-dropdown";
 
     const btn = document.createElement('button');
-    btn.className = "year-tab-btn";
+    btn.className = `year-tab-btn ${olderTabs.map(String).includes(selectedYear) && activeView === 'dues' ? 'active' : ''}`;
     const isOlderSelected = olderTabs.map(String).includes(selectedYear);
-    btn.innerHTML = `${isOlderSelected ? selectedYear : 'Older Seasons'} ▾`;
-    if (isOlderSelected) {
-      btn.classList.add('active');
-    }
+    btn.innerHTML = `${isOlderSelected && activeView === 'dues' ? selectedYear : 'Older Seasons'} ▾`;
 
     const menu = document.createElement('div');
     menu.className = "year-dropdown-menu";
 
     olderTabs.forEach(year => {
       const item = document.createElement('button');
-      item.className = `year-dropdown-item ${year.toString() === selectedYear ? 'active' : ''}`;
+      item.className = `year-dropdown-item ${year.toString() === selectedYear && activeView === 'dues' ? 'active' : ''}`;
       item.textContent = year.toString();
       item.addEventListener('click', (e) => {
         e.stopPropagation();
         wrap.classList.remove('active');
+        activeView = "dues";
         selectYearTab(year.toString());
       });
       menu.appendChild(item);
@@ -741,6 +901,22 @@ function buildYearTabs() {
 
     yearTabsContainer.appendChild(wrap);
   }
+
+  // Add subtle separator and Rollup tab button
+  const sep = document.createElement('span');
+  sep.className = "filter-separator";
+  sep.textContent = "|";
+  yearTabsContainer.appendChild(sep);
+
+  const rollupBtn = document.createElement('button');
+  rollupBtn.className = `year-tab-btn ${activeView === 'rollup' ? 'active' : ''}`;
+  rollupBtn.textContent = "Rollup View";
+  rollupBtn.addEventListener('click', () => {
+    activeView = "rollup";
+    buildYearTabs();
+    recalculateAll();
+  });
+  yearTabsContainer.appendChild(rollupBtn);
 }
 
 function selectYearTab(year) {
@@ -753,7 +929,7 @@ function selectYearTab(year) {
 }
 
 // ----------------------------------------------------
-// 7. TEAM AUDIT LOG & MODAL
+// 8. TEAM AUDIT LOG & MODAL
 // ----------------------------------------------------
 let currentAuditTeam = "";
 let currentAuditFilter = "all";
@@ -832,19 +1008,17 @@ function populateAuditData() {
   }
   document.getElementById('modal-team-record-year').textContent = `${selectedYear} ${recordStr}`;
 
-  // All-Time Record: sum standings over ALL seasons + historical settings stats base
+  // All-Time Record & Championships finish totals
   let totalWins = 0, totalLosses = 0, totalTies = 0;
   const hist = config.teamHistoricalStats && config.teamHistoricalStats[team.name];
   if (hist) {
     totalWins = hist.wins || 0;
     totalLosses = hist.losses || 0;
     totalTies = hist.ties || 0;
-    document.getElementById('modal-championships-badge').textContent = `🏆 ${hist.championships || 0} Championships`;
-    document.getElementById('modal-championships-badge').style.display = 'inline-block';
-  } else {
-    document.getElementById('modal-championships-badge').style.display = 'none';
   }
 
+  // Count finishes where standing rank was 1 (championships) dynamically in cache
+  let standingsChampionships = 0;
   if (rawData.standings) {
     Object.values(rawData.standings).forEach(std => {
       const allDivTeams = std.divisions.flatMap(d => d.teams);
@@ -853,9 +1027,22 @@ function populateAuditData() {
         totalWins += m.recordOverall.wins;
         totalLosses += m.recordOverall.losses;
         totalTies += m.recordOverall.ties;
+        // Verify completed seasons (under 2026) where rank is 1
+        if (m.recordOverall.rank === 1 && std.season < 2026) {
+          standingsChampionships++;
+        }
       }
     });
   }
+
+  const finalChampionshipsCount = (hist ? (hist.championships || 0) : 0) + standingsChampionships;
+  if (finalChampionshipsCount > 0) {
+    document.getElementById('modal-championships-badge').textContent = `🏆 ${finalChampionshipsCount} Championships`;
+    document.getElementById('modal-championships-badge').style.display = 'inline-block';
+  } else {
+    document.getElementById('modal-championships-badge').style.display = 'none';
+  }
+
   document.getElementById('modal-team-record-alltime').textContent = `All-Time Record: ${totalWins}-${totalLosses}-${totalTies}`;
 
   // Money breakdown cards
@@ -882,13 +1069,20 @@ function populateAuditData() {
 
   const filteredHistory = team.history.filter(item => {
     if (currentAuditFilter === 'all') return true;
-    if (!item.transaction) return currentAuditFilter === 'Reserves';
+    if (!item.transaction) return false; // Exclude reserves from filter chips
 
-    const type = item.transaction.type || "TRANSACTION_ADD";
+    const type = item.transaction.type || "";
+    
+    // Chunk 2: Groupings
+    if (currentAuditFilter === 'Additions') return type === 'TRANSACTION_CLAIM' || type === 'TRANSACTION_ADD';
+    if (currentAuditFilter === 'Drops') return type === 'TRANSACTION_DROP';
+    if (currentAuditFilter === 'Imports') return type === 'TRANSACTION_IMPORT';
+
+    // Chunk 3: Specific Actions
     if (currentAuditFilter === 'Claims') return type === 'TRANSACTION_CLAIM';
     if (currentAuditFilter === 'Adds') return type === 'TRANSACTION_ADD';
-    if (currentAuditFilter === 'Drops') return type === 'TRANSACTION_DROP';
     if (currentAuditFilter === 'Trades') return type === 'TRANSACTION_TRADE';
+    
     return false;
   });
 
@@ -899,53 +1093,41 @@ function populateAuditData() {
     return;
   }
 
+  // Alternating week background colors
+  let currentWeekVal = null;
+  let weekColorToggle = false;
+
   descHistory.forEach((item, index) => {
     const tr = document.createElement('tr');
     
-    // Alternating week backgrounds
     const week = item.nflWeek || 1;
-    tr.className = week % 2 === 0 ? 'week-bg-even' : 'week-bg-odd';
+    if (currentWeekVal === null) {
+      currentWeekVal = week;
+      weekColorToggle = true;
+    } else if (currentWeekVal !== week) {
+      currentWeekVal = week;
+      weekColorToggle = !weekColorToggle;
+    }
 
-    // Timestamp
+    tr.className = weekColorToggle ? 'week-bg-color-a' : 'week-bg-color-b';
+
     let dateStr = "Unknown";
     if (item.timeEpochMilli) {
       const d = new Date(parseInt(item.timeEpochMilli));
       dateStr = d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     }
 
-    let typeLabel = "Reserve Move";
     let pDetails = "—";
     let costLabel = "—";
     let costClass = "";
 
     if (item.transaction) {
-      const type = item.transaction.type || "TRANSACTION_ADD";
-      switch (type) {
-        case "TRANSACTION_CLAIM":
-          typeLabel = "Waiver Claim";
-          break;
-        case "TRANSACTION_ADD":
-          typeLabel = "Free Agent Add";
-          break;
-        case "TRANSACTION_DROP":
-          typeLabel = "Drop Player";
-          break;
-        case "TRANSACTION_TRADE":
-          typeLabel = "Trade";
-          break;
-        case "TRANSACTION_IMPORT":
-          typeLabel = "Import";
-          break;
-        case "TRANSACTION_DRAFT":
-          typeLabel = "Draft";
-          break;
-      }
-
       if (item.transaction.player && item.transaction.player.proPlayer) {
         const p = item.transaction.player.proPlayer;
         pDetails = `${p.nameFull} (${p.position}, ${p.proTeamAbbreviation})`;
       }
 
+      const type = item.transaction.type || "TRANSACTION_ADD";
       if (type === 'TRANSACTION_CLAIM' || type === 'TRANSACTION_ADD') {
         if (item.charge > 0) {
           costLabel = `$${item.charge.toFixed(2)}`;
@@ -955,19 +1137,13 @@ function populateAuditData() {
           costClass = "audit-charge-free";
         }
       }
-    } else if (item.reserveChange) {
-      typeLabel = item.reserveChange.removed ? "Activate Reserve" : "Place Reserve";
-      if (item.reserveChange.player && item.reserveChange.player.proPlayer) {
-        const p = item.reserveChange.player.proPlayer;
-        pDetails = `${p.nameFull} (${p.position})`;
-      }
     }
 
     tr.innerHTML = `
       <td>${descHistory.length - index}</td>
-      <td style="font-family:var(--font-code); font-weight:700; color:var(--accent-coral);">${getWeekName(week)}</td>
+      <td style="font-family:var(--font-code); font-weight:700; color:var(--text-primary);">${getWeekName(week)}</td>
       <td style="color:var(--text-secondary);">${dateStr}</td>
-      <td><span class="logo-badge" style="font-size:0.7rem; border-color:var(--border-color);">${typeLabel}</span></td>
+      <td style="text-align: center;">${getActionLightsaberIcon(item)}</td>
       <td style="font-weight:600;">${pDetails}</td>
       <td><span class="${costClass}">${costLabel}</span></td>
     `;
@@ -980,7 +1156,7 @@ function closeAuditModal() {
 }
 
 // ----------------------------------------------------
-// 8. ADMIN SETTINGS OVERLAYS
+// 9. ADMIN SETTINGS OVERLAYS
 // ----------------------------------------------------
 function openSettingsModal() {
   inputBuyIn.value = config.buyInCost;
@@ -1002,12 +1178,10 @@ function closeSettingsModal() {
 
 function populateTeamSelector() {
   selectAdjTeam.innerHTML = '';
-  // Load list of all teams across any year
   const allTeamNamesSet = new Set();
   Object.values(rawData.standings || {}).forEach(std => {
     std.divisions.flatMap(d => d.teams).forEach(t => allTeamNamesSet.add(t.name));
   });
-  // fallback to transactions
   Object.values(processedData).forEach(season => {
     Object.keys(season.teams).forEach(name => allTeamNamesSet.add(name));
   });
@@ -1084,7 +1258,7 @@ window.deleteTeamAdjustment = function(teamName, index) {
 };
 
 // ----------------------------------------------------
-// 9. LISTENERS SETUP
+// 10. LISTENERS SETUP
 // ----------------------------------------------------
 function setupEventListeners() {
   document.getElementById('btn-open-settings').addEventListener('click', openSettingsModal);
