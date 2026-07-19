@@ -1,6 +1,7 @@
 // Global State
 let config = {};
 let rawData = {};
+let draftBoards = {}; // loaded from docs/data/draftboards.json
 let selectedYear = "";
 let processedData = {}; // year -> teamsMap
 let yearList = [];
@@ -21,7 +22,7 @@ let inputBuyIn, inputPickupCost, inputFreePickups, inputFirstSplit, inputSecondS
 let globalDuesList, teamAdjustmentsList, selectAdjTeam;
 let inputGlobalDesc, inputGlobalAmount, btnAddGlobal;
 let inputAdjDesc, inputAdjAmount, btnAddAdj;
-let btnRecalculate, btnExportConfig;
+let btnRecalculate, btnExportConfig, btnExportDraftBoards;
 let modalTeamTitle;
 
 // Initial setup
@@ -53,6 +54,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   btnAddAdj = document.getElementById('btn-add-adj');
   btnRecalculate = document.getElementById('btn-recalculate');
   btnExportConfig = document.getElementById('btn-export-config');
+  btnExportDraftBoards = document.getElementById('btn-export-draftboards');
   modalTeamTitle = document.getElementById('modal-team-title');
 
   initSpaceBg();
@@ -147,6 +149,14 @@ async function loadData() {
   try {
     const configResp = await fetch('data/config.json');
     config = await configResp.json();
+
+    try {
+      const draftBoardsResp = await fetch('data/draftboards.json');
+      draftBoards = await draftBoardsResp.json();
+    } catch (dbErr) {
+      console.warn('Could not load draftboards.json, fallback to empty:', dbErr);
+      draftBoards = {};
+    }
 
     const dataResp = await fetch('data/transactions_cache.json');
     rawData = await dataResp.json();
@@ -1109,7 +1119,7 @@ function buildYearTabs() {
   viewSelectorContainer.appendChild(rollupBtn);
 
   // If a draft board URL exists for this year, render a beautiful purple glowing button next to them!
-  const draftUrl = config.draftBoards && config.draftBoards[selectedYear];
+  const draftUrl = draftBoards && draftBoards[selectedYear];
   if (draftUrl) {
     const draftBtn = document.createElement('a');
     draftBtn.className = "year-tab-btn draft-board-link-btn";
@@ -1418,7 +1428,7 @@ function openSettingsModal() {
   const draftBoardUrlInput = document.getElementById('input-draft-board-url');
   const labelDraftBoardSeason = document.getElementById('label-draft-board-season');
   if (draftBoardUrlInput) {
-    draftBoardUrlInput.value = (config.draftBoards && config.draftBoards[selectedYear]) || "";
+    draftBoardUrlInput.value = (draftBoards && draftBoards[selectedYear]) || "";
   }
   if (labelDraftBoardSeason) {
     labelDraftBoardSeason.textContent = `ClickyDraft Board URL (for ${selectedYear})`;
@@ -1600,16 +1610,16 @@ function setupEventListeners() {
     config.payouts.secondPlacePercent = parseInt(inputSecondSplit.value) || 0;
     
     // Save draft board url for selected year
-    if (!config.draftBoards) {
-      config.draftBoards = {};
+    if (!draftBoards) {
+      draftBoards = {};
     }
     const draftBoardUrlInput = document.getElementById('input-draft-board-url');
     if (draftBoardUrlInput) {
       const url = draftBoardUrlInput.value.trim();
       if (url) {
-        config.draftBoards[selectedYear] = url;
+        draftBoards[selectedYear] = url;
       } else {
-        delete config.draftBoards[selectedYear];
+        delete draftBoards[selectedYear];
       }
     }
 
@@ -1622,6 +1632,14 @@ function setupEventListeners() {
     const dlAnchorElem = document.createElement('a');
     dlAnchorElem.setAttribute("href",     dataStr     );
     dlAnchorElem.setAttribute("download", "config.json");
+    dlAnchorElem.click();
+  });
+
+  btnExportDraftBoards.addEventListener('click', () => {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(draftBoards, null, 2));
+    const dlAnchorElem = document.createElement('a');
+    dlAnchorElem.setAttribute("href",     dataStr     );
+    dlAnchorElem.setAttribute("download", "draftboards.json");
     dlAnchorElem.click();
   });
 
@@ -1685,8 +1703,8 @@ function setupEventListeners() {
       
       let count = 0;
       let skippedPFFL = 0;
-      if (!config.draftBoards) {
-        config.draftBoards = {};
+      if (!draftBoards) {
+        draftBoards = {};
       }
 
       anchors.forEach(a => {
@@ -1704,7 +1722,7 @@ function setupEventListeners() {
             const yearMatch = text.match(/\b(20\d{2})\b/);
             if (yearMatch) {
               const year = yearMatch[1];
-              config.draftBoards[year] = `https://clickydraft.com/draftapp/board/${boardId}`;
+              draftBoards[year] = `https://clickydraft.com/draftapp/board/${boardId}`;
               count++;
             } else {
               let parent = a.parentElement;
@@ -1719,7 +1737,7 @@ function setupEventListeners() {
                 parent = parent.parentElement;
               }
               if (foundYear) {
-                config.draftBoards[foundYear] = `https://clickydraft.com/draftapp/board/${boardId}`;
+                draftBoards[foundYear] = `https://clickydraft.com/draftapp/board/${boardId}`;
                 count++;
               }
             }
@@ -1743,7 +1761,7 @@ function setupEventListeners() {
             const yearMatch = text.match(/\b(20\d{2})\b/);
             if (yearMatch) {
               const year = yearMatch[1];
-              config.draftBoards[year] = `https://clickydraft.com/draftapp/board/${boardId}`;
+              draftBoards[year] = `https://clickydraft.com/draftapp/board/${boardId}`;
               count++;
             }
           } else if (isPFFL) {
@@ -1757,7 +1775,7 @@ function setupEventListeners() {
         clickyImportStatus.textContent = `Successfully imported ${count} draft boards (skipped ${skippedPFFL} PFFL boards)! Click "Save & Apply" in the settings modal to save them.`;
         clickyImportStatus.style.display = "block";
         
-        const currentUrl = config.draftBoards[selectedYear];
+        const currentUrl = draftBoards[selectedYear];
         const draftBoardUrlInput = document.getElementById('input-draft-board-url');
         if (draftBoardUrlInput) {
           draftBoardUrlInput.value = currentUrl || "";

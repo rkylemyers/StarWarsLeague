@@ -22,8 +22,5 @@
     "macejaydu": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
     "Jar Jar Skywalker": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 },
     "The Death Carr": { "championships": 0, "wins": 0, "losses": 0, "ties": 0 }
-  },
-  "draftBoards": {
-    "2025": "https://clickydraft.com/draftapp/board/278728"
   }
 }
