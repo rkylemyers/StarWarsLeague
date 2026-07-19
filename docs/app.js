@@ -308,7 +308,7 @@ function getWeekName(weekInt) {
 }
 
 // Helper to return thematic lightsaber icons with optional text label beside it
-function getActionLightsaberIcon(item, showLabel = false) {
+function getActionLightsaberIcon(item, showLabel = true) {
   if (!item.transaction) return '—';
   
   let type = item.transaction.type || "";
@@ -320,7 +320,7 @@ function getActionLightsaberIcon(item, showLabel = false) {
   let svg = "";
   
   if (type === "TRANSACTION_CLAIM" || type === "TRANSACTION_ADD") {
-    label = type === "TRANSACTION_CLAIM" ? "Waiver Claim" : "Free Agent Add";
+    label = type === "TRANSACTION_CLAIM" ? "Claim" : "Add";
     svg = `<svg width="16" height="16" viewBox="0 0 16 16">
       <line x1="2" y1="8" x2="14" y2="8" stroke="#00ff66" stroke-width="2.5" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #00ff66);"></line>
       <line x1="8" y1="2" x2="8" y2="14" stroke="#00f0ff" stroke-width="2.5" stroke-linecap="round" style="filter: drop-shadow(0 0 3px #00f0ff);"></line>
@@ -341,7 +341,7 @@ function getActionLightsaberIcon(item, showLabel = false) {
       <path d="M3,8 L13,8 M3,8 L6,5 M3,8 L6,11 M13,8 L10,5 M13,8 L10,11" fill="none" stroke="#a626ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 3px #a626ff);"></path>
     </svg>`;
   } else if (type === "TRANSACTION_DRAFT") {
-    label = "Draft Pick";
+    label = "Draft";
     svg = `<svg width="16" height="16" viewBox="0 0 16 16">
       <path d="M3,8 L13,8 M3,8 L6,5 M3,8 L6,11 M13,8 L10,5 M13,8 L10,11" fill="none" stroke="#a626ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 3px #a626ff);"></path>
     </svg>`;
@@ -1240,7 +1240,7 @@ function populateAuditData() {
       <td>${descHistory.length - index}</td>
       <td style="font-family:var(--font-code); font-weight:700; color:var(--text-primary);">${getWeekName(week)}</td>
       <td style="color:var(--text-secondary);">${dateStr}</td>
-      <td style="text-align: center;">${getActionLightsaberIcon(item, false)}</td>
+      <td style="text-align: left;">${getActionLightsaberIcon(item, true)}</td>
       <td style="font-weight:600;">${pDetails}</td>
       <td><span class="${costClass}">${costLabel}</span></td>
     `;
