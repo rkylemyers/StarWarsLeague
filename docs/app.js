@@ -13,20 +13,47 @@ let warpSpeed = 0.5;
 let targetWarpSpeed = 0.5;
 
 // DOM Elements
-const syncTimeLabel = document.getElementById('sync-time-label');
-const potValue = document.getElementById('pot-value');
-const payoutSplitInfo = document.getElementById('payout-split-info');
-const totalPickupsValue = document.getElementById('total-pickups-value');
-const duesTbody = document.getElementById('dues-tbody');
-const yearTabsContainer = document.getElementById('year-tabs-container');
-const timelineChartElement = document.getElementById('timeline-chart-element');
-
-// Modals
-const auditModal = document.getElementById('audit-modal');
-const settingsModal = document.getElementById('settings-modal');
+let syncTimeLabel, potValue, payoutSplitInfo, totalPickupsValue, duesTbody, yearTabsContainer, timelineChartElement;
+let auditModal, settingsModal;
+let inputBuyIn, inputPickupCost, inputFreePickups, inputFirstSplit, inputSecondSplit;
+let globalDuesList, teamAdjustmentsList, selectAdjTeam;
+let inputGlobalDesc, inputGlobalAmount, btnAddGlobal;
+let inputAdjDesc, inputAdjAmount, btnAddAdj;
+let btnRecalculate, btnExportConfig;
+let modalTeamTitle;
 
 // Initial setup
 document.addEventListener('DOMContentLoaded', async () => {
+  // Bind elements to variables
+  syncTimeLabel = document.getElementById('sync-time-label');
+  potValue = document.getElementById('pot-value');
+  payoutSplitInfo = document.getElementById('payout-split-info');
+  totalPickupsValue = document.getElementById('total-pickups-value');
+  duesTbody = document.getElementById('dues-tbody');
+  yearTabsContainer = document.getElementById('year-tabs-container');
+  timelineChartElement = document.getElementById('timeline-chart-element');
+  
+  auditModal = document.getElementById('audit-modal');
+  settingsModal = document.getElementById('settings-modal');
+
+  inputBuyIn = document.getElementById('input-buyin');
+  inputPickupCost = document.getElementById('input-pickup-cost');
+  inputFreePickups = document.getElementById('input-free-pickups');
+  inputFirstSplit = document.getElementById('input-first-split');
+  inputSecondSplit = document.getElementById('input-second-split');
+  globalDuesList = document.getElementById('global-dues-list');
+  teamAdjustmentsList = document.getElementById('team-adjustments-list');
+  selectAdjTeam = document.getElementById('select-adj-team');
+  inputGlobalDesc = document.getElementById('input-global-desc');
+  inputGlobalAmount = document.getElementById('input-global-amount');
+  btnAddGlobal = document.getElementById('btn-add-global');
+  inputAdjDesc = document.getElementById('input-adj-desc');
+  inputAdjAmount = document.getElementById('input-adj-amount');
+  btnAddAdj = document.getElementById('btn-add-adj');
+  btnRecalculate = document.getElementById('btn-recalculate');
+  btnExportConfig = document.getElementById('btn-export-config');
+  modalTeamTitle = document.getElementById('modal-team-title');
+
   initSpaceBg();
   await loadData();
   setupEventListeners();
@@ -154,7 +181,7 @@ function processTransactionsBySeason() {
   if (!rawData || !rawData.items) return;
 
   rawData.items.forEach(item => {
-    const year = getSeasonYear(item.TimeEpochMilli);
+    const year = getSeasonYear(item.timeEpochMilli);
     
     let teamName = "";
     let teamId = 0;
@@ -349,7 +376,7 @@ function recalculateAll() {
 
     let pickupIndex = 0;
     team.history.forEach(item => {
-      const week = getNFLWeek(item.TimeEpochMilli, selectedYear);
+      const week = getNFLWeek(item.timeEpochMilli, selectedYear);
       item.nflWeek = week;
       item.isPickup = false;
       item.charge = 0.00;
@@ -558,8 +585,8 @@ function renderWeeklyChart(teamList) {
         <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="var(--accent-cyan)" />
           <stop offset="35%" stop-color="var(--accent-green)" />
-          <stop offset="70%" stop-color="var(--accent-coral)" />
-          <stop offset="100%" stop-color="var(--accent-purple)" />
+          <stop offset="70%" stop-color="var(--accent-purple)" />
+          <stop offset="100%" stop-color="var(--accent-coral)" />
         </linearGradient>
       </defs>
       <line class="chart-grid-line" x1="40" y1="15" x2="740" y2="15"></line>
