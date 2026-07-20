@@ -206,6 +206,20 @@ function processTransactionsBySeason() {
 
     if (!teamName) return;
 
+    // Skip Week 1 drops (roster clearing transactions from previous years)
+    if (item.transaction) {
+      let type = item.transaction.type || "";
+      if (type === "") {
+        type = "TRANSACTION_ADD";
+      }
+      if (type === "TRANSACTION_DROP") {
+        const week = getNFLWeek(item.timeEpochMilli, year);
+        if (week === 1) {
+          return; // Skip drops in Week 1 completely
+        }
+      }
+    }
+
     let officialName = teamName;
     const standings = rawData.standings && rawData.standings[year];
     if (standings && standings.divisions && teamId > 0) {
