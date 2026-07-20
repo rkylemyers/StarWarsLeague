@@ -206,6 +206,16 @@ function processTransactionsBySeason() {
 
     if (!teamName) return;
 
+    let officialName = teamName;
+    const standings = rawData.standings && rawData.standings[year];
+    if (standings && standings.divisions && teamId > 0) {
+      const divTeams = standings.divisions.flatMap(d => d.teams);
+      const matched = divTeams.find(t => t.id === teamId);
+      if (matched) {
+        officialName = matched.name;
+      }
+    }
+
     if (!processedData[year]) {
       processedData[year] = {
         teams: {},
@@ -214,10 +224,10 @@ function processTransactionsBySeason() {
     }
 
     const season = processedData[year];
-    if (!season.teams[teamName]) {
-      season.teams[teamName] = {
+    if (!season.teams[officialName]) {
+      season.teams[officialName] = {
         id: teamId,
-        name: teamName,
+        name: officialName,
         claims: 0,
         adds: 0,
         trades: 0,
@@ -229,7 +239,7 @@ function processTransactionsBySeason() {
       };
     }
 
-    const team = season.teams[teamName];
+    const team = season.teams[officialName];
     team.history.push(item);
 
     if (item.transaction) {
