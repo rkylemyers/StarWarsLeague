@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-07-29T15:37:50.135569623Z",
+  "synced_at": "2026-07-29T23:40:59.606337716Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -130326,8 +130326,8 @@
             "nameFull": "Anthony Firkser",
             "nameShort": "A. Firkser",
             "position": "TE",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -139738,8 +139738,8 @@
             "nameFull": "Anthony Firkser",
             "nameShort": "A. Firkser",
             "position": "TE",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -226630,8 +226630,8 @@
             "nameFull": "Trevor Siemian",
             "nameShort": "T. Siemian",
             "position": "QB",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -227826,8 +227826,8 @@
             "nameFull": "Trevor Siemian",
             "nameShort": "T. Siemian",
             "position": "QB",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -229230,8 +229230,8 @@
             "nameFull": "Trevor Siemian",
             "nameShort": "T. Siemian",
             "position": "QB",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -230062,8 +230062,8 @@
             "nameFull": "Trevor Siemian",
             "nameShort": "T. Siemian",
             "position": "QB",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
