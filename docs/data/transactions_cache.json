@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-07-31T15:52:14.263228098Z",
+  "synced_at": "2026-07-31T23:40:54.289975903Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -130326,8 +130326,8 @@
             "nameFull": "Anthony Firkser",
             "nameShort": "A. Firkser",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "TE"
             ]
@@ -139738,8 +139738,8 @@
             "nameFull": "Anthony Firkser",
             "nameShort": "A. Firkser",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "TE"
             ]
