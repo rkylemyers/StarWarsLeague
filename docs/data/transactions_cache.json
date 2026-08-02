@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-02T11:48:20.591298552Z",
+  "synced_at": "2026-08-02T23:19:17.376050386Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -38234,8 +38234,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -38390,8 +38390,8 @@
             "nameFull": "Ja'Lynn Polk",
             "nameShort": "J. Polk",
             "position": "WR",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -41614,8 +41614,8 @@
             "nameFull": "Ja'Lynn Polk",
             "nameShort": "J. Polk",
             "position": "WR",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -45358,8 +45358,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -53470,8 +53470,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -72450,8 +72450,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -82122,8 +82122,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -102662,8 +102662,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -128974,8 +128974,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -131834,8 +131834,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
