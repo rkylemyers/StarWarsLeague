@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-09T10:06:49.099695816Z",
+  "synced_at": "2026-08-09T21:20:59.659121311Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -158562,8 +158562,8 @@
             "nameFull": "Teddy Bridgewater",
             "nameShort": "T. Bridgewater",
             "position": "QB",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -163190,8 +163190,8 @@
             "nameFull": "Teddy Bridgewater",
             "nameShort": "T. Bridgewater",
             "position": "QB",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -273690,8 +273690,8 @@
             "nameFull": "Teddy Bridgewater",
             "nameShort": "T. Bridgewater",
             "position": "QB",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -296050,8 +296050,8 @@
             "nameFull": "Teddy Bridgewater",
             "nameShort": "T. Bridgewater",
             "position": "QB",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -322674,8 +322674,8 @@
             "nameFull": "Teddy Bridgewater",
             "nameShort": "T. Bridgewater",
             "position": "QB",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -324546,8 +324546,8 @@
             "nameFull": "Teddy Bridgewater",
             "nameShort": "T. Bridgewater",
             "position": "QB",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
