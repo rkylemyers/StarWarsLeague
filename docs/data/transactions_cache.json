@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-09T21:20:59.659121311Z",
+  "synced_at": "2026-08-10T11:34:23.131302256Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -57942,8 +57942,8 @@
             "nameFull": "Joshua Dobbs",
             "nameShort": "J. Dobbs",
             "position": "QB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -67302,8 +67302,8 @@
             "nameFull": "Joshua Dobbs",
             "nameShort": "J. Dobbs",
             "position": "QB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
