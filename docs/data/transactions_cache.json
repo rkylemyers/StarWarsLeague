@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-10T11:34:23.131302256Z",
+  "synced_at": "2026-08-10T22:10:24.96252865Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -1053,8 +1053,8 @@
             "nameFull": "Devin Neal",
             "nameShort": "D. Neal",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
