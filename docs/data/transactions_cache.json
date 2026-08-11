@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-10T22:10:24.96252865Z",
+  "synced_at": "2026-08-11T10:41:05.075799305Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -26430,8 +26430,8 @@
             "nameFull": "Ray-Ray McCloud",
             "nameShort": "R. McCloud",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "WR"
             ]
@@ -31734,8 +31734,8 @@
             "nameFull": "Ray-Ray McCloud",
             "nameShort": "R. McCloud",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "WR"
             ]
@@ -31786,8 +31786,8 @@
             "nameFull": "Trey Sermon",
             "nameShort": "T. Sermon",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -37558,8 +37558,8 @@
             "nameFull": "Trey Sermon",
             "nameShort": "T. Sermon",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -114050,8 +114050,8 @@
             "nameFull": "Trey Sermon",
             "nameShort": "T. Sermon",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -130326,8 +130326,8 @@
             "nameFull": "Anthony Firkser",
             "nameShort": "A. Firkser",
             "position": "TE",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -136202,8 +136202,8 @@
             "nameFull": "Trey Sermon",
             "nameShort": "T. Sermon",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -139738,8 +139738,8 @@
             "nameFull": "Anthony Firkser",
             "nameShort": "A. Firkser",
             "position": "TE",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
