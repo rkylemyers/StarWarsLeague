@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-13T11:15:52.4055539Z",
+  "synced_at": "2026-08-13T22:26:46.912957305Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -7189,8 +7189,8 @@
             "nameFull": "Darren Waller",
             "nameShort": "D. Waller",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CAR",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "TE"
             ]
@@ -34282,8 +34282,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -46294,8 +46294,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -52430,8 +52430,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -59242,8 +59242,8 @@
             "nameFull": "Darren Waller",
             "nameShort": "D. Waller",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CAR",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "TE"
             ]
@@ -75934,8 +75934,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -80146,8 +80146,8 @@
             "nameFull": "Darren Waller",
             "nameShort": "D. Waller",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CAR",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "TE"
             ]
@@ -81238,8 +81238,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -83370,8 +83370,8 @@
             "nameFull": "JaMycal Hasty",
             "nameShort": "J. Hasty",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NE",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -89142,8 +89142,8 @@
             "nameFull": "Darren Waller",
             "nameShort": "D. Waller",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CAR",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "TE"
             ]
@@ -93666,8 +93666,8 @@
             "nameFull": "JaMycal Hasty",
             "nameShort": "J. Hasty",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NE",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -107758,8 +107758,8 @@
             "nameFull": "Darren Waller",
             "nameShort": "D. Waller",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CAR",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "TE"
             ]
@@ -110098,8 +110098,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -114778,8 +114778,8 @@
             "nameFull": "JaMycal Hasty",
             "nameShort": "J. Hasty",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NE",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -121330,8 +121330,8 @@
             "nameFull": "Darren Waller",
             "nameShort": "D. Waller",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CAR",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "TE"
             ]
@@ -126010,8 +126010,8 @@
             "nameFull": "JaMycal Hasty",
             "nameShort": "J. Hasty",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NE",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -135942,8 +135942,8 @@
             "nameFull": "Darren Waller",
             "nameShort": "D. Waller",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CAR",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "TE"
             ]
@@ -150710,8 +150710,8 @@
             "nameFull": "Darren Waller",
             "nameShort": "D. Waller",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CAR",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "TE"
             ]
@@ -170626,8 +170626,8 @@
             "nameFull": "Darren Waller",
             "nameShort": "D. Waller",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CAR",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "TE"
             ]
