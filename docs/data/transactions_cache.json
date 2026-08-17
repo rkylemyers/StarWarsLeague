@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-17T10:06:56.581176222Z",
+  "synced_at": "2026-08-17T21:01:30.956364178Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -32930,8 +32930,8 @@
             "nameFull": "Noah Brown",
             "nameShort": "N. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "WR"
             ]
@@ -33606,8 +33606,8 @@
             "nameFull": "Noah Brown",
             "nameShort": "N. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "WR"
             ]
@@ -57734,8 +57734,8 @@
             "nameFull": "Noah Brown",
             "nameShort": "N. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "WR"
             ]
@@ -63870,8 +63870,8 @@
             "nameFull": "Noah Brown",
             "nameShort": "N. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "WR"
             ]
