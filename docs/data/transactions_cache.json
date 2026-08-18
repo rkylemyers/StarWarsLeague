@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-17T21:01:30.956364178Z",
+  "synced_at": "2026-08-18T09:21:05.135954826Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -21178,8 +21178,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -32462,8 +32462,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -36362,8 +36362,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -38234,8 +38234,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -45358,8 +45358,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -48946,8 +48946,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -53470,8 +53470,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -65482,8 +65482,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -69278,8 +69278,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -72450,8 +72450,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -82122,8 +82122,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -102662,8 +102662,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -128974,8 +128974,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -131834,8 +131834,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
