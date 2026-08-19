@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-19T08:35:01.144742207Z",
+  "synced_at": "2026-08-19T20:24:30.483865952Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -116026,8 +116026,8 @@
             "nameFull": "D'Ernest Johnson",
             "nameShort": "D. Johnson",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "RB"
             ]
@@ -130742,8 +130742,8 @@
             "nameFull": "D'Ernest Johnson",
             "nameShort": "D. Johnson",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "RB"
             ]
