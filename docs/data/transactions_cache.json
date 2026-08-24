@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-24T08:45:55.916530917Z",
+  "synced_at": "2026-08-24T20:27:48.486584807Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -34282,7 +34282,7 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
+            "proTeamAbbreviation": "NO",
             "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
@@ -46294,7 +46294,7 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
+            "proTeamAbbreviation": "NO",
             "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
@@ -52430,7 +52430,7 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
+            "proTeamAbbreviation": "NO",
             "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
@@ -56694,8 +56694,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "K"
             ]
@@ -69018,8 +69018,8 @@
             "nameFull": "Deuce Vaughn",
             "nameShort": "D. Vaughn",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "HOU",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -75934,7 +75934,7 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
+            "proTeamAbbreviation": "NO",
             "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
@@ -76298,8 +76298,8 @@
             "nameFull": "Deuce Vaughn",
             "nameShort": "D. Vaughn",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "HOU",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -76662,8 +76662,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "K"
             ]
@@ -81238,7 +81238,7 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
+            "proTeamAbbreviation": "NO",
             "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
@@ -86022,8 +86022,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "K"
             ]
@@ -106614,8 +106614,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "K"
             ]
@@ -110098,7 +110098,7 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "SF",
+            "proTeamAbbreviation": "NO",
             "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
@@ -117638,8 +117638,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "K"
             ]
@@ -126738,8 +126738,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "K"
             ]
@@ -127882,8 +127882,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "K"
             ]
@@ -130846,8 +130846,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "K"
             ]
