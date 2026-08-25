@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-24T20:27:48.486584807Z",
+  "synced_at": "2026-08-25T08:40:08.705504172Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -8697,8 +8697,8 @@
             "nameFull": "Kayshon Boutte",
             "nameShort": "K. Boutte",
             "position": "WR",
-            "proTeamAbbreviation": "NE",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "HOU",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -18578,8 +18578,8 @@
             "nameFull": "Trey Benson",
             "nameShort": "T. Benson",
             "position": "RB",
-            "proTeamAbbreviation": "ARI",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -19826,8 +19826,8 @@
             "nameFull": "Trey Benson",
             "nameShort": "T. Benson",
             "position": "RB",
-            "proTeamAbbreviation": "ARI",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -32930,8 +32930,8 @@
             "nameFull": "Noah Brown",
             "nameShort": "N. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -33606,8 +33606,8 @@
             "nameFull": "Noah Brown",
             "nameShort": "N. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -43954,8 +43954,8 @@
             "nameFull": "Trey Benson",
             "nameShort": "T. Benson",
             "position": "RB",
-            "proTeamAbbreviation": "ARI",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -57734,8 +57734,8 @@
             "nameFull": "Noah Brown",
             "nameShort": "N. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -63870,8 +63870,8 @@
             "nameFull": "Noah Brown",
             "nameShort": "N. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
