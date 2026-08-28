@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-27T18:49:45.84942833Z",
+  "synced_at": "2026-08-28T04:02:45.991483618Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -7241,8 +7241,8 @@
             "nameFull": "Jonnu Smith",
             "nameShort": "J. Smith",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "TE"
             ]
@@ -12545,8 +12545,8 @@
             "nameFull": "Cedric Tillman",
             "nameShort": "C. Tillman",
             "position": "WR",
-            "proTeamAbbreviation": "CLE",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -12649,8 +12649,8 @@
             "nameFull": "Jonnu Smith",
             "nameShort": "J. Smith",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "TE"
             ]
@@ -21230,8 +21230,8 @@
             "nameFull": "Cedric Tillman",
             "nameShort": "C. Tillman",
             "position": "WR",
-            "proTeamAbbreviation": "CLE",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -27678,8 +27678,8 @@
             "nameFull": "Jonnu Smith",
             "nameShort": "J. Smith",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "TE"
             ]
@@ -34334,8 +34334,8 @@
             "nameFull": "Cedric Tillman",
             "nameShort": "C. Tillman",
             "position": "WR",
-            "proTeamAbbreviation": "CLE",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -47542,8 +47542,8 @@
             "nameFull": "Jonnu Smith",
             "nameShort": "J. Smith",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "TE"
             ]
@@ -64338,8 +64338,8 @@
             "nameFull": "Tutu Atwell",
             "nameShort": "T. Atwell",
             "position": "WR",
-            "proTeamAbbreviation": "MIA",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "LAR",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "WR"
             ]
@@ -69434,8 +69434,8 @@
             "nameFull": "Tutu Atwell",
             "nameShort": "T. Atwell",
             "position": "WR",
-            "proTeamAbbreviation": "MIA",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "LAR",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "WR"
             ]
@@ -99022,8 +99022,8 @@
             "nameFull": "Jonnu Smith",
             "nameShort": "J. Smith",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "TE"
             ]
@@ -99490,8 +99490,8 @@
             "nameFull": "Jonnu Smith",
             "nameShort": "J. Smith",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "TE"
             ]
@@ -128558,8 +128558,8 @@
             "nameFull": "Jonnu Smith",
             "nameShort": "J. Smith",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "TE"
             ]
@@ -142026,8 +142026,8 @@
             "nameFull": "Jonnu Smith",
             "nameShort": "J. Smith",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "TE"
             ]
@@ -160018,8 +160018,8 @@
             "nameFull": "Jonnu Smith",
             "nameShort": "J. Smith",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "TE"
             ]
@@ -160122,8 +160122,8 @@
             "nameFull": "Jonnu Smith",
             "nameShort": "J. Smith",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "TE"
             ]
