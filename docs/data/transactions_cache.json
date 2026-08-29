@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-29T13:37:31.240274391Z",
+  "synced_at": "2026-08-29T22:19:17.81029847Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -125958,8 +125958,8 @@
             "nameFull": "Mecole Hardman",
             "nameShort": "M. Hardman",
             "position": "WR",
-            "proTeamAbbreviation": "BUF",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -137138,8 +137138,8 @@
             "nameFull": "Mecole Hardman",
             "nameShort": "M. Hardman",
             "position": "WR",
-            "proTeamAbbreviation": "BUF",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -159914,8 +159914,8 @@
             "nameFull": "Mecole Hardman",
             "nameShort": "M. Hardman",
             "position": "WR",
-            "proTeamAbbreviation": "BUF",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -165634,8 +165634,8 @@
             "nameFull": "Mecole Hardman",
             "nameShort": "M. Hardman",
             "position": "WR",
-            "proTeamAbbreviation": "BUF",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
