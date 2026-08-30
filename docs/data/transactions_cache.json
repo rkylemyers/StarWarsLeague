@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-30T13:32:24.655847455Z",
+  "synced_at": "2026-08-30T22:24:11.821567935Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -15561,8 +15561,8 @@
             "nameFull": "Kaleb Johnson",
             "nameShort": "K. Johnson",
             "position": "RB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -33346,8 +33346,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -34178,8 +34178,8 @@
             "nameFull": "Dare Ogunbowale",
             "nameShort": "D. Ogunbowale",
             "position": "RB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -34282,8 +34282,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -35842,8 +35842,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -36830,8 +36830,8 @@
             "nameFull": "Dare Ogunbowale",
             "nameShort": "D. Ogunbowale",
             "position": "RB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -46294,8 +46294,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -52430,8 +52430,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -52482,8 +52482,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -75934,8 +75934,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -76766,8 +76766,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -81238,8 +81238,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -81290,8 +81290,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -98918,8 +98918,8 @@
             "nameFull": "Albert Okwuegbunam",
             "nameShort": "A. Okwuegbunam",
             "position": "TE",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -107706,8 +107706,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -108174,8 +108174,8 @@
             "nameFull": "Albert Okwuegbunam",
             "nameShort": "A. Okwuegbunam",
             "position": "TE",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -110098,8 +110098,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -114830,8 +114830,8 @@
             "nameFull": "Albert Okwuegbunam",
             "nameShort": "A. Okwuegbunam",
             "position": "TE",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -116026,8 +116026,8 @@
             "nameFull": "D'Ernest Johnson",
             "nameShort": "D. Johnson",
             "position": "RB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -125490,8 +125490,8 @@
             "nameFull": "Albert Okwuegbunam",
             "nameShort": "A. Okwuegbunam",
             "position": "TE",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -130742,8 +130742,8 @@
             "nameFull": "D'Ernest Johnson",
             "nameShort": "D. Johnson",
             "position": "RB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
