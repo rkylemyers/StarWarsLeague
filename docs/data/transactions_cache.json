@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-29T22:19:17.81029847Z",
+  "synced_at": "2026-08-30T13:32:24.655847455Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -36778,8 +36778,8 @@
             "nameFull": "Carson Steele",
             "nameShort": "C. Steele",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -39482,8 +39482,8 @@
             "nameFull": "Carson Steele",
             "nameShort": "C. Steele",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -68446,8 +68446,8 @@
             "nameFull": "Isaiah Hodgins",
             "nameShort": "I. Hodgins",
             "position": "WR",
-            "proTeamAbbreviation": "NYG",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -69018,8 +69018,8 @@
             "nameFull": "Deuce Vaughn",
             "nameShort": "D. Vaughn",
             "position": "RB",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -76298,8 +76298,8 @@
             "nameFull": "Deuce Vaughn",
             "nameShort": "D. Vaughn",
             "position": "RB",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -80510,8 +80510,8 @@
             "nameFull": "Isaiah Hodgins",
             "nameShort": "I. Hodgins",
             "position": "WR",
-            "proTeamAbbreviation": "NYG",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -165270,8 +165270,8 @@
             "nameFull": "Dante Pettis",
             "nameShort": "D. Pettis",
             "position": "WR",
-            "proTeamAbbreviation": "BUF",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -180246,8 +180246,8 @@
             "nameFull": "Dante Pettis",
             "nameShort": "D. Pettis",
             "position": "WR",
-            "proTeamAbbreviation": "BUF",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -200578,8 +200578,8 @@
             "nameFull": "Dante Pettis",
             "nameShort": "D. Pettis",
             "position": "WR",
-            "proTeamAbbreviation": "BUF",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -201462,8 +201462,8 @@
             "nameFull": "Dante Pettis",
             "nameShort": "D. Pettis",
             "position": "WR",
-            "proTeamAbbreviation": "BUF",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
