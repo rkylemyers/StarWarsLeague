@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-30T22:24:11.821567935Z",
+  "synced_at": "2026-08-31T15:50:20.376200271Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -3705,8 +3705,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "KC",
-            "nflByeWeek": 5,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -6825,8 +6825,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "KC",
-            "nflByeWeek": 5,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -17798,8 +17798,8 @@
             "nameFull": "Jaydon Blue",
             "nameShort": "J. Blue",
             "position": "RB",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -26274,8 +26274,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -26378,8 +26378,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -32878,8 +32878,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -39066,8 +39066,8 @@
             "nameFull": "Will Levis",
             "nameShort": "W. Levis",
             "position": "QB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -42394,8 +42394,8 @@
             "nameFull": "Will Levis",
             "nameShort": "W. Levis",
             "position": "QB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -44318,8 +44318,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -56538,8 +56538,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -56642,8 +56642,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -61998,8 +61998,8 @@
             "nameFull": "Brevin Jordan",
             "nameShort": "B. Jordan",
             "position": "TE",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -62362,8 +62362,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -62466,8 +62466,8 @@
             "nameFull": "Brevin Jordan",
             "nameShort": "B. Jordan",
             "position": "TE",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -64234,8 +64234,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "KC",
-            "nflByeWeek": 5,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -65638,8 +65638,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "KC",
-            "nflByeWeek": 5,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -65794,8 +65794,8 @@
             "nameFull": "Blake Grupe",
             "nameShort": "B. Grupe",
             "position": "K",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -65846,8 +65846,8 @@
             "nameFull": "K.J. Osborn",
             "nameShort": "K. Osborn",
             "position": "WR",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -66262,8 +66262,8 @@
             "nameFull": "K.J. Osborn",
             "nameShort": "K. Osborn",
             "position": "WR",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -66574,8 +66574,8 @@
             "nameFull": "Blake Grupe",
             "nameShort": "B. Grupe",
             "position": "K",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -66834,8 +66834,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "KC",
-            "nflByeWeek": 5,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -67666,8 +67666,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "KC",
-            "nflByeWeek": 5,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -69382,8 +69382,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -70422,8 +70422,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -79054,8 +79054,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -82278,8 +82278,8 @@
             "nameFull": "Brevin Jordan",
             "nameShort": "B. Jordan",
             "position": "TE",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -85866,8 +85866,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -85970,8 +85970,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -87738,8 +87738,8 @@
             "nameFull": "Zay Jones",
             "nameShort": "Z. Jones",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -100426,8 +100426,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -100998,8 +100998,8 @@
             "nameFull": "Zay Jones",
             "nameShort": "Z. Jones",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -101050,8 +101050,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -102038,8 +102038,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -106770,8 +106770,8 @@
             "nameFull": "Brevin Jordan",
             "nameShort": "B. Jordan",
             "position": "TE",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -108018,8 +108018,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -115454,8 +115454,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -117482,8 +117482,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -120758,8 +120758,8 @@
             "nameFull": "Sterling Shepard",
             "nameShort": "S. Shepard",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -125438,8 +125438,8 @@
             "nameFull": "K.J. Osborn",
             "nameShort": "K. Osborn",
             "position": "WR",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -126426,8 +126426,8 @@
             "nameFull": "K.J. Osborn",
             "nameShort": "K. Osborn",
             "position": "WR",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -128922,8 +128922,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -131106,8 +131106,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -132510,8 +132510,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "DET",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "TE"
             ]
@@ -136774,8 +136774,8 @@
             "nameFull": "Sterling Shepard",
             "nameShort": "S. Shepard",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -139582,8 +139582,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -146238,8 +146238,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -150086,8 +150086,8 @@
             "nameFull": "Sterling Shepard",
             "nameShort": "S. Shepard",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -174682,8 +174682,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -180142,8 +180142,8 @@
             "nameFull": "Sterling Shepard",
             "nameShort": "S. Shepard",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -184198,8 +184198,8 @@
             "nameFull": "Sterling Shepard",
             "nameShort": "S. Shepard",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -192310,8 +192310,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -195326,8 +195326,8 @@
             "nameFull": "Marquez Valdes-Scantling",
             "nameShort": "M. Valdes-Scantling",
             "position": "WR",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -209886,8 +209886,8 @@
             "nameFull": "Sterling Shepard",
             "nameShort": "S. Shepard",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -214046,8 +214046,8 @@
             "nameFull": "Sterling Shepard",
             "nameShort": "S. Shepard",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -229854,8 +229854,8 @@
             "nameFull": "Sterling Shepard",
             "nameShort": "S. Shepard",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -241814,8 +241814,8 @@
             "nameFull": "Sterling Shepard",
             "nameShort": "S. Shepard",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -264070,8 +264070,8 @@
             "nameFull": "Sterling Shepard",
             "nameShort": "S. Shepard",
             "position": "WR",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
