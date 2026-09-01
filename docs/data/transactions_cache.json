@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-08-31T23:37:59.116162442Z",
+  "synced_at": "2026-09-01T13:04:24.343871057Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -33346,8 +33346,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "RB"
             ]
@@ -35842,8 +35842,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "RB"
             ]
@@ -36778,8 +36778,8 @@
             "nameFull": "Carson Steele",
             "nameShort": "C. Steele",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "RB"
             ]
@@ -39482,8 +39482,8 @@
             "nameFull": "Carson Steele",
             "nameShort": "C. Steele",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "RB"
             ]
@@ -52482,8 +52482,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "RB"
             ]
@@ -76766,8 +76766,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "RB"
             ]
@@ -81290,8 +81290,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "RB"
             ]
@@ -83370,8 +83370,8 @@
             "nameFull": "JaMycal Hasty",
             "nameShort": "J. Hasty",
             "position": "RB",
-            "proTeamAbbreviation": "NE",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -93666,8 +93666,8 @@
             "nameFull": "JaMycal Hasty",
             "nameShort": "J. Hasty",
             "position": "RB",
-            "proTeamAbbreviation": "NE",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -107706,8 +107706,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "RB"
             ]
@@ -114778,8 +114778,8 @@
             "nameFull": "JaMycal Hasty",
             "nameShort": "J. Hasty",
             "position": "RB",
-            "proTeamAbbreviation": "NE",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -126010,8 +126010,8 @@
             "nameFull": "JaMycal Hasty",
             "nameShort": "J. Hasty",
             "position": "RB",
-            "proTeamAbbreviation": "NE",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
