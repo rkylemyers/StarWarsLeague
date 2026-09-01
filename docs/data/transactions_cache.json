@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-09-01T13:04:24.343871057Z",
+  "synced_at": "2026-09-01T22:23:54.041555974Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -3237,8 +3237,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "RB"
             ]
@@ -5109,8 +5109,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "RB"
             ]
@@ -6669,8 +6669,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "RB"
             ]
@@ -17798,8 +17798,8 @@
             "nameFull": "Jaydon Blue",
             "nameShort": "J. Blue",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
             "positionEligibility": [
               "RB"
             ]
@@ -21178,8 +21178,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -26326,8 +26326,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -32462,8 +32462,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -34750,8 +34750,8 @@
             "nameFull": "Jaleel McLaughlin",
             "nameShort": "J. McLaughlin",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CLE",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -36362,8 +36362,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -41146,8 +41146,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -48686,8 +48686,8 @@
             "nameFull": "Jaleel McLaughlin",
             "nameShort": "J. McLaughlin",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CLE",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -48946,8 +48946,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -50662,8 +50662,8 @@
             "nameFull": "Jaleel McLaughlin",
             "nameShort": "J. McLaughlin",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CLE",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -56590,8 +56590,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -61998,8 +61998,8 @@
             "nameFull": "Brevin Jordan",
             "nameShort": "B. Jordan",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "HOU",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "TE"
             ]
@@ -62258,8 +62258,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -62466,8 +62466,8 @@
             "nameFull": "Brevin Jordan",
             "nameShort": "B. Jordan",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "HOU",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "TE"
             ]
@@ -64442,8 +64442,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -65482,8 +65482,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -65794,8 +65794,8 @@
             "nameFull": "Blake Grupe",
             "nameShort": "B. Grupe",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -65846,8 +65846,8 @@
             "nameFull": "K.J. Osborn",
             "nameShort": "K. Osborn",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "WR"
             ]
@@ -66262,8 +66262,8 @@
             "nameFull": "K.J. Osborn",
             "nameShort": "K. Osborn",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "WR"
             ]
@@ -66574,8 +66574,8 @@
             "nameFull": "Blake Grupe",
             "nameShort": "B. Grupe",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -67198,8 +67198,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -68082,8 +68082,8 @@
             "nameFull": "Jaleel McLaughlin",
             "nameShort": "J. McLaughlin",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "CLE",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -69278,8 +69278,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -82070,8 +82070,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "RB"
             ]
@@ -82278,8 +82278,8 @@
             "nameFull": "Brevin Jordan",
             "nameShort": "B. Jordan",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "HOU",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "TE"
             ]
@@ -92730,8 +92730,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -92938,8 +92938,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -94238,8 +94238,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -101258,8 +101258,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -106770,8 +106770,8 @@
             "nameFull": "Brevin Jordan",
             "nameShort": "B. Jordan",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "HOU",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "TE"
             ]
@@ -112750,8 +112750,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "RB"
             ]
@@ -113738,8 +113738,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "RB"
             ]
@@ -117534,8 +117534,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -125438,8 +125438,8 @@
             "nameFull": "K.J. Osborn",
             "nameShort": "K. Osborn",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "WR"
             ]
@@ -126426,8 +126426,8 @@
             "nameFull": "K.J. Osborn",
             "nameShort": "K. Osborn",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "WR"
             ]
@@ -135474,8 +135474,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -136878,8 +136878,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "TEN",
+            "nflByeWeek": 9,
             "positionEligibility": [
               "RB"
             ]
