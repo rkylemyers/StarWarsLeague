@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-09-01T22:23:54.041555974Z",
+  "synced_at": "2026-09-02T12:32:53.649200725Z",
   "items": [
     {
       "timeEpochMilli": "1766574000000",
@@ -3705,8 +3705,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -6825,8 +6825,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -12545,8 +12545,8 @@
             "nameFull": "Cedric Tillman",
             "nameShort": "C. Tillman",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -21230,8 +21230,8 @@
             "nameFull": "Cedric Tillman",
             "nameShort": "C. Tillman",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -26274,8 +26274,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "TE"
             ]
@@ -26326,8 +26326,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -34178,8 +34178,8 @@
             "nameFull": "Dare Ogunbowale",
             "nameShort": "D. Ogunbowale",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "RB"
             ]
@@ -34282,8 +34282,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -34334,8 +34334,8 @@
             "nameFull": "Cedric Tillman",
             "nameShort": "C. Tillman",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -36830,8 +36830,8 @@
             "nameFull": "Dare Ogunbowale",
             "nameShort": "D. Ogunbowale",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "RB"
             ]
@@ -41146,8 +41146,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -44318,8 +44318,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "TE"
             ]
@@ -46294,8 +46294,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -52430,8 +52430,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -56538,8 +56538,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "TE"
             ]
@@ -56590,8 +56590,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -62258,8 +62258,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -62362,8 +62362,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "TE"
             ]
@@ -64234,8 +64234,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -64442,8 +64442,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -65638,8 +65638,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -66834,8 +66834,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -67198,8 +67198,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -67666,8 +67666,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -75934,8 +75934,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -81238,8 +81238,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -85866,8 +85866,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "TE"
             ]
@@ -92730,8 +92730,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -92938,8 +92938,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -94238,8 +94238,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -98918,8 +98918,8 @@
             "nameFull": "Albert Okwuegbunam",
             "nameShort": "A. Okwuegbunam",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "TE"
             ]
@@ -101050,8 +101050,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "TE"
             ]
@@ -101258,8 +101258,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -108174,8 +108174,8 @@
             "nameFull": "Albert Okwuegbunam",
             "nameShort": "A. Okwuegbunam",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "TE"
             ]
@@ -110098,8 +110098,8 @@
             "nameFull": "Zamir White",
             "nameShort": "Z. White",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NO",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "RB"
             ]
@@ -114830,8 +114830,8 @@
             "nameFull": "Albert Okwuegbunam",
             "nameShort": "A. Okwuegbunam",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "TE"
             ]
@@ -117482,8 +117482,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "TE"
             ]
@@ -117534,8 +117534,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -125490,8 +125490,8 @@
             "nameFull": "Albert Okwuegbunam",
             "nameShort": "A. Okwuegbunam",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "TE"
             ]
@@ -132510,8 +132510,8 @@
             "nameFull": "Tyler Conklin",
             "nameShort": "T. Conklin",
             "position": "TE",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DET",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "TE"
             ]
@@ -135474,8 +135474,8 @@
             "nameFull": "Jason Sanders",
             "nameShort": "J. Sanders",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
