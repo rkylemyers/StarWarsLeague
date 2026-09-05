@@ -616,6 +616,7 @@ function renderDuesLeaderboardGrouped(teamList, standings) {
   duesTbody.innerHTML = '';
 
   if (standings && standings.divisions && standings.divisions.length > 0) {
+    let globalRankCounter = 1;
     // Render grouped by divisions
     standings.divisions.forEach(division => {
       let divClass = "div-generic";
@@ -636,19 +637,28 @@ function renderDuesLeaderboardGrouped(teamList, standings) {
       const divTeamIds = new Set(division.teams.map(t => t.id));
       const divTeams = teamList.filter(t => divTeamIds.has(t.id));
 
-      const getRank = (name, defaultIdx) => {
+      const getRank = (name) => {
         const matched = division.teams.find(t => t.name === name);
         if (matched && matched.recordOverall && matched.recordOverall.rank !== undefined && matched.recordOverall.rank !== null) {
           return matched.recordOverall.rank;
         }
         if (matched && matched.rankOverall) return matched.rankOverall;
         if (matched && matched.rank) return matched.rank;
-        return defaultIdx !== undefined ? defaultIdx + 1 : 99;
+        return null;
       };
-      divTeams.sort((a, b) => getRank(a.name) - getRank(b.name));
 
-      divTeams.forEach((team, index) => {
-        renderTeamRow(team, getRank(team.name, index));
+      divTeams.sort((a, b) => {
+        const rA = getRank(a.name);
+        const rB = getRank(b.name);
+        if (rA !== null && rB !== null) return rA - rB;
+        return 0;
+      });
+
+      divTeams.forEach((team) => {
+        const officialRank = getRank(team.name);
+        const displayRank = (officialRank !== null) ? officialRank : globalRankCounter;
+        renderTeamRow(team, displayRank);
+        globalRankCounter++;
       });
     });
   } else {
@@ -753,12 +763,19 @@ function renderTeamRow(team, rank) {
     championshipsHTML = ` <span style="cursor:help;" title="${stats.championships} championships">🏆 x${stats.championships}</span>`;
   }
 
-  // Prepend Trophy for Rank 1 / Butt for Rank 12
+  // Prepend Trophy for Rank 1 / Butt for Rank 12 (only for completed historical seasons)
   let trophyOrButt = '';
-  if (rank === 1) {
-    trophyOrButt = '<span style="font-size: 1.15rem; margin-right: 0.35rem; vertical-align: middle; cursor: help;" title="Champ!">🏆</span>';
-  } else if (rank === 12) {
-    trophyOrButt = '<span style="font-size: 1.15rem; margin-right: 0.35rem; vertical-align: middle; cursor: help;" title="🫱( ‿ * ‿ )🫲">🍑</span>';
+  const latestYearStr = (yearList && yearList.length > 0) ? yearList[0].toString() : "2026";
+  const divTeamsAll = (rawData.standings && rawData.standings[selectedYear]) ? rawData.standings[selectedYear].divisions.flatMap(d => d.teams) : [];
+  const matchedTeam = divTeamsAll.find(t => t.name === team.name);
+  const isCompletedSeason = (selectedYear !== latestYearStr) && matchedTeam && matchedTeam.recordOverall && matchedTeam.recordOverall.rank !== undefined && matchedTeam.recordOverall.rank !== null;
+
+  if (isCompletedSeason) {
+    if (rank === 1) {
+      trophyOrButt = '<span style="font-size: 1.15rem; margin-right: 0.35rem; vertical-align: middle; cursor: help;" title="Champ!">🏆</span>';
+    } else if (rank === 12) {
+      trophyOrButt = '<span style="font-size: 1.15rem; margin-right: 0.35rem; vertical-align: middle; cursor: help;" title="🫱( ‿ * ‿ )🫲">🍑</span>';
+    }
   }
 
   tr.innerHTML = `
