@@ -636,14 +636,19 @@ function renderDuesLeaderboardGrouped(teamList, standings) {
       const divTeamIds = new Set(division.teams.map(t => t.id));
       const divTeams = teamList.filter(t => divTeamIds.has(t.id));
 
-      const getRank = (name) => {
+      const getRank = (name, defaultIdx) => {
         const matched = division.teams.find(t => t.name === name);
-        return matched && matched.recordOverall ? matched.recordOverall.rank : 99;
+        if (matched && matched.recordOverall && matched.recordOverall.rank !== undefined && matched.recordOverall.rank !== null) {
+          return matched.recordOverall.rank;
+        }
+        if (matched && matched.rankOverall) return matched.rankOverall;
+        if (matched && matched.rank) return matched.rank;
+        return defaultIdx !== undefined ? defaultIdx + 1 : 99;
       };
       divTeams.sort((a, b) => getRank(a.name) - getRank(b.name));
 
       divTeams.forEach((team, index) => {
-        renderTeamRow(team, getRank(team.name));
+        renderTeamRow(team, getRank(team.name, index));
       });
     });
   } else {
@@ -726,11 +731,18 @@ function renderTeamRow(team, rank) {
     const divTeams = rawData.standings[selectedYear].divisions.flatMap(d => d.teams);
     const matched = divTeams.find(t => t.name === team.name);
     if (matched && matched.recordOverall) {
-      recordStr = `${matched.recordOverall.wins}-${matched.recordOverall.losses}`;
-      if (matched.recordOverall.ties > 0) {
-        recordStr += `-${matched.recordOverall.ties}`;
+      const rec = matched.recordOverall;
+      let recText = rec.formatted || "0-0";
+      if (rec.wins !== undefined && rec.losses !== undefined) {
+        recText = `${rec.wins}-${rec.losses}`;
+        if (rec.ties > 0) recText += `-${rec.ties}`;
       }
-      recordStr = `(Rank #${matched.recordOverall.rank}, ${recordStr})`;
+      const rankNum = rec.rank || matched.rankOverall || matched.rank;
+      if (rankNum !== undefined && rankNum !== null) {
+        recordStr = `(Rank #${rankNum}, ${recText})`;
+      } else {
+        recordStr = `(${recText})`;
+      }
     }
   }
 
@@ -1239,7 +1251,15 @@ function populateAuditData() {
     const divTeams = standings.divisions.flatMap(d => d.teams);
     const matched = divTeams.find(t => t.name === team.name);
     if (matched && matched.recordOverall) {
-      recordStr = `Record: ${matched.recordOverall.wins}-${matched.recordOverall.losses} (Rank #${matched.recordOverall.rank})`;
+      const rec = matched.recordOverall;
+      const wins = rec.wins !== undefined ? rec.wins : 0;
+      const losses = rec.losses !== undefined ? rec.losses : 0;
+      const rankNum = rec.rank || matched.rankOverall || matched.rank;
+      if (rankNum !== undefined && rankNum !== null) {
+        recordStr = `Record: ${wins}-${losses} (Rank #${rankNum})`;
+      } else {
+        recordStr = `Record: ${rec.formatted || '0-0'} (Preseason)`;
+      }
     }
   }
   document.getElementById('modal-team-record-year').textContent = `${selectedYear} ${recordStr}`;
@@ -1286,9 +1306,9 @@ function populateAuditData() {
       });
 
       if (matched && matched.recordOverall) {
-        totalWins += matched.recordOverall.wins;
-        totalLosses += matched.recordOverall.losses;
-        totalTies += matched.recordOverall.ties;
+        totalWins += matched.recordOverall.wins || 0;
+        totalLosses += matched.recordOverall.losses || 0;
+        totalTies += matched.recordOverall.ties || 0;
       }
 
       // Check champion of the season (Rank 1)
