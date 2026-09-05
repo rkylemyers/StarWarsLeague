@@ -163,7 +163,7 @@
     "player_name": "Kenneth Walker III",
     "position": "RB",
     "nfl_team": "KC",
-    "fleaflicker_player_id": 17712,
+    "fleaflicker_player_id": 16890,
     "fleaflicker_player_name": "Kenneth Walker",
     "fleaflicker_team": "Army",
     "fleaflicker_team_id": 873124
@@ -397,7 +397,7 @@
     "player_name": "Travis Etienne Jr.",
     "position": "RB",
     "nfl_team": "NO",
-    "fleaflicker_player_id": 13199,
+    "fleaflicker_player_id": 16241,
     "fleaflicker_player_name": "Travis Etienne",
     "fleaflicker_team": "Wookie of the Year",
     "fleaflicker_team_id": 793918
@@ -761,7 +761,7 @@
     "player_name": "Brian Thomas Jr.",
     "position": "WR",
     "nfl_team": "JAX",
-    "fleaflicker_player_id": 19341,
+    "fleaflicker_player_id": 18361,
     "fleaflicker_player_name": "Brian Thomas",
     "fleaflicker_team": "The Death Carr",
     "fleaflicker_team_id": 1787909
@@ -787,7 +787,7 @@
     "player_name": "Kyle Pitts Sr.",
     "position": "TE",
     "nfl_team": "ATL",
-    "fleaflicker_player_id": 16340,
+    "fleaflicker_player_id": 16256,
     "fleaflicker_player_name": "Kyle Pitts",
     "fleaflicker_team": "Army",
     "fleaflicker_team_id": 873124
@@ -956,7 +956,7 @@
     "player_name": "Marvin Harrison Jr.",
     "position": "WR",
     "nfl_team": "ARI",
-    "fleaflicker_player_id": 14245,
+    "fleaflicker_player_id": 18381,
     "fleaflicker_player_name": "Marvin Harrison",
     "fleaflicker_team": "Java the BUTT",
     "fleaflicker_team_id": 811297
@@ -1008,7 +1008,7 @@
     "player_name": "Harold Fannin Jr.",
     "position": "TE",
     "nfl_team": "CLE",
-    "fleaflicker_player_id": 19280,
+    "fleaflicker_player_id": 19305,
     "fleaflicker_player_name": "Harold Fannin",
     "fleaflicker_team": "macejaydu",
     "fleaflicker_team_id": 807995
@@ -1190,7 +1190,7 @@
     "player_name": "Michael Pittman Jr.",
     "position": "WR",
     "nfl_team": "PIT",
-    "fleaflicker_player_id": 16789,
+    "fleaflicker_player_id": 15603,
     "fleaflicker_player_name": "Michael Pittman",
     "fleaflicker_team": "Darth Bane",
     "fleaflicker_team_id": 788025
@@ -1489,7 +1489,7 @@
     "player_name": "Deebo Samuel Sr.",
     "position": "WR",
     "nfl_team": "SF",
-    "fleaflicker_player_id": 13210,
+    "fleaflicker_player_id": 14702,
     "fleaflicker_player_name": "Deebo Samuel",
     "fleaflicker_team": "macejaydu",
     "fleaflicker_team_id": 807995
@@ -1957,7 +1957,7 @@
     "player_name": "Tyrone Tracy Jr.",
     "position": "RB",
     "nfl_team": "NYG",
-    "fleaflicker_player_id": 4437,
+    "fleaflicker_player_id": 18534,
     "fleaflicker_player_name": "Tyrone Tracy",
     "fleaflicker_team": "Wookie of the Year",
     "fleaflicker_team_id": 793918
@@ -2165,7 +2165,7 @@
     "player_name": "Mike Washington Jr.",
     "position": "RB",
     "nfl_team": "LV",
-    "fleaflicker_player_id": 19346,
+    "fleaflicker_player_id": 20153,
     "fleaflicker_player_name": "Mike Washington",
     "fleaflicker_team": "Java the BUTT",
     "fleaflicker_team_id": 811297
@@ -2477,8 +2477,8 @@
     "player_name": "Luther Burden III",
     "position": "WR",
     "nfl_team": "CHI",
-    "fleaflicker_player_id": 3846,
-    "fleaflicker_player_name": "Luther Burden III",
+    "fleaflicker_player_id": 19335,
+    "fleaflicker_player_name": "Luther Burden",
     "fleaflicker_team": "Java the BUTT",
     "fleaflicker_team_id": 811297
   },

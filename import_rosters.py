@@ -150,8 +150,21 @@ def match_team_name(cd_name, ff_teams):
 PLAYER_OVERRIDE_IDS = {
     "Aaron Jones Sr.": 13111,
     "Aaron Jones": 13111,
+    "James Cook III": 16839,
+    "Kenneth Walker III": 16890,
+    "Travis Etienne Jr.": 16241,
+    "Brian Thomas Jr.": 18361,
+    "Kyle Pitts Sr.": 16256,
+    "Marvin Harrison Jr.": 18381,
+    "Harold Fannin Jr.": 19305,
+    "Michael Pittman Jr.": 15603,
+    "Deebo Samuel Sr.": 14702,
+    "Tyrone Tracy Jr.": 18534,
+    "Mike Washington Jr.": 20153,
+    "Luther Burden III": 19335,
+    "Chris Godwin Jr.": 12926,
+    "Chris Rodriguez Jr.": 17762,
     "Sam LaPorta": 17681,
-    "Mike Washington Jr.": 19346,
     "Tank Bigsby": 17625
 }
 
