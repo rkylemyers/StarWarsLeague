@@ -11,9 +11,12 @@ import html
 
 # Fleaflicker D/ST IDs
 DST_IDS = {
-    "KC": 2343, "DEN": 2336, "MIN": 2349, "PHI": 2351, "LAR": 2356,
-    "HOU": 2345, "SEA": 2358, "LAC": 2355, "PIT": 2357, "BAL": 2334,
-    "NE": 2352, "JAX": 2346, "DAL": 2338, "BUF": 2335, "FA": 2335
+    "ARI": 2328, "ATL": 2329, "BAL": 2330, "BUF": 2331, "CAR": 2332, "CHI": 2333,
+    "CIN": 2334, "CLE": 2335, "DAL": 2336, "DEN": 2337, "DET": 2338, "GB": 2339,
+    "HOU": 2340, "IND": 2341, "JAX": 2342, "JAC": 2342, "KC": 2343, "MIA": 2344,
+    "MIN": 2345, "NE": 2346, "NO": 2347, "NYG": 2348, "NYJ": 2349, "LV": 2350,
+    "PHI": 2351, "PIT": 2352, "LAC": 2353, "SEA": 2354, "SF": 2355, "LAR": 2356,
+    "TB": 2357, "TEN": 2358, "WAS": 2359
 }
 
 # ClickyDraft -> Fleaflicker Team Name Mapping (handles common historical nicknames)
