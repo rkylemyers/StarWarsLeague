@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-09-07T13:58:54.107611764Z",
+  "synced_at": "2026-09-07T22:31:11.175707119Z",
   "items": [
     {
       "timeEpochMilli": "1788577670000",
@@ -96631,8 +96631,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -97671,8 +97671,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -127675,8 +127675,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -129287,8 +129287,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -142703,8 +142703,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -156171,8 +156171,8 @@
             "nameFull": "Van Jefferson",
             "nameShort": "V. Jefferson",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
