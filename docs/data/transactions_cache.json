@@ -1,8 +1,60 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-09-16T22:39:44.725850459Z",
+  "synced_at": "2026-09-17T13:03:36.331795218Z",
   "items": [
+    {
+      "timeEpochMilli": "1789614498000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 2355,
+            "nameFull": "San Francisco 49ers",
+            "nameShort": "49ers",
+            "position": "D/ST",
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
+            "positionEligibility": [
+              "D/ST"
+            ]
+          }
+        },
+        "team": {
+          "id": 786874,
+          "name": "Jedi Mind Tricks",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1789586238000",
       "transaction": {
@@ -35686,8 +35738,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "RB"
             ]
@@ -41666,8 +41718,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "RB"
             ]
@@ -50559,8 +50611,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "RB"
             ]
@@ -66367,8 +66419,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -73491,8 +73543,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -75883,8 +75935,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "RB"
             ]
@@ -80355,8 +80407,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "RB"
             ]
@@ -81603,8 +81655,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -100583,8 +100635,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -107239,8 +107291,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "RB"
             ]
@@ -110255,8 +110307,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -130795,8 +130847,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -157107,8 +157159,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
@@ -159967,8 +160019,8 @@
             "nameFull": "Khalil Herbert",
             "nameShort": "K. Herbert",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "RB"
             ]
