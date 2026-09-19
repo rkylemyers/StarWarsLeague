@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-09-18T22:16:45.155156409Z",
+  "synced_at": "2026-09-19T12:17:26.160019839Z",
   "items": [
     {
       "timeEpochMilli": "1789614498000",
@@ -464263,6 +464263,407 @@
     }
   ],
   "standings": {
+    "2011": {
+      "divisions": [
+        {
+          "id": 335627,
+          "name": "Pen",
+          "teams": [
+            {
+              "id": 786874,
+              "name": "MentalJohnson",
+              "recordOverall": {
+                "wins": 11,
+                "losses": 4,
+                "ties": 0,
+                "winPercentage": {
+                  "value": 0.73333335,
+                  "formatted": ".733"
+                },
+                "rank": 1,
+                "formatted": "11-4"
+              },
+              "pointsFor": {
+                "value": 2671.3,
+                "formatted": "2,671.3"
+              },
+              "pointsAgainst": {
+                "value": 2143.3,
+                "formatted": "2,143.3"
+              },
+              "streak": {
+                "value": 1,
+                "formatted": "W1"
+              },
+              "waiverPosition": 6,
+              "waiverAcquisitionBudget": {
+                "value": 0,
+                "formatted": ""
+              },
+              "owners": [
+                {
+                  "id": 361249,
+                  "displayName": "rkylemyers"
+                }
+              ]
+            },
+            {
+              "id": 787863,
+              "name": "whogivesashit",
+              "recordOverall": {
+                "wins": 10,
+                "losses": 5,
+                "ties": 0,
+                "winPercentage": {
+                  "value": 0.6666667,
+                  "formatted": ".667"
+                },
+                "rank": 3,
+                "formatted": "10-5"
+              },
+              "pointsFor": {
+                "value": 2236,
+                "formatted": "2,236"
+              },
+              "pointsAgainst": {
+                "value": 1956.75,
+                "formatted": "1,956.75"
+              },
+              "streak": {
+                "value": -1,
+                "formatted": "L1"
+              },
+              "waiverPosition": 3,
+              "waiverAcquisitionBudget": {
+                "value": 0,
+                "formatted": ""
+              },
+              "owners": [
+                {
+                  "id": 484830,
+                  "displayName": "THELOVEMUSCLE"
+                }
+              ]
+            },
+            {
+              "id": 788025,
+              "name": "Zombiez",
+              "recordOverall": {
+                "wins": 8,
+                "losses": 7,
+                "ties": 0,
+                "winPercentage": {
+                  "value": 0.53333336,
+                  "formatted": ".533"
+                },
+                "rank": 6,
+                "formatted": "8-7"
+              },
+              "pointsFor": {
+                "value": 2560.35,
+                "formatted": "2,560.35"
+              },
+              "pointsAgainst": {
+                "value": 2383.7,
+                "formatted": "2,383.7"
+              },
+              "streak": {
+                "value": -1,
+                "formatted": "L1"
+              },
+              "waiverPosition": 8,
+              "waiverAcquisitionBudget": {
+                "value": 0,
+                "formatted": ""
+              },
+              "owners": [
+                {
+                  "id": 362669,
+                  "displayName": "Zombiez"
+                }
+              ]
+            },
+            {
+              "id": 786929,
+              "name": "Hurricane_Gert",
+              "recordOverall": {
+                "wins": 8,
+                "losses": 7,
+                "ties": 0,
+                "winPercentage": {
+                  "value": 0.53333336,
+                  "formatted": ".533"
+                },
+                "rank": 7,
+                "formatted": "8-7"
+              },
+              "pointsFor": {
+                "value": 2202.1,
+                "formatted": "2,202.1"
+              },
+              "pointsAgainst": {
+                "value": 2159.65,
+                "formatted": "2,159.65"
+              },
+              "streak": {
+                "value": 3,
+                "formatted": "W3"
+              },
+              "waiverPosition": 2,
+              "waiverAcquisitionBudget": {
+                "value": 0,
+                "formatted": ""
+              },
+              "owners": [
+                {
+                  "id": 361794,
+                  "displayName": "Hurricane_Gert"
+                }
+              ]
+            },
+            {
+              "id": 807995,
+              "name": "macejaydo",
+              "recordOverall": {
+                "wins": 2,
+                "losses": 13,
+                "ties": 0,
+                "winPercentage": {
+                  "value": 0.13333334,
+                  "formatted": ".133"
+                },
+                "rank": 10,
+                "formatted": "2-13"
+              },
+              "pointsFor": {
+                "value": 1975.25,
+                "formatted": "1,975.25"
+              },
+              "pointsAgainst": {
+                "value": 2389.8,
+                "formatted": "2,389.8"
+              },
+              "streak": {
+                "value": -3,
+                "formatted": "L3"
+              },
+              "waiverPosition": 1,
+              "waiverAcquisitionBudget": {
+                "value": 0,
+                "formatted": ""
+              },
+              "owners": [
+                {
+                  "id": 425638,
+                  "displayName": "chefblade2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 335628,
+          "name": "Sword",
+          "teams": [
+            {
+              "id": 802577,
+              "name": "Mitt Romney's Hair",
+              "recordOverall": {
+                "wins": 10,
+                "losses": 5,
+                "ties": 0,
+                "winPercentage": {
+                  "value": 0.6666667,
+                  "formatted": ".667"
+                },
+                "rank": 2,
+                "formatted": "10-5"
+              },
+              "pointsFor": {
+                "value": 2206.6,
+                "formatted": "2,206.6"
+              },
+              "pointsAgainst": {
+                "value": 2218.65,
+                "formatted": "2,218.65"
+              },
+              "streak": {
+                "value": 3,
+                "formatted": "W3"
+              },
+              "waiverPosition": 0,
+              "waiverAcquisitionBudget": {
+                "value": 0,
+                "formatted": ""
+              },
+              "owners": [
+                {
+                  "id": 362706,
+                  "displayName": "obsequious"
+                }
+              ]
+            },
+            {
+              "id": 793918,
+              "name": "The Earthquake",
+              "recordOverall": {
+                "wins": 9,
+                "losses": 6,
+                "ties": 0,
+                "winPercentage": {
+                  "value": 0.6,
+                  "formatted": ".600"
+                },
+                "rank": 5,
+                "formatted": "9-6"
+              },
+              "pointsFor": {
+                "value": 2016.9,
+                "formatted": "2,016.9"
+              },
+              "pointsAgainst": {
+                "value": 2168.95,
+                "formatted": "2,168.95"
+              },
+              "streak": {
+                "value": 1,
+                "formatted": "W1"
+              },
+              "waiverPosition": 7,
+              "waiverAcquisitionBudget": {
+                "value": 0,
+                "formatted": ""
+              },
+              "owners": [
+                {
+                  "id": 358938,
+                  "displayName": "MrMaddness"
+                }
+              ]
+            },
+            {
+              "id": 811297,
+              "name": "Wade's Warriors",
+              "recordOverall": {
+                "wins": 9,
+                "losses": 6,
+                "ties": 0,
+                "winPercentage": {
+                  "value": 0.6,
+                  "formatted": ".600"
+                },
+                "rank": 4,
+                "formatted": "9-6"
+              },
+              "pointsFor": {
+                "value": 2273.15,
+                "formatted": "2,273.15"
+              },
+              "pointsAgainst": {
+                "value": 2025,
+                "formatted": "2,025"
+              },
+              "streak": {
+                "value": -3,
+                "formatted": "L3"
+              },
+              "waiverPosition": 5,
+              "waiverAcquisitionBudget": {
+                "value": 0,
+                "formatted": ""
+              },
+              "owners": [
+                {
+                  "id": 491427,
+                  "displayName": "WadesWarriors"
+                }
+              ]
+            },
+            {
+              "id": 786942,
+              "name": "(yet to be decided)",
+              "recordOverall": {
+                "wins": 5,
+                "losses": 10,
+                "ties": 0,
+                "winPercentage": {
+                  "value": 0.33333334,
+                  "formatted": ".333"
+                },
+                "rank": 8,
+                "formatted": "5-10"
+              },
+              "pointsFor": {
+                "value": 1955.75,
+                "formatted": "1,955.75"
+              },
+              "pointsAgainst": {
+                "value": 2292.4,
+                "formatted": "2,292.4"
+              },
+              "streak": {
+                "value": 2,
+                "formatted": "W2"
+              },
+              "waiverPosition": 0,
+              "waiverAcquisitionBudget": {
+                "value": 0,
+                "formatted": ""
+              },
+              "owners": [
+                {
+                  "id": 425763,
+                  "displayName": "Knepp"
+                }
+              ]
+            },
+            {
+              "id": 788878,
+              "name": "The Orange Crush",
+              "recordOverall": {
+                "wins": 3,
+                "losses": 12,
+                "ties": 0,
+                "winPercentage": {
+                  "value": 0.2,
+                  "formatted": ".200"
+                },
+                "rank": 9,
+                "formatted": "3-12"
+              },
+              "pointsFor": {
+                "value": 1904.7,
+                "formatted": "1,904.7"
+              },
+              "pointsAgainst": {
+                "value": 2263.9,
+                "formatted": "2,263.9"
+              },
+              "streak": {
+                "value": -8,
+                "formatted": "L8"
+              },
+              "waiverPosition": 12,
+              "waiverAcquisitionBudget": {
+                "value": 0,
+                "formatted": ""
+              },
+              "owners": [
+                {
+                  "id": 485224,
+                  "displayName": "VonMiller2020"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "season": 2011,
+      "league": {
+        "id": 111626,
+        "name": "Star Wars League"
+      }
+    },
     "2012": {
       "divisions": [
         {
