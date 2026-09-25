@@ -1,8 +1,60 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-09-24T23:02:53.218962847Z",
+  "synced_at": "2026-09-25T13:15:51.6571672Z",
   "items": [
+    {
+      "timeEpochMilli": "1790335758000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 18395,
+            "nameFull": "Adonai Mitchell",
+            "nameShort": "A. Mitchell",
+            "position": "WR",
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 787863,
+          "name": "THE BAD SNATCH",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1790279752000",
       "transaction": {
