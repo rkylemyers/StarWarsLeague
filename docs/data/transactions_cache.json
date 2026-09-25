@@ -1,8 +1,60 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-09-25T13:15:51.6571672Z",
+  "synced_at": "2026-09-25T23:07:25.688450294Z",
   "items": [
+    {
+      "timeEpochMilli": "1790344249000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 18372,
+            "nameFull": "Jayden Daniels",
+            "nameShort": "J. Daniels",
+            "position": "QB",
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
+            "positionEligibility": [
+              "QB"
+            ]
+          }
+        },
+        "team": {
+          "id": 928665,
+          "name": "Finn’s Football Force",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1790335758000",
       "transaction": {
