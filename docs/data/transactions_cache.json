@@ -1,8 +1,216 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-09-30T14:38:06.176402212Z",
+  "synced_at": "2026-09-30T23:27:40.362452635Z",
   "items": [
+    {
+      "timeEpochMilli": "1790810644000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 12197,
+            "nameFull": "Tyreek Hill",
+            "nameShort": "T. Hill",
+            "position": "WR",
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 786874,
+          "name": "Jedi Mind Tricks",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1790805536000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 17674,
+            "nameFull": "Jayden Reed",
+            "nameShort": "J. Reed",
+            "position": "WR",
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 793918,
+          "name": "Wookie of the Year",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1790805524000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 9380,
+            "nameFull": "Keenan Allen",
+            "nameShort": "K. Allen",
+            "position": "WR",
+            "proTeamAbbreviation": "IND",
+            "nflByeWeek": 13,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 793918,
+          "name": "Wookie of the Year",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1790788653000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 12951,
+            "nameFull": "James Conner",
+            "nameShort": "J. Conner",
+            "position": "RB",
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
+            "positionEligibility": [
+              "RB"
+            ]
+          }
+        },
+        "team": {
+          "id": 787863,
+          "name": "THE BAD SNATCH",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1790762400000",
       "transaction": {
@@ -7551,8 +7759,8 @@
             "nameFull": "Caullin Lacy",
             "nameShort": "C. Lacy",
             "position": "WR",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -13273,8 +13481,8 @@
             "nameFull": "Caullin Lacy",
             "nameShort": "C. Lacy",
             "position": "WR",
-            "proTeamAbbreviation": "NYJ",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -36570,8 +36778,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -42550,8 +42758,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -51443,8 +51651,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -59711,8 +59919,8 @@
             "nameFull": "Audric Estime",
             "nameShort": "A. Estime",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "RB"
             ]
@@ -64443,8 +64651,8 @@
             "nameFull": "Audric Estime",
             "nameShort": "A. Estime",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "RB"
             ]
@@ -76767,8 +76975,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -81239,8 +81447,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -108123,8 +108331,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -187163,8 +187371,8 @@
             "nameFull": "Zane Gonzalez",
             "nameShort": "Z. Gonzalez",
             "position": "K",
-            "proTeamAbbreviation": "MIA",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -188463,8 +188671,8 @@
             "nameFull": "Zane Gonzalez",
             "nameShort": "Z. Gonzalez",
             "position": "K",
-            "proTeamAbbreviation": "MIA",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
