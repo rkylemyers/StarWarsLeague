@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-10-01T15:05:33.424163953Z",
+  "synced_at": "2026-10-01T23:42:31.790388577Z",
   "items": [
     {
       "timeEpochMilli": "1790810644000",
@@ -95019,8 +95019,8 @@
             "nameFull": "Blake Grupe",
             "nameShort": "B. Grupe",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -95799,8 +95799,8 @@
             "nameFull": "Blake Grupe",
             "nameShort": "B. Grupe",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
