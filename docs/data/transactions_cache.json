@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-10-08T15:13:00.302851643Z",
+  "synced_at": "2026-10-09T00:09:54.232483927Z",
   "items": [
     {
       "timeEpochMilli": "1791406015000",
@@ -33346,8 +33346,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -97307,8 +97307,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
