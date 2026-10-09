@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-10-09T00:09:54.232483927Z",
+  "synced_at": "2026-10-09T14:58:29.604700206Z",
   "items": [
     {
       "timeEpochMilli": "1791406015000",
@@ -36466,8 +36466,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -93875,8 +93875,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -95279,8 +95279,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -96475,8 +96475,8 @@
             "nameFull": "Emari Demercado",
             "nameShort": "E. Demercado",
             "position": "RB",
-            "proTeamAbbreviation": "DAL",
-            "nflByeWeek": 14,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -194911,8 +194911,8 @@
             "nameFull": "Dante Pettis",
             "nameShort": "D. Pettis",
             "position": "WR",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -209887,8 +209887,8 @@
             "nameFull": "Dante Pettis",
             "nameShort": "D. Pettis",
             "position": "WR",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -230219,8 +230219,8 @@
             "nameFull": "Dante Pettis",
             "nameShort": "D. Pettis",
             "position": "WR",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -231103,8 +231103,8 @@
             "nameFull": "Dante Pettis",
             "nameShort": "D. Pettis",
             "position": "WR",
-            "proTeamAbbreviation": "SF",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
