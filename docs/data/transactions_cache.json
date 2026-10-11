@@ -1,8 +1,60 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-10-11T14:38:47.290137691Z",
+  "synced_at": "2026-10-11T23:29:19.896260956Z",
   "items": [
+    {
+      "timeEpochMilli": "1791734030000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 2334,
+            "nameFull": "Cincinnati Bengals",
+            "nameShort": "Bengals",
+            "position": "D/ST",
+            "proTeamAbbreviation": "CIN",
+            "nflByeWeek": 6,
+            "positionEligibility": [
+              "D/ST"
+            ]
+          }
+        },
+        "team": {
+          "id": 793918,
+          "name": "Wookie of the Year",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1791717538000",
       "transaction": {
