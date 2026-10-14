@@ -1,8 +1,164 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-10-14T13:21:46.238598063Z",
+  "synced_at": "2026-10-14T23:01:25.746879589Z",
   "items": [
+    {
+      "timeEpochMilli": "1791995379000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 20095,
+            "nameFull": "Germie Bernard",
+            "nameShort": "G. Bernard",
+            "position": "WR",
+            "proTeamAbbreviation": "PIT",
+            "nflByeWeek": 9,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 788025,
+          "name": "Darth Bane",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1791994189000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 16914,
+            "nameFull": "Dameon Pierce",
+            "nameShort": "D. Pierce",
+            "position": "RB",
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
+            "positionEligibility": [
+              "RB"
+            ]
+          }
+        },
+        "team": {
+          "id": 786874,
+          "name": "Jedi Mind Tricks",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1791994189000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 18476,
+            "nameFull": "Will Shipley",
+            "nameShort": "W. Shipley",
+            "position": "RB",
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
+            "positionEligibility": [
+              "RB"
+            ]
+          }
+        },
+        "team": {
+          "id": 786874,
+          "name": "Jedi Mind Tricks",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1791972000000",
       "transaction": {
@@ -37714,8 +37870,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -43694,8 +43850,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -52587,8 +52743,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -77911,8 +78067,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -82383,8 +82539,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -109267,8 +109423,8 @@
             "nameFull": "Jerome Ford",
             "nameShort": "J. Ford",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
