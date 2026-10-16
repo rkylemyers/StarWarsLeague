@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-10-16T13:03:59.315094224Z",
+  "synced_at": "2026-10-16T22:30:36.822027474Z",
   "items": [
     {
       "timeEpochMilli": "1792104814000",
@@ -26326,8 +26326,8 @@
             "nameFull": "Darius Slayton",
             "nameShort": "D. Slayton",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -37350,8 +37350,8 @@
             "nameFull": "Darius Slayton",
             "nameShort": "D. Slayton",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -115143,8 +115143,8 @@
             "nameFull": "Darius Slayton",
             "nameShort": "D. Slayton",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -123515,8 +123515,8 @@
             "nameFull": "Darius Slayton",
             "nameShort": "D. Slayton",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -175567,8 +175567,8 @@
             "nameFull": "Darius Slayton",
             "nameShort": "D. Slayton",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -187059,8 +187059,8 @@
             "nameFull": "Darius Slayton",
             "nameShort": "D. Slayton",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
