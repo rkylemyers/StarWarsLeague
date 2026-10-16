@@ -1,8 +1,112 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-10-15T22:56:48.826688892Z",
+  "synced_at": "2026-10-16T13:03:59.315094224Z",
   "items": [
+    {
+      "timeEpochMilli": "1792104814000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 4780,
+            "nameFull": "Nick Folk",
+            "nameShort": "N. Folk",
+            "position": "K",
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
+            "positionEligibility": [
+              "K"
+            ]
+          }
+        },
+        "team": {
+          "id": 811297,
+          "name": "Java the BUTT",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1792104814000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 16457,
+            "nameFull": "Evan McPherson",
+            "nameShort": "E. McPherson",
+            "position": "K",
+            "proTeamAbbreviation": "CIN",
+            "nflByeWeek": 6,
+            "positionEligibility": [
+              "K"
+            ]
+          }
+        },
+        "team": {
+          "id": 811297,
+          "name": "Java the BUTT",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1791995379000",
       "transaction": {
@@ -226069,110 +226173,6 @@
         "team": {
           "id": 786929,
           "name": "Mandalorian Mudhorns",
-          "recordOverall": {
-            "wins": 0,
-            "losses": 0,
-            "ties": 0,
-            "winPercentage": {
-              "value": 0,
-              "formatted": ""
-            },
-            "rank": 0,
-            "formatted": ""
-          },
-          "pointsFor": {
-            "value": 0,
-            "formatted": ""
-          },
-          "pointsAgainst": {
-            "value": 0,
-            "formatted": ""
-          },
-          "streak": {
-            "value": 0,
-            "formatted": ""
-          },
-          "waiverPosition": 0,
-          "waiverAcquisitionBudget": {
-            "value": 0,
-            "formatted": ""
-          },
-          "owners": null
-        }
-      }
-    },
-    {
-      "timeEpochMilli": "1541072973000",
-      "transaction": {
-        "type": "TRANSACTION_DROP",
-        "player": {
-          "proPlayer": {
-            "id": 2074,
-            "nameFull": "Adam Vinatieri",
-            "nameShort": "A. Vinatieri",
-            "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
-            "positionEligibility": [
-              "K"
-            ]
-          }
-        },
-        "team": {
-          "id": 786929,
-          "name": "Mandalorian Mudhorns",
-          "recordOverall": {
-            "wins": 0,
-            "losses": 0,
-            "ties": 0,
-            "winPercentage": {
-              "value": 0,
-              "formatted": ""
-            },
-            "rank": 0,
-            "formatted": ""
-          },
-          "pointsFor": {
-            "value": 0,
-            "formatted": ""
-          },
-          "pointsAgainst": {
-            "value": 0,
-            "formatted": ""
-          },
-          "streak": {
-            "value": 0,
-            "formatted": ""
-          },
-          "waiverPosition": 0,
-          "waiverAcquisitionBudget": {
-            "value": 0,
-            "formatted": ""
-          },
-          "owners": null
-        }
-      }
-    },
-    {
-      "timeEpochMilli": "1540993226000",
-      "transaction": {
-        "type": "",
-        "player": {
-          "proPlayer": {
-            "id": 2359,
-            "nameFull": "Washington Commanders",
-            "nameShort": "Commanders",
-            "position": "D/ST",
-            "proTeamAbbreviation": "WAS",
-            "nflByeWeek": 7,
-            "positionEligibility": [
-              "D/ST"
-            ]
-          }
-        },
-        "team": {
-          "id": 793918,
-          "name": "Wookie of the Year",
           "recordOverall": {
             "wins": 0,
             "losses": 0,
