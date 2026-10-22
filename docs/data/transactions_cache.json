@@ -1,8 +1,112 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-10-21T23:04:12.726281144Z",
+  "synced_at": "2026-10-22T13:26:47.456576403Z",
   "items": [
+    {
+      "timeEpochMilli": "1792671320000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 18361,
+            "nameFull": "Brian Thomas",
+            "nameShort": "B. Thomas",
+            "position": "WR",
+            "proTeamAbbreviation": "JAC",
+            "nflByeWeek": 7,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 787863,
+          "name": "THE BAD SNATCH",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1792671320000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 19298,
+            "nameFull": "Tre' Harris",
+            "nameShort": "T. Harris",
+            "position": "WR",
+            "proTeamAbbreviation": "LAC",
+            "nflByeWeek": 7,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 787863,
+          "name": "THE BAD SNATCH",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1792619691000",
       "transaction": {
