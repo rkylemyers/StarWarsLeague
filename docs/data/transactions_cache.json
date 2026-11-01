@@ -1,8 +1,112 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-10-31T23:04:19.866272087Z",
+  "synced_at": "2026-11-01T14:44:47.040139986Z",
   "items": [
+    {
+      "timeEpochMilli": "1793535606000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 18484,
+            "nameFull": "AJ Barner",
+            "nameShort": "A. Barner",
+            "position": "TE",
+            "proTeamAbbreviation": "SEA",
+            "nflByeWeek": 11,
+            "positionEligibility": [
+              "TE"
+            ]
+          }
+        },
+        "team": {
+          "id": 811297,
+          "name": "Java the BUTT",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1793535606000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 16248,
+            "nameFull": "Rashod Bateman",
+            "nameShort": "R. Bateman",
+            "position": "WR",
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 811297,
+          "name": "Java the BUTT",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1793482066000",
       "transaction": {
