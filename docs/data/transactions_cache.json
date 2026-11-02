@@ -1,8 +1,112 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-01T23:22:31.688303793Z",
+  "synced_at": "2026-11-02T17:47:55.479750159Z",
   "items": [
+    {
+      "timeEpochMilli": "1793624420000",
+      "transaction": {
+        "type": "TRANSACTION_TRADE",
+        "player": {
+          "proPlayer": {
+            "id": 14694,
+            "nameFull": "A.J. Brown",
+            "nameShort": "A. Brown",
+            "position": "WR",
+            "proTeamAbbreviation": "NE",
+            "nflByeWeek": 11,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 788025,
+          "name": "Darth Bane",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1793624420000",
+      "transaction": {
+        "type": "TRANSACTION_TRADE",
+        "player": {
+          "proPlayer": {
+            "id": 13764,
+            "nameFull": "DJ Moore",
+            "nameShort": "D. Moore",
+            "position": "WR",
+            "proTeamAbbreviation": "BUF",
+            "nflByeWeek": 7,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 793918,
+          "name": "Wookie of the Year",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1793535606000",
       "transaction": {
