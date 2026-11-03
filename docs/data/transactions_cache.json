@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-02T17:47:55.479750159Z",
+  "synced_at": "2026-11-03T02:00:32.753661969Z",
   "items": [
     {
       "timeEpochMilli": "1793624420000",
@@ -63715,8 +63715,8 @@
             "nameFull": "Audric Estime",
             "nameShort": "A. Estime",
             "position": "RB",
-            "proTeamAbbreviation": "CLE",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -102039,8 +102039,8 @@
             "nameFull": "Deuce Vaughn",
             "nameShort": "D. Vaughn",
             "position": "RB",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -109319,8 +109319,8 @@
             "nameFull": "Deuce Vaughn",
             "nameShort": "D. Vaughn",
             "position": "RB",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
