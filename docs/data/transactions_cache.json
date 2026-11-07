@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-07T14:41:04.426326117Z",
+  "synced_at": "2026-11-07T23:26:08.437034821Z",
   "items": [
     {
       "timeEpochMilli": "1794055065000",
@@ -5525,8 +5525,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -37402,8 +37402,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -39690,8 +39690,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -72659,8 +72659,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -77443,8 +77443,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -84515,8 +84515,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -104119,8 +104119,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "NO",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
