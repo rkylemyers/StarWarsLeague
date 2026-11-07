@@ -1,8 +1,112 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-06T23:58:33.940618712Z",
+  "synced_at": "2026-11-07T14:41:04.426326117Z",
   "items": [
+    {
+      "timeEpochMilli": "1794055065000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 16845,
+            "nameFull": "Malik Willis",
+            "nameShort": "M. Willis",
+            "position": "QB",
+            "proTeamAbbreviation": "MIA",
+            "nflByeWeek": 6,
+            "positionEligibility": [
+              "QB"
+            ]
+          }
+        },
+        "team": {
+          "id": 873124,
+          "name": "Army",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1794055065000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 13758,
+            "nameFull": "Baker Mayfield",
+            "nameShort": "B. Mayfield",
+            "position": "QB",
+            "proTeamAbbreviation": "TB",
+            "nflByeWeek": 10,
+            "positionEligibility": [
+              "QB"
+            ]
+          }
+        },
+        "team": {
+          "id": 873124,
+          "name": "Army",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1793790000000",
       "transaction": {
@@ -2509,8 +2613,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -2717,8 +2821,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -3081,8 +3185,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -66679,8 +66783,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -69175,8 +69279,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -85815,8 +85919,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -110099,8 +110203,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -114623,8 +114727,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -141039,8 +141143,8 @@
             "nameFull": "Dameon Pierce",
             "nameShort": "D. Pierce",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -184667,8 +184771,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -201203,8 +201307,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -233495,8 +233599,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -235003,8 +235107,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -276603,8 +276707,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -300991,8 +301095,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
