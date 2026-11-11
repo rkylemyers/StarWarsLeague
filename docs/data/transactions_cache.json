@@ -1,8 +1,320 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-11T00:26:31.121159344Z",
+  "synced_at": "2026-11-11T15:51:35.809039936Z",
   "items": [
+    {
+      "timeEpochMilli": "1794406829000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 20048,
+            "nameFull": "Fernando Mendoza",
+            "nameShort": "F. Mendoza",
+            "position": "QB",
+            "proTeamAbbreviation": "LV",
+            "nflByeWeek": 13,
+            "positionEligibility": [
+              "QB"
+            ]
+          }
+        },
+        "team": {
+          "id": 786929,
+          "name": "Mandalorian Mudhorns",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1794406829000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 15516,
+            "nameFull": "Justin Herbert",
+            "nameShort": "J. Herbert",
+            "position": "QB",
+            "proTeamAbbreviation": "LAC",
+            "nflByeWeek": 7,
+            "positionEligibility": [
+              "QB"
+            ]
+          }
+        },
+        "team": {
+          "id": 786929,
+          "name": "Mandalorian Mudhorns",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1794394800000",
+      "transaction": {
+        "type": "TRANSACTION_CLAIM",
+        "player": {
+          "proPlayer": {
+            "id": 9372,
+            "nameFull": "Geno Smith",
+            "nameShort": "G. Smith",
+            "position": "QB",
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
+            "positionEligibility": [
+              "QB"
+            ]
+          }
+        },
+        "team": {
+          "id": 873124,
+          "name": "Army",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1794394800000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 16845,
+            "nameFull": "Malik Willis",
+            "nameShort": "M. Willis",
+            "position": "QB",
+            "proTeamAbbreviation": "MIA",
+            "nflByeWeek": 6,
+            "positionEligibility": [
+              "QB"
+            ]
+          }
+        },
+        "team": {
+          "id": 873124,
+          "name": "Army",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1794394800000",
+      "transaction": {
+        "type": "TRANSACTION_CLAIM",
+        "player": {
+          "proPlayer": {
+            "id": 16912,
+            "nameFull": "Chig Okonkwo",
+            "nameShort": "C. Okonkwo",
+            "position": "TE",
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
+            "positionEligibility": [
+              "TE"
+            ]
+          }
+        },
+        "team": {
+          "id": 786929,
+          "name": "Mandalorian Mudhorns",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1794394800000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 19915,
+            "nameFull": "Darius Cooper",
+            "nameShort": "D. Cooper",
+            "position": "WR",
+            "proTeamAbbreviation": "PHI",
+            "nflByeWeek": 10,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 786929,
+          "name": "Mandalorian Mudhorns",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1794055065000",
       "transaction": {
@@ -1573,8 +1885,8 @@
             "nameFull": "Josh Downs",
             "nameShort": "J. Downs",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "KC",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "WR"
             ]
@@ -5525,8 +5837,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -21177,8 +21489,8 @@
             "nameFull": "Josh Downs",
             "nameShort": "J. Downs",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "KC",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "WR"
             ]
@@ -22165,8 +22477,8 @@
             "nameFull": "Jaydon Blue",
             "nameShort": "J. Blue",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -25702,8 +26014,8 @@
             "nameFull": "Josh Downs",
             "nameShort": "J. Downs",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "KC",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "WR"
             ]
@@ -37402,8 +37714,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -39690,8 +40002,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -44370,8 +44682,8 @@
             "nameFull": "Josh Downs",
             "nameShort": "J. Downs",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "KC",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "WR"
             ]
@@ -51235,8 +51547,8 @@
             "nameFull": "Jaydon Blue",
             "nameShort": "J. Blue",
             "position": "RB",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -54927,8 +55239,8 @@
             "nameFull": "Josh Downs",
             "nameShort": "J. Downs",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "KC",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "WR"
             ]
@@ -69383,8 +69695,8 @@
             "nameFull": "Josh Downs",
             "nameShort": "J. Downs",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "KC",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "WR"
             ]
@@ -72659,8 +72971,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -77443,8 +77755,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -84515,8 +84827,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -84775,8 +85087,8 @@
             "nameFull": "Josh Downs",
             "nameShort": "J. Downs",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "KC",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "WR"
             ]
@@ -93303,8 +93615,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -96319,8 +96631,8 @@
             "nameFull": "Josh Downs",
             "nameShort": "J. Downs",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "KC",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "WR"
             ]
@@ -96943,8 +97255,8 @@
             "nameFull": "Josh Downs",
             "nameShort": "J. Downs",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "KC",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "WR"
             ]
@@ -100999,8 +101311,8 @@
             "nameFull": "Josh Downs",
             "nameShort": "J. Downs",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "KC",
+            "nflByeWeek": 5,
             "positionEligibility": [
               "WR"
             ]
@@ -104119,8 +104431,8 @@
             "nameFull": "Kendre Miller",
             "nameShort": "K. Miller",
             "position": "RB",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "DAL",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "RB"
             ]
@@ -112699,8 +113011,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -123307,8 +123619,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -129391,8 +129703,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -155703,8 +156015,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -166311,8 +166623,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -178375,8 +178687,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -184771,8 +185083,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "WR"
             ]
@@ -185551,8 +185863,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -193091,8 +193403,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -201307,8 +201619,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "WR"
             ]
@@ -212487,8 +212799,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -220183,8 +220495,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -233599,8 +233911,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "WR"
             ]
@@ -235107,8 +235419,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "WR"
             ]
@@ -243999,8 +244311,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -250031,8 +250343,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -274367,8 +274679,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -276707,8 +277019,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "WR"
             ]
@@ -278215,8 +278527,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -296675,8 +296987,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -301095,8 +301407,8 @@
             "nameFull": "Phillip Dorsett",
             "nameShort": "P. Dorsett",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "ARI",
+            "nflByeWeek": 14,
             "positionEligibility": [
               "WR"
             ]
@@ -307023,8 +307335,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -329539,8 +329851,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -338379,8 +338691,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -355903,8 +356215,8 @@
             "nameFull": "Odell Beckham",
             "nameShort": "O. Beckham",
             "position": "WR",
-            "proTeamAbbreviation": "MIN",
-            "nflByeWeek": 6,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -469623,7 +469935,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 10,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -469661,7 +469973,7 @@
                 "value": 3,
                 "formatted": "W3"
               },
-              "waiverPosition": 4,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -469699,7 +470011,7 @@
                 "value": -3,
                 "formatted": "L3"
               },
-              "waiverPosition": 10,
+              "waiverPosition": 8,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -469781,7 +470093,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 8,
+              "waiverPosition": 6,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -469895,7 +470207,7 @@
                 "value": -8,
                 "formatted": "L8"
               },
-              "waiverPosition": 5,
+              "waiverPosition": 4,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470106,7 +470418,7 @@
                 "value": 3,
                 "formatted": "W3"
               },
-              "waiverPosition": 8,
+              "waiverPosition": 6,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470144,7 +470456,7 @@
                 "value": 2,
                 "formatted": "W2"
               },
-              "waiverPosition": 5,
+              "waiverPosition": 4,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470182,7 +470494,7 @@
                 "value": 2,
                 "formatted": "W2"
               },
-              "waiverPosition": 9,
+              "waiverPosition": 7,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470220,7 +470532,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 10,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470264,7 +470576,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 7,
+              "waiverPosition": 5,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470302,7 +470614,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 6,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470340,7 +470652,7 @@
                 "value": -3,
                 "formatted": "L3"
               },
-              "waiverPosition": 4,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470378,7 +470690,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 10,
+              "waiverPosition": 8,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470507,7 +470819,7 @@
                 "value": -3,
                 "formatted": "L3"
               },
-              "waiverPosition": 9,
+              "waiverPosition": 7,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470545,7 +470857,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 10,
+              "waiverPosition": 8,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470627,7 +470939,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 8,
+              "waiverPosition": 6,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470665,7 +470977,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 6,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470747,7 +471059,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 10,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470785,7 +471097,7 @@
                 "value": 2,
                 "formatted": "W2"
               },
-              "waiverPosition": 5,
+              "waiverPosition": 4,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470823,7 +471135,7 @@
                 "value": 2,
                 "formatted": "W2"
               },
-              "waiverPosition": 7,
+              "waiverPosition": 5,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470861,7 +471173,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 4,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -470952,7 +471264,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 8,
+              "waiverPosition": 6,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471028,7 +471340,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 5,
+              "waiverPosition": 4,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471072,7 +471384,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 10,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471110,7 +471422,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 7,
+              "waiverPosition": 5,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471148,7 +471460,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 9,
+              "waiverPosition": 7,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471186,7 +471498,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 6,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471230,7 +471542,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 10,
+              "waiverPosition": 8,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471306,7 +471618,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 4,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471435,7 +471747,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 4,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471473,7 +471785,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 9,
+              "waiverPosition": 7,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471555,7 +471867,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 10,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471631,7 +471943,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 7,
+              "waiverPosition": 5,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471669,7 +471981,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 6,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471751,7 +472063,7 @@
                 "value": 3,
                 "formatted": "W3"
               },
-              "waiverPosition": 8,
+              "waiverPosition": 6,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471789,7 +472101,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 10,
+              "waiverPosition": 8,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471827,7 +472139,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 5,
+              "waiverPosition": 4,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471918,7 +472230,7 @@
                 "value": -3,
                 "formatted": "L3"
               },
-              "waiverPosition": 9,
+              "waiverPosition": 7,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -471956,7 +472268,7 @@
                 "value": -4,
                 "formatted": "L4"
               },
-              "waiverPosition": 10,
+              "waiverPosition": 8,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472038,7 +472350,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 10,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472076,7 +472388,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 7,
+              "waiverPosition": 5,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472114,7 +472426,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 8,
+              "waiverPosition": 6,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472152,7 +472464,7 @@
                 "value": -5,
                 "formatted": "L5"
               },
-              "waiverPosition": 6,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472196,7 +472508,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 4,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472272,7 +472584,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 5,
+              "waiverPosition": 4,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472331,489 +472643,6 @@
         "name": "Star Wars League"
       }
     },
-    "2017": {
-      "divisions": [
-        {
-          "id": 374296,
-          "name": "Jedi",
-          "teams": [
-            {
-              "id": 807995,
-              "name": "macejaydu",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 4,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.6923077,
-                  "formatted": ".692"
-                },
-                "rank": 4,
-                "formatted": "9-4"
-              },
-              "pointsFor": {
-                "value": 1753.3,
-                "formatted": "1,753.3"
-              },
-              "pointsAgainst": {
-                "value": 1517.8,
-                "formatted": "1,517.8"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 10,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 425638,
-                  "displayName": "chefblade2"
-                }
-              ]
-            },
-            {
-              "id": 787863,
-              "name": "GENITAL REAMIS",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.53846157,
-                  "formatted": ".538"
-                },
-                "rank": 6,
-                "formatted": "7-6"
-              },
-              "pointsFor": {
-                "value": 1665.5,
-                "formatted": "1,665.5"
-              },
-              "pointsAgainst": {
-                "value": 1540.35,
-                "formatted": "1,540.35"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 1,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 484830,
-                  "displayName": "THELOVEMUSCLE"
-                }
-              ]
-            },
-            {
-              "id": 786874,
-              "name": "Jedi Mind Tricks",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.3846154,
-                  "formatted": ".385"
-                },
-                "rank": 9,
-                "formatted": "5-8"
-              },
-              "pointsFor": {
-                "value": 1544.7,
-                "formatted": "1,544.7"
-              },
-              "pointsAgainst": {
-                "value": 1700.4,
-                "formatted": "1,700.4"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 3,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361249,
-                  "displayName": "rkylemyers"
-                }
-              ]
-            },
-            {
-              "id": 873124,
-              "name": "Rebel ScuM",
-              "recordOverall": {
-                "wins": 4,
-                "losses": 9,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.30769232,
-                  "formatted": ".308"
-                },
-                "rank": 12,
-                "formatted": "4-9"
-              },
-              "pointsFor": {
-                "value": 1315.3,
-                "formatted": "1,315.3"
-              },
-              "pointsAgainst": {
-                "value": 1684.15,
-                "formatted": "1,684.15"
-              },
-              "streak": {
-                "value": -4,
-                "formatted": "L4"
-              },
-              "waiverPosition": 6,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 897317,
-                  "displayName": "DShoop"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374297,
-          "name": "Sith",
-          "teams": [
-            {
-              "id": 928665,
-              "name": "Wasabi Kenobi",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 4,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.6923077,
-                  "formatted": ".692"
-                },
-                "rank": 3,
-                "formatted": "9-4"
-              },
-              "pointsFor": {
-                "value": 1844.1,
-                "formatted": "1,844.1"
-              },
-              "pointsAgainst": {
-                "value": 1590.45,
-                "formatted": "1,590.45"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 9,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 605853,
-                  "displayName": "ram-da-man"
-                }
-              ]
-            },
-            {
-              "id": 811297,
-              "name": "Java the BUTT",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.61538464,
-                  "formatted": ".615"
-                },
-                "rank": 2,
-                "formatted": "8-5"
-              },
-              "pointsFor": {
-                "value": 1889.15,
-                "formatted": "1,889.15"
-              },
-              "pointsAgainst": {
-                "value": 1585.95,
-                "formatted": "1,585.95"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 2,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 609545,
-                  "displayName": "jaythehipster"
-                }
-              ]
-            },
-            {
-              "id": 873137,
-              "name": "Edward Saberhands",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.53846157,
-                  "formatted": ".538"
-                },
-                "rank": 1,
-                "formatted": "7-6"
-              },
-              "pointsFor": {
-                "value": 1611.75,
-                "formatted": "1,611.75"
-              },
-              "pointsAgainst": {
-                "value": 1546.3,
-                "formatted": "1,546.3"
-              },
-              "streak": {
-                "value": 5,
-                "formatted": "W5"
-              },
-              "waiverPosition": 7,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 538568,
-                  "displayName": "UhOhMill3r"
-                }
-              ]
-            },
-            {
-              "id": 788025,
-              "name": "Darth Bane",
-              "recordOverall": {
-                "wins": 4,
-                "losses": 9,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.30769232,
-                  "formatted": ".308"
-                },
-                "rank": 11,
-                "formatted": "4-9"
-              },
-              "pointsFor": {
-                "value": 1438.5,
-                "formatted": "1,438.5"
-              },
-              "pointsAgainst": {
-                "value": 1814.55,
-                "formatted": "1,814.55"
-              },
-              "streak": {
-                "value": -5,
-                "formatted": "L5"
-              },
-              "waiverPosition": 12,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 362669,
-                  "displayName": "Zombiez"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374298,
-          "name": "Ewoks",
-          "teams": [
-            {
-              "id": 788878,
-              "name": "TRUMP VADER",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.61538464,
-                  "formatted": ".615"
-                },
-                "rank": 5,
-                "formatted": "8-5"
-              },
-              "pointsFor": {
-                "value": 1525,
-                "formatted": "1,525"
-              },
-              "pointsAgainst": {
-                "value": 1489.6,
-                "formatted": "1,489.6"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 5,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 744821,
-                  "displayName": "Carter29"
-                }
-              ]
-            },
-            {
-              "id": 793918,
-              "name": "Big Darth Decker",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.46153846,
-                  "formatted": ".462"
-                },
-                "rank": 7,
-                "formatted": "6-7"
-              },
-              "pointsFor": {
-                "value": 1704.05,
-                "formatted": "1,704.05"
-              },
-              "pointsAgainst": {
-                "value": 1682.8,
-                "formatted": "1,682.8"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 8,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 358938,
-                  "displayName": "MrMaddness"
-                }
-              ]
-            },
-            {
-              "id": 802577,
-              "name": "That team that didn't know when the season started",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.46153846,
-                  "formatted": ".462"
-                },
-                "rank": 8,
-                "formatted": "6-7"
-              },
-              "pointsFor": {
-                "value": 1603.05,
-                "formatted": "1,603.05"
-              },
-              "pointsAgainst": {
-                "value": 1649.25,
-                "formatted": "1,649.25"
-              },
-              "streak": {
-                "value": 2,
-                "formatted": "W2"
-              },
-              "waiverPosition": 0,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 425763,
-                  "displayName": "Knepp"
-                }
-              ]
-            },
-            {
-              "id": 786929,
-              "name": "Gert Shot First",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.3846154,
-                  "formatted": ".385"
-                },
-                "rank": 10,
-                "formatted": "5-8"
-              },
-              "pointsFor": {
-                "value": 1546.5,
-                "formatted": "1,546.5"
-              },
-              "pointsAgainst": {
-                "value": 1639.3,
-                "formatted": "1,639.3"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 4,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361794,
-                  "displayName": "Hurricane_Gert"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "season": 2017,
-      "league": {
-        "id": 111626,
-        "name": "Star Wars League"
-      }
-    },
     "2018": {
       "divisions": [
         {
@@ -472846,7 +472675,7 @@
                 "value": -3,
                 "formatted": "L3"
               },
-              "waiverPosition": 7,
+              "waiverPosition": 5,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472884,7 +472713,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 8,
+              "waiverPosition": 6,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472960,7 +472789,7 @@
                 "value": 5,
                 "formatted": "W5"
               },
-              "waiverPosition": 9,
+              "waiverPosition": 7,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -473042,7 +472871,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 10,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -473080,7 +472909,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 10,
+              "waiverPosition": 8,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -473162,7 +472991,7 @@
                 "value": 3,
                 "formatted": "W3"
               },
-              "waiverPosition": 4,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -473238,7 +473067,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 5,
+              "waiverPosition": 4,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -473276,7 +473105,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 6,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -473292,1455 +473121,6 @@
         }
       ],
       "season": 2018,
-      "league": {
-        "id": 111626,
-        "name": "Star Wars League"
-      }
-    },
-    "2019": {
-      "divisions": [
-        {
-          "id": 374296,
-          "name": "Jedi",
-          "teams": [
-            {
-              "id": 928665,
-              "name": "Finn’s Football Force",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.46153846,
-                  "formatted": ".462"
-                },
-                "rank": 4,
-                "formatted": "6-7"
-              },
-              "pointsFor": {
-                "value": 1747.3,
-                "formatted": "1,747.3"
-              },
-              "pointsAgainst": {
-                "value": 1785.35,
-                "formatted": "1,785.35"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 9,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 742973,
-                  "displayName": "michaelpitone"
-                }
-              ]
-            },
-            {
-              "id": 873124,
-              "name": "Army",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.46153846,
-                  "formatted": ".462"
-                },
-                "rank": 8,
-                "formatted": "6-7"
-              },
-              "pointsFor": {
-                "value": 1780.5,
-                "formatted": "1,780.5"
-              },
-              "pointsAgainst": {
-                "value": 1971.9,
-                "formatted": "1,971.9"
-              },
-              "streak": {
-                "value": -3,
-                "formatted": "L3"
-              },
-              "waiverPosition": 6,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1122458,
-                  "displayName": "Rebel-AllIance"
-                }
-              ]
-            },
-            {
-              "id": 873137,
-              "name": "Baby ChYODA",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.46153846,
-                  "formatted": ".462"
-                },
-                "rank": 9,
-                "formatted": "6-7"
-              },
-              "pointsFor": {
-                "value": 1639.55,
-                "formatted": "1,639.55"
-              },
-              "pointsAgainst": {
-                "value": 1782.4,
-                "formatted": "1,782.4"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 7,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 538568,
-                  "displayName": "UhOhMill3r"
-                }
-              ]
-            },
-            {
-              "id": 811297,
-              "name": "Java the BUTT",
-              "recordOverall": {
-                "wins": 4,
-                "losses": 9,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.30769232,
-                  "formatted": ".308"
-                },
-                "rank": 11,
-                "formatted": "4-9"
-              },
-              "pointsFor": {
-                "value": 1665.55,
-                "formatted": "1,665.55"
-              },
-              "pointsAgainst": {
-                "value": 1790.85,
-                "formatted": "1,790.85"
-              },
-              "streak": {
-                "value": 4,
-                "formatted": "W4"
-              },
-              "waiverPosition": 2,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 609545,
-                  "displayName": "jaythehipster"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374297,
-          "name": "Sith",
-          "teams": [
-            {
-              "id": 788025,
-              "name": "Darth Bane",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 4,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.6923077,
-                  "formatted": ".692"
-                },
-                "rank": 2,
-                "formatted": "9-4"
-              },
-              "pointsFor": {
-                "value": 2072.55,
-                "formatted": "2,072.55"
-              },
-              "pointsAgainst": {
-                "value": 1752.5,
-                "formatted": "1,752.5"
-              },
-              "streak": {
-                "value": 3,
-                "formatted": "W3"
-              },
-              "waiverPosition": 12,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 362669,
-                  "displayName": "Zombiez"
-                }
-              ]
-            },
-            {
-              "id": 793918,
-              "name": "Darth Deej",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.61538464,
-                  "formatted": ".615"
-                },
-                "rank": 1,
-                "formatted": "8-5"
-              },
-              "pointsFor": {
-                "value": 1841.9,
-                "formatted": "1,841.9"
-              },
-              "pointsAgainst": {
-                "value": 1578.15,
-                "formatted": "1,578.15"
-              },
-              "streak": {
-                "value": 2,
-                "formatted": "W2"
-              },
-              "waiverPosition": 8,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 538558,
-                  "displayName": "Deejers"
-                }
-              ]
-            },
-            {
-              "id": 786929,
-              "name": "Juju Binks Schuster",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.61538464,
-                  "formatted": ".615"
-                },
-                "rank": 6,
-                "formatted": "8-5"
-              },
-              "pointsFor": {
-                "value": 1828.2,
-                "formatted": "1,828.2"
-              },
-              "pointsAgainst": {
-                "value": 1791.5,
-                "formatted": "1,791.5"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 4,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361794,
-                  "displayName": "Hurricane_Gert"
-                }
-              ]
-            },
-            {
-              "id": 802577,
-              "name": "green jedi",
-              "recordOverall": {
-                "wins": 3,
-                "losses": 10,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.23076923,
-                  "formatted": ".231"
-                },
-                "rank": 12,
-                "formatted": "3-10"
-              },
-              "pointsFor": {
-                "value": 1487.35,
-                "formatted": "1,487.35"
-              },
-              "pointsAgainst": {
-                "value": 1747.2,
-                "formatted": "1,747.2"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 0,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1210287,
-                  "displayName": "DallasArroyo"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374298,
-          "name": "First Order",
-          "teams": [
-            {
-              "id": 788878,
-              "name": "The Droids You’re Looking For",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.61538464,
-                  "formatted": ".615"
-                },
-                "rank": 3,
-                "formatted": "8-5"
-              },
-              "pointsFor": {
-                "value": 1829.7,
-                "formatted": "1,829.7"
-              },
-              "pointsAgainst": {
-                "value": 1765.5,
-                "formatted": "1,765.5"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 5,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1112060,
-                  "displayName": "LadyOfGuadalupe"
-                }
-              ]
-            },
-            {
-              "id": 787863,
-              "name": "KYLO RUSS",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.61538464,
-                  "formatted": ".615"
-                },
-                "rank": 5,
-                "formatted": "8-5"
-              },
-              "pointsFor": {
-                "value": 1920.75,
-                "formatted": "1,920.75"
-              },
-              "pointsAgainst": {
-                "value": 1748.7,
-                "formatted": "1,748.7"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 1,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 484830,
-                  "displayName": "THELOVEMUSCLE"
-                }
-              ]
-            },
-            {
-              "id": 786874,
-              "name": "Jedi Mind Tricks",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.53846157,
-                  "formatted": ".538"
-                },
-                "rank": 7,
-                "formatted": "7-6"
-              },
-              "pointsFor": {
-                "value": 2033.6,
-                "formatted": "2,033.6"
-              },
-              "pointsAgainst": {
-                "value": 1932.75,
-                "formatted": "1,932.75"
-              },
-              "streak": {
-                "value": 3,
-                "formatted": "W3"
-              },
-              "waiverPosition": 3,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361249,
-                  "displayName": "rkylemyers"
-                }
-              ]
-            },
-            {
-              "id": 807995,
-              "name": "macejaydu",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.3846154,
-                  "formatted": ".385"
-                },
-                "rank": 10,
-                "formatted": "5-8"
-              },
-              "pointsFor": {
-                "value": 1702.7,
-                "formatted": "1,702.7"
-              },
-              "pointsAgainst": {
-                "value": 1902.85,
-                "formatted": "1,902.85"
-              },
-              "streak": {
-                "value": -3,
-                "formatted": "L3"
-              },
-              "waiverPosition": 10,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 425638,
-                  "displayName": "chefblade2"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "season": 2019,
-      "league": {
-        "id": 111626,
-        "name": "Star Wars League"
-      }
-    },
-    "2021": {
-      "divisions": [
-        {
-          "id": 374296,
-          "name": "Jedi",
-          "teams": [
-            {
-              "id": 873124,
-              "name": "Army",
-              "recordOverall": {
-                "wins": 11,
-                "losses": 3,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.78571427,
-                  "formatted": ".786"
-                },
-                "rank": 3,
-                "formatted": "11-3"
-              },
-              "pointsFor": {
-                "value": 1987.6,
-                "formatted": "1,987.6"
-              },
-              "pointsAgainst": {
-                "value": 1823.4,
-                "formatted": "1,823.4"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 6,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1122458,
-                  "displayName": "Rebel-AllIance"
-                }
-              ]
-            },
-            {
-              "id": 788025,
-              "name": "Darth Bane",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.64285713,
-                  "formatted": ".643"
-                },
-                "rank": 6,
-                "formatted": "9-5"
-              },
-              "pointsFor": {
-                "value": 2097.6,
-                "formatted": "2,097.6"
-              },
-              "pointsAgainst": {
-                "value": 1855.7,
-                "formatted": "1,855.7"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 12,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 362669,
-                  "displayName": "Zombiez"
-                }
-              ]
-            },
-            {
-              "id": 788878,
-              "name": "what the hell is an aluminum falcon",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5,
-                  "formatted": ".500"
-                },
-                "rank": 8,
-                "formatted": "7-7"
-              },
-              "pointsFor": {
-                "value": 2005.75,
-                "formatted": "2,005.75"
-              },
-              "pointsAgainst": {
-                "value": 1849.6,
-                "formatted": "1,849.6"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 5,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1112060,
-                  "displayName": "LadyOfGuadalupe"
-                }
-              ]
-            },
-            {
-              "id": 807995,
-              "name": "macejaydu",
-              "recordOverall": {
-                "wins": 0,
-                "losses": 14,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0,
-                  "formatted": ".000"
-                },
-                "rank": 12,
-                "formatted": "0-14"
-              },
-              "pointsFor": {
-                "value": 1605.95,
-                "formatted": "1,605.95"
-              },
-              "pointsAgainst": {
-                "value": 2130.95,
-                "formatted": "2,130.95"
-              },
-              "streak": {
-                "value": -15,
-                "formatted": "L15"
-              },
-              "waiverPosition": 10,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 425638,
-                  "displayName": "chefblade2"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374297,
-          "name": "Sith",
-          "teams": [
-            {
-              "id": 787863,
-              "name": "DARTH CLITIOUS",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.64285713,
-                  "formatted": ".643"
-                },
-                "rank": 4,
-                "formatted": "9-5"
-              },
-              "pointsFor": {
-                "value": 2017.1,
-                "formatted": "2,017.1"
-              },
-              "pointsAgainst": {
-                "value": 1857.8,
-                "formatted": "1,857.8"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 1,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 484830,
-                  "displayName": "THELOVEMUSCLE"
-                }
-              ]
-            },
-            {
-              "id": 786874,
-              "name": "Jedi Mind Tricks",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.64285713,
-                  "formatted": ".643"
-                },
-                "rank": 1,
-                "formatted": "9-5"
-              },
-              "pointsFor": {
-                "value": 2134.8,
-                "formatted": "2,134.8"
-              },
-              "pointsAgainst": {
-                "value": 1935.8,
-                "formatted": "1,935.8"
-              },
-              "streak": {
-                "value": 4,
-                "formatted": "W4"
-              },
-              "waiverPosition": 3,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361249,
-                  "displayName": "rkylemyers"
-                }
-              ]
-            },
-            {
-              "id": 802577,
-              "name": "green jedi",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.42857143,
-                  "formatted": ".429"
-                },
-                "rank": 9,
-                "formatted": "6-8"
-              },
-              "pointsFor": {
-                "value": 1958.3,
-                "formatted": "1,958.3"
-              },
-              "pointsAgainst": {
-                "value": 1958.5,
-                "formatted": "1,958.5"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 0,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1210287,
-                  "displayName": "DallasArroyo"
-                }
-              ]
-            },
-            {
-              "id": 786929,
-              "name": "Juju Binks Schuster",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 9,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.35714287,
-                  "formatted": ".357"
-                },
-                "rank": 11,
-                "formatted": "5-9"
-              },
-              "pointsFor": {
-                "value": 1772.1,
-                "formatted": "1,772.1"
-              },
-              "pointsAgainst": {
-                "value": 2155.15,
-                "formatted": "2,155.15"
-              },
-              "streak": {
-                "value": -7,
-                "formatted": "L7"
-              },
-              "waiverPosition": 4,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361794,
-                  "displayName": "Hurricane_Gert"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374298,
-          "name": "First Order",
-          "teams": [
-            {
-              "id": 811297,
-              "name": "Java the BUTT",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5714286,
-                  "formatted": ".571"
-                },
-                "rank": 5,
-                "formatted": "8-6"
-              },
-              "pointsFor": {
-                "value": 1978.6,
-                "formatted": "1,978.6"
-              },
-              "pointsAgainst": {
-                "value": 1888.5,
-                "formatted": "1,888.5"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 2,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 609545,
-                  "displayName": "jaythehipster"
-                }
-              ]
-            },
-            {
-              "id": 793918,
-              "name": "Wookie of the Year",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5,
-                  "formatted": ".500"
-                },
-                "rank": 2,
-                "formatted": "7-7"
-              },
-              "pointsFor": {
-                "value": 2112.15,
-                "formatted": "2,112.15"
-              },
-              "pointsAgainst": {
-                "value": 1868.55,
-                "formatted": "1,868.55"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 8,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1484527,
-                  "displayName": "SDP79"
-                }
-              ]
-            },
-            {
-              "id": 928665,
-              "name": "Finn’s Football Force",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5,
-                  "formatted": ".500"
-                },
-                "rank": 7,
-                "formatted": "7-7"
-              },
-              "pointsFor": {
-                "value": 1802.9,
-                "formatted": "1,802.9"
-              },
-              "pointsAgainst": {
-                "value": 2076.75,
-                "formatted": "2,076.75"
-              },
-              "streak": {
-                "value": 3,
-                "formatted": "W3"
-              },
-              "waiverPosition": 9,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 742973,
-                  "displayName": "michaelpitone"
-                }
-              ]
-            },
-            {
-              "id": 873137,
-              "name": "Beam Me Up!",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.42857143,
-                  "formatted": ".429"
-                },
-                "rank": 10,
-                "formatted": "6-8"
-              },
-              "pointsFor": {
-                "value": 1761.5,
-                "formatted": "1,761.5"
-              },
-              "pointsAgainst": {
-                "value": 1833.65,
-                "formatted": "1,833.65"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 7,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 538568,
-                  "displayName": "UhOhMill3r"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "season": 2021,
-      "league": {
-        "id": 111626,
-        "name": "Star Wars League"
-      }
-    },
-    "2022": {
-      "divisions": [
-        {
-          "id": 374296,
-          "name": "Jedi",
-          "teams": [
-            {
-              "id": 873124,
-              "name": "Army",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5,
-                  "formatted": ".500"
-                },
-                "rank": 4,
-                "formatted": "7-7"
-              },
-              "pointsFor": {
-                "value": 1938.45,
-                "formatted": "1,938.45"
-              },
-              "pointsAgainst": {
-                "value": 1939.5,
-                "formatted": "1,939.5"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 6,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1122458,
-                  "displayName": "Rebel-AllIance"
-                }
-              ]
-            },
-            {
-              "id": 807995,
-              "name": "macejaydu",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5,
-                  "formatted": ".500"
-                },
-                "rank": 8,
-                "formatted": "7-7"
-              },
-              "pointsFor": {
-                "value": 1730.45,
-                "formatted": "1,730.45"
-              },
-              "pointsAgainst": {
-                "value": 1672.05,
-                "formatted": "1,672.05"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 10,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 425638,
-                  "displayName": "chefblade2"
-                }
-              ]
-            },
-            {
-              "id": 788025,
-              "name": "Darth Bane",
-              "recordOverall": {
-                "wins": 4,
-                "losses": 10,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.2857143,
-                  "formatted": ".286"
-                },
-                "rank": 10,
-                "formatted": "4-10"
-              },
-              "pointsFor": {
-                "value": 1636.8,
-                "formatted": "1,636.8"
-              },
-              "pointsAgainst": {
-                "value": 1754.15,
-                "formatted": "1,754.15"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 12,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 362669,
-                  "displayName": "Zombiez"
-                }
-              ]
-            },
-            {
-              "id": 788878,
-              "name": "what the hell is an aluminum falcon",
-              "recordOverall": {
-                "wins": 1,
-                "losses": 13,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.071428575,
-                  "formatted": ".071"
-                },
-                "rank": 12,
-                "formatted": "1-13"
-              },
-              "pointsFor": {
-                "value": 1265.8,
-                "formatted": "1,265.8"
-              },
-              "pointsAgainst": {
-                "value": 1972.3,
-                "formatted": "1,972.3"
-              },
-              "streak": {
-                "value": -10,
-                "formatted": "L10"
-              },
-              "waiverPosition": 5,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1112060,
-                  "displayName": "LadyOfGuadalupe"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374297,
-          "name": "Sith",
-          "teams": [
-            {
-              "id": 786874,
-              "name": "Jedi Mind Tricks",
-              "recordOverall": {
-                "wins": 10,
-                "losses": 4,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.71428573,
-                  "formatted": ".714"
-                },
-                "rank": 1,
-                "formatted": "10-4"
-              },
-              "pointsFor": {
-                "value": 2019.05,
-                "formatted": "2,019.05"
-              },
-              "pointsAgainst": {
-                "value": 1738.25,
-                "formatted": "1,738.25"
-              },
-              "streak": {
-                "value": 7,
-                "formatted": "W7"
-              },
-              "waiverPosition": 3,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361249,
-                  "displayName": "rkylemyers"
-                }
-              ]
-            },
-            {
-              "id": 787863,
-              "name": "Nad Bane",
-              "recordOverall": {
-                "wins": 10,
-                "losses": 4,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.71428573,
-                  "formatted": ".714"
-                },
-                "rank": 5,
-                "formatted": "10-4"
-              },
-              "pointsFor": {
-                "value": 1994.4,
-                "formatted": "1,994.4"
-              },
-              "pointsAgainst": {
-                "value": 1767.2,
-                "formatted": "1,767.2"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 1,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 484830,
-                  "displayName": "THELOVEMUSCLE"
-                }
-              ]
-            },
-            {
-              "id": 873137,
-              "name": "Darth JarJar",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5,
-                  "formatted": ".500"
-                },
-                "rank": 7,
-                "formatted": "7-7"
-              },
-              "pointsFor": {
-                "value": 1760.7,
-                "formatted": "1,760.7"
-              },
-              "pointsAgainst": {
-                "value": 1763.85,
-                "formatted": "1,763.85"
-              },
-              "streak": {
-                "value": 4,
-                "formatted": "W4"
-              },
-              "waiverPosition": 7,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 538568,
-                  "displayName": "UhOhMill3r"
-                }
-              ]
-            },
-            {
-              "id": 802577,
-              "name": "green jedi",
-              "recordOverall": {
-                "wins": 4,
-                "losses": 10,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.2857143,
-                  "formatted": ".286"
-                },
-                "rank": 11,
-                "formatted": "4-10"
-              },
-              "pointsFor": {
-                "value": 1637.4,
-                "formatted": "1,637.4"
-              },
-              "pointsAgainst": {
-                "value": 1721.8,
-                "formatted": "1,721.8"
-              },
-              "streak": {
-                "value": -5,
-                "formatted": "L5"
-              },
-              "waiverPosition": 0,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1210287,
-                  "displayName": "DallasArroyo"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374298,
-          "name": "First Order",
-          "teams": [
-            {
-              "id": 928665,
-              "name": "Finn’s Football Force",
-              "recordOverall": {
-                "wins": 11,
-                "losses": 3,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.78571427,
-                  "formatted": ".786"
-                },
-                "rank": 3,
-                "formatted": "11-3"
-              },
-              "pointsFor": {
-                "value": 2329.3,
-                "formatted": "2,329.3"
-              },
-              "pointsAgainst": {
-                "value": 1780.5,
-                "formatted": "1,780.5"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 9,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 742973,
-                  "displayName": "michaelpitone"
-                }
-              ]
-            },
-            {
-              "id": 811297,
-              "name": "Java the BUTT",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.64285713,
-                  "formatted": ".643"
-                },
-                "rank": 6,
-                "formatted": "9-5"
-              },
-              "pointsFor": {
-                "value": 1898,
-                "formatted": "1,898"
-              },
-              "pointsAgainst": {
-                "value": 1729.2,
-                "formatted": "1,729.2"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 2,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 609545,
-                  "displayName": "jaythehipster"
-                }
-              ]
-            },
-            {
-              "id": 793918,
-              "name": "Wookie of the Year",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5714286,
-                  "formatted": ".571"
-                },
-                "rank": 2,
-                "formatted": "8-6"
-              },
-              "pointsFor": {
-                "value": 1815.65,
-                "formatted": "1,815.65"
-              },
-              "pointsAgainst": {
-                "value": 1800.2,
-                "formatted": "1,800.2"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 8,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1484527,
-                  "displayName": "SDP79"
-                }
-              ]
-            },
-            {
-              "id": 786929,
-              "name": "Juju Binks Schuster",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.42857143,
-                  "formatted": ".429"
-                },
-                "rank": 9,
-                "formatted": "6-8"
-              },
-              "pointsFor": {
-                "value": 1668.15,
-                "formatted": "1,668.15"
-              },
-              "pointsAgainst": {
-                "value": 2055.15,
-                "formatted": "2,055.15"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 4,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361794,
-                  "displayName": "Hurricane_Gert"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "season": 2022,
       "league": {
         "id": 111626,
         "name": "Star Wars League"
@@ -474816,7 +473196,7 @@
                 "value": 2,
                 "formatted": "W2"
               },
-              "waiverPosition": 8,
+              "waiverPosition": 6,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -474854,7 +473234,7 @@
                 "value": -8,
                 "formatted": "L8"
               },
-              "waiverPosition": 10,
+              "waiverPosition": 8,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -474936,7 +473316,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 6,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -474974,7 +473354,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 4,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475012,7 +473392,7 @@
                 "value": 2,
                 "formatted": "W2"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 10,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475050,7 +473430,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 5,
+              "waiverPosition": 4,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475094,7 +473474,7 @@
                 "value": 3,
                 "formatted": "W3"
               },
-              "waiverPosition": 9,
+              "waiverPosition": 7,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475170,7 +473550,7 @@
                 "value": -7,
                 "formatted": "L7"
               },
-              "waiverPosition": 7,
+              "waiverPosition": 5,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475224,489 +473604,6 @@
         }
       ],
       "season": 2023,
-      "league": {
-        "id": 111626,
-        "name": "Star Wars League"
-      }
-    },
-    "2024": {
-      "divisions": [
-        {
-          "id": 374296,
-          "name": "Jedi",
-          "teams": [
-            {
-              "id": 873137,
-              "name": "Jar Jar Skywalker",
-              "recordOverall": {
-                "wins": 10,
-                "losses": 4,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.71428573,
-                  "formatted": ".714"
-                },
-                "rank": 3,
-                "formatted": "10-4"
-              },
-              "pointsFor": {
-                "value": 2008.4,
-                "formatted": "2,008.4"
-              },
-              "pointsAgainst": {
-                "value": 1778.35,
-                "formatted": "1,778.35"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 7,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 538568,
-                  "displayName": "UhOhMill3r"
-                }
-              ]
-            },
-            {
-              "id": 807995,
-              "name": "macejaydu",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.64285713,
-                  "formatted": ".643"
-                },
-                "rank": 5,
-                "formatted": "9-5"
-              },
-              "pointsFor": {
-                "value": 2075.2,
-                "formatted": "2,075.2"
-              },
-              "pointsAgainst": {
-                "value": 1926.85,
-                "formatted": "1,926.85"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 10,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 425638,
-                  "displayName": "chefblade2"
-                }
-              ]
-            },
-            {
-              "id": 787863,
-              "name": "Rankwhores",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5714286,
-                  "formatted": ".571"
-                },
-                "rank": 7,
-                "formatted": "8-6"
-              },
-              "pointsFor": {
-                "value": 1868.85,
-                "formatted": "1,868.85"
-              },
-              "pointsAgainst": {
-                "value": 1886.25,
-                "formatted": "1,886.25"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 1,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 484830,
-                  "displayName": "THELOVEMUSCLE"
-                }
-              ]
-            },
-            {
-              "id": 786874,
-              "name": "Jedi Mind Tricks",
-              "recordOverall": {
-                "wins": 3,
-                "losses": 11,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.21428572,
-                  "formatted": ".214"
-                },
-                "rank": 12,
-                "formatted": "3-11"
-              },
-              "pointsFor": {
-                "value": 1731.7,
-                "formatted": "1,731.7"
-              },
-              "pointsAgainst": {
-                "value": 1842.85,
-                "formatted": "1,842.85"
-              },
-              "streak": {
-                "value": 2,
-                "formatted": "W2"
-              },
-              "waiverPosition": 3,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361249,
-                  "displayName": "rkylemyers"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374297,
-          "name": "Sith",
-          "teams": [
-            {
-              "id": 788025,
-              "name": "Darth Bane",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.64285713,
-                  "formatted": ".643"
-                },
-                "rank": 1,
-                "formatted": "9-5"
-              },
-              "pointsFor": {
-                "value": 2032.75,
-                "formatted": "2,032.75"
-              },
-              "pointsAgainst": {
-                "value": 1805.95,
-                "formatted": "1,805.95"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 12,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 362669,
-                  "displayName": "Zombiez"
-                }
-              ]
-            },
-            {
-              "id": 873124,
-              "name": "Army",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5714286,
-                  "formatted": ".571"
-                },
-                "rank": 6,
-                "formatted": "8-6"
-              },
-              "pointsFor": {
-                "value": 1965.85,
-                "formatted": "1,965.85"
-              },
-              "pointsAgainst": {
-                "value": 1850.4,
-                "formatted": "1,850.4"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 6,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1122458,
-                  "displayName": "Rebel-AllIance"
-                }
-              ]
-            },
-            {
-              "id": 1787909,
-              "name": "The Death Carr",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.42857143,
-                  "formatted": ".429"
-                },
-                "rank": 8,
-                "formatted": "6-8"
-              },
-              "pointsFor": {
-                "value": 1743.65,
-                "formatted": "1,743.65"
-              },
-              "pointsAgainst": {
-                "value": 1806.3,
-                "formatted": "1,806.3"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 11,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1210287,
-                  "displayName": "DallasArroyo"
-                }
-              ]
-            },
-            {
-              "id": 793918,
-              "name": "Wookie of the Year",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 9,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.35714287,
-                  "formatted": ".357"
-                },
-                "rank": 9,
-                "formatted": "5-9"
-              },
-              "pointsFor": {
-                "value": 1967.3,
-                "formatted": "1,967.3"
-              },
-              "pointsAgainst": {
-                "value": 1995.95,
-                "formatted": "1,995.95"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 8,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 1484527,
-                  "displayName": "SDP79"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374298,
-          "name": "First Order",
-          "teams": [
-            {
-              "id": 811297,
-              "name": "Java the BUTT",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5714286,
-                  "formatted": ".571"
-                },
-                "rank": 4,
-                "formatted": "8-6"
-              },
-              "pointsFor": {
-                "value": 1847.8,
-                "formatted": "1,847.8"
-              },
-              "pointsAgainst": {
-                "value": 1822.75,
-                "formatted": "1,822.75"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 2,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 609545,
-                  "displayName": "jaythehipster"
-                }
-              ]
-            },
-            {
-              "id": 786929,
-              "name": "Star Trek Forever",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.5714286,
-                  "formatted": ".571"
-                },
-                "rank": 2,
-                "formatted": "8-6"
-              },
-              "pointsFor": {
-                "value": 1824.4,
-                "formatted": "1,824.4"
-              },
-              "pointsAgainst": {
-                "value": 1840.45,
-                "formatted": "1,840.45"
-              },
-              "streak": {
-                "value": 2,
-                "formatted": "W2"
-              },
-              "waiverPosition": 4,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 754595,
-                  "displayName": "Ross717"
-                }
-              ]
-            },
-            {
-              "id": 928665,
-              "name": "Finn’s Football Force",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 9,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.35714287,
-                  "formatted": ".357"
-                },
-                "rank": 10,
-                "formatted": "5-9"
-              },
-              "pointsFor": {
-                "value": 1650.8,
-                "formatted": "1,650.8"
-              },
-              "pointsAgainst": {
-                "value": 1736.8,
-                "formatted": "1,736.8"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 9,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 742973,
-                  "displayName": "michaelpitone"
-                }
-              ]
-            },
-            {
-              "id": 788878,
-              "name": "Ashoka Nightmare",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 9,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.35714287,
-                  "formatted": ".357"
-                },
-                "rank": 11,
-                "formatted": "5-9"
-              },
-              "pointsFor": {
-                "value": 1568,
-                "formatted": "1,568"
-              },
-              "pointsAgainst": {
-                "value": 1991.8,
-                "formatted": "1,991.8"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 5,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 2077800,
-                  "displayName": "CburgRaiders"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "season": 2024,
       "league": {
         "id": 111626,
         "name": "Star Wars League"
@@ -475782,7 +473679,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 8,
+              "waiverPosition": 6,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475820,7 +473717,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 10,
+              "waiverPosition": 8,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475858,7 +473755,7 @@
                 "value": -5,
                 "formatted": "L5"
               },
-              "waiverPosition": 7,
+              "waiverPosition": 5,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475902,7 +473799,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 5,
+              "waiverPosition": 4,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475940,7 +473837,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 9,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475978,7 +473875,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 10,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476016,7 +473913,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 6,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476098,7 +473995,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 4,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476136,7 +474033,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 9,
+              "waiverPosition": 7,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476227,7 +474124,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 5,
+              "waiverPosition": 4,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476341,7 +474238,7 @@
                 "value": -5,
                 "formatted": "L5"
               },
-              "waiverPosition": 10,
+              "waiverPosition": 8,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476385,7 +474282,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 6,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476423,7 +474320,7 @@
                 "value": 3,
                 "formatted": "W3"
               },
-              "waiverPosition": 7,
+              "waiverPosition": 5,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476461,7 +474358,7 @@
                 "value": -3,
                 "formatted": "L3"
               },
-              "waiverPosition": 9,
+              "waiverPosition": 7,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476499,7 +474396,7 @@
                 "value": 5,
                 "formatted": "W5"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 10,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476543,7 +474440,7 @@
                 "value": 2,
                 "formatted": "W2"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 9,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476619,7 +474516,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 8,
+              "waiverPosition": 6,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476657,7 +474554,7 @@
                 "value": -9,
                 "formatted": "L9"
               },
-              "waiverPosition": 4,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
