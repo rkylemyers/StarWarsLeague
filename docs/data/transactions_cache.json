@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-10T16:04:55.267137394Z",
+  "synced_at": "2026-11-11T00:26:31.121159344Z",
   "items": [
     {
       "timeEpochMilli": "1794055065000",
@@ -3029,8 +3029,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -4329,8 +4329,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -4745,8 +4745,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -32046,8 +32046,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -32254,8 +32254,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -35426,8 +35426,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -35894,8 +35894,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -38130,8 +38130,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -48426,8 +48426,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -54615,8 +54615,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "BAL",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "K"
             ]
@@ -62467,8 +62467,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -62779,8 +62779,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -62883,8 +62883,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -65899,8 +65899,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "BAL",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "K"
             ]
@@ -68343,8 +68343,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -69799,8 +69799,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "BAL",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "K"
             ]
@@ -70631,8 +70631,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -73023,8 +73023,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -77651,8 +77651,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -79471,8 +79471,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -82383,8 +82383,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "BAL",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "K"
             ]
@@ -93615,8 +93615,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -94031,8 +94031,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -98503,8 +98503,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -98919,8 +98919,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "BAL",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "K"
             ]
@@ -102715,8 +102715,8 @@
             "nameFull": "Jake Moody",
             "nameShort": "J. Moody",
             "position": "K",
-            "proTeamAbbreviation": "BAL",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "ATL",
+            "nflByeWeek": 11,
             "positionEligibility": [
               "K"
             ]
@@ -103235,8 +103235,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -113687,8 +113687,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -114207,8 +114207,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -123567,8 +123567,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -123983,8 +123983,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -124347,8 +124347,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -130067,8 +130067,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -135423,8 +135423,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -138231,8 +138231,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -140519,8 +140519,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -144003,8 +144003,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -155963,8 +155963,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -156431,8 +156431,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -157419,8 +157419,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -161839,8 +161839,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -162775,8 +162775,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -164387,8 +164387,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -173851,8 +173851,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -175723,8 +175723,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -186123,8 +186123,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -186695,8 +186695,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -188047,8 +188047,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -191375,8 +191375,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -206819,8 +206819,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -208067,8 +208067,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -220859,8 +220859,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -221431,8 +221431,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -239215,8 +239215,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -244623,8 +244623,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -250759,8 +250759,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -251539,8 +251539,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -268231,8 +268231,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -269011,8 +269011,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -278943,8 +278943,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -279723,8 +279723,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -295895,8 +295895,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -298339,8 +298339,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -307647,8 +307647,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -317475,8 +317475,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -318307,8 +318307,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -331099,8 +331099,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -339107,8 +339107,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -345035,8 +345035,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -350079,8 +350079,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -355175,8 +355175,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -361571,8 +361571,8 @@
             "nameFull": "Kirk Cousins",
             "nameShort": "K. Cousins",
             "position": "QB",
-            "proTeamAbbreviation": "LV",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "QB"
             ]
@@ -366563,8 +366563,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -366823,8 +366823,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -373011,8 +373011,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -379719,8 +379719,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -388767,8 +388767,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -391263,8 +391263,8 @@
             "nameFull": "Keenan Allen",
             "nameShort": "K. Allen",
             "position": "WR",
-            "proTeamAbbreviation": "IND",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -454547,8 +454547,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -467963,8 +467963,8 @@
             "nameFull": "Nick Folk",
             "nameShort": "N. Folk",
             "position": "K",
-            "proTeamAbbreviation": "ATL",
-            "nflByeWeek": 11,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
