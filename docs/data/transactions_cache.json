@@ -1,8 +1,164 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-12T16:36:26.958039454Z",
+  "synced_at": "2026-11-13T00:54:31.376804125Z",
   "items": [
+    {
+      "timeEpochMilli": "1794520680000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 15516,
+            "nameFull": "Justin Herbert",
+            "nameShort": "J. Herbert",
+            "position": "QB",
+            "proTeamAbbreviation": "LAC",
+            "nflByeWeek": 7,
+            "positionEligibility": [
+              "QB"
+            ]
+          }
+        },
+        "team": {
+          "id": 786874,
+          "name": "Jedi Mind Tricks",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1794520680000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 14664,
+            "nameFull": "Kyler Murray",
+            "nameShort": "K. Murray",
+            "position": "QB",
+            "proTeamAbbreviation": "MIN",
+            "nflByeWeek": 6,
+            "positionEligibility": [
+              "QB"
+            ]
+          }
+        },
+        "team": {
+          "id": 786874,
+          "name": "Jedi Mind Tricks",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1794520666000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 18234,
+            "nameFull": "Emanuel Wilson",
+            "nameShort": "E. Wilson",
+            "position": "RB",
+            "proTeamAbbreviation": "SEA",
+            "nflByeWeek": 11,
+            "positionEligibility": [
+              "RB"
+            ]
+          }
+        },
+        "team": {
+          "id": 786874,
+          "name": "Jedi Mind Tricks",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1794418129000",
       "transaction": {
@@ -5525,8 +5681,8 @@
             "nameFull": "Harrison Mevis",
             "nameShort": "H. Mevis",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -18681,8 +18837,8 @@
             "nameFull": "Harrison Mevis",
             "nameShort": "H. Mevis",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -87375,8 +87531,8 @@
             "nameFull": "Riley Patterson",
             "nameShort": "R. Patterson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
@@ -99179,8 +99335,8 @@
             "nameFull": "Riley Patterson",
             "nameShort": "R. Patterson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "BAL",
+            "nflByeWeek": 13,
             "positionEligibility": [
               "K"
             ]
