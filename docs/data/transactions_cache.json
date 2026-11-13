@@ -1,8 +1,60 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-13T00:54:31.376804125Z",
+  "synced_at": "2026-11-13T15:55:52.817787574Z",
   "items": [
+    {
+      "timeEpochMilli": "1794531457000",
+      "transaction": {
+        "type": "",
+        "player": {
+          "proPlayer": {
+            "id": 13977,
+            "nameFull": "Jason Sanders",
+            "nameShort": "J. Sanders",
+            "position": "K",
+            "proTeamAbbreviation": "NYJ",
+            "nflByeWeek": 13,
+            "positionEligibility": [
+              "K"
+            ]
+          }
+        },
+        "team": {
+          "id": 873124,
+          "name": "Army",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1794520680000",
       "transaction": {
@@ -30642,8 +30694,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -43434,8 +43486,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -60231,8 +60283,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -75467,8 +75519,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -90547,8 +90599,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -107967,8 +108019,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -119719,8 +119771,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -146499,8 +146551,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -151387,8 +151439,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -174839,8 +174891,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -180143,8 +180195,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -201359,8 +201411,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
@@ -204635,8 +204687,8 @@
             "nameFull": "Hollywood Brown",
             "nameShort": "H. Brown",
             "position": "WR",
-            "proTeamAbbreviation": "PHI",
-            "nflByeWeek": 10,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "WR"
             ]
