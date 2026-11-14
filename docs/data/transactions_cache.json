@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-13T15:55:52.817787574Z",
+  "synced_at": "2026-11-14T00:40:40.608101722Z",
   "items": [
     {
       "timeEpochMilli": "1794531457000",
@@ -68343,8 +68343,8 @@
             "nameFull": "Dare Ogunbowale",
             "nameShort": "D. Ogunbowale",
             "position": "RB",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -70995,8 +70995,8 @@
             "nameFull": "Dare Ogunbowale",
             "nameShort": "D. Ogunbowale",
             "position": "RB",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
