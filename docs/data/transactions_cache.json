@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-14T23:38:42.426410989Z",
+  "synced_at": "2026-11-15T15:18:59.833989669Z",
   "items": [
     {
       "timeEpochMilli": "1794694446000",
@@ -28770,8 +28770,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -37818,8 +37818,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -39690,8 +39690,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -41250,8 +41250,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -116651,8 +116651,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -147331,8 +147331,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -148319,8 +148319,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -171459,8 +171459,8 @@
             "nameFull": "Michael Carter",
             "nameShort": "M. Carter",
             "position": "RB",
-            "proTeamAbbreviation": "TEN",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
