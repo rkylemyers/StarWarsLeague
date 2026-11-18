@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-17T17:24:34.337122214Z",
+  "synced_at": "2026-11-18T02:05:52.402370346Z",
   "items": [
     {
       "timeEpochMilli": "1794760938000",
@@ -6253,8 +6253,8 @@
             "nameFull": "Harrison Mevis",
             "nameShort": "H. Mevis",
             "position": "K",
-            "proTeamAbbreviation": "BAL",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -19409,8 +19409,8 @@
             "nameFull": "Harrison Mevis",
             "nameShort": "H. Mevis",
             "position": "K",
-            "proTeamAbbreviation": "BAL",
-            "nflByeWeek": 13,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "K"
             ]
@@ -91379,8 +91379,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "MIA",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "K"
             ]
@@ -111347,8 +111347,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "MIA",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "K"
             ]
@@ -120707,8 +120707,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "MIA",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "K"
             ]
@@ -141299,8 +141299,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "MIA",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "K"
             ]
@@ -152323,8 +152323,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "MIA",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "K"
             ]
@@ -161423,8 +161423,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "MIA",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "K"
             ]
@@ -162567,8 +162567,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "MIA",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "K"
             ]
@@ -165531,8 +165531,8 @@
             "nameFull": "Daniel Carlson",
             "nameShort": "D. Carlson",
             "position": "K",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "MIA",
+            "nflByeWeek": 6,
             "positionEligibility": [
               "K"
             ]
