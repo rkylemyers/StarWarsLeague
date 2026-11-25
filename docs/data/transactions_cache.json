@@ -1,8 +1,112 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-25T03:24:46.913886755Z",
+  "synced_at": "2026-11-25T18:25:58.920942996Z",
   "items": [
+    {
+      "timeEpochMilli": "1795604400000",
+      "transaction": {
+        "type": "TRANSACTION_CLAIM",
+        "player": {
+          "proPlayer": {
+            "id": 20109,
+            "nameFull": "Antonio Williams",
+            "nameShort": "A. Williams",
+            "position": "WR",
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
+            "positionEligibility": [
+              "WR"
+            ]
+          }
+        },
+        "team": {
+          "id": 788025,
+          "name": "Darth Bane",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1795604400000",
+      "transaction": {
+        "type": "TRANSACTION_DROP",
+        "player": {
+          "proPlayer": {
+            "id": 19300,
+            "nameFull": "Kaleb Johnson",
+            "nameShort": "K. Johnson",
+            "position": "RB",
+            "proTeamAbbreviation": "GB",
+            "nflByeWeek": 11,
+            "positionEligibility": [
+              "RB"
+            ]
+          }
+        },
+        "team": {
+          "id": 788025,
+          "name": "Darth Bane",
+          "recordOverall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0,
+            "winPercentage": {
+              "value": 0,
+              "formatted": ""
+            },
+            "rank": 0,
+            "formatted": ""
+          },
+          "pointsFor": {
+            "value": 0,
+            "formatted": ""
+          },
+          "pointsAgainst": {
+            "value": 0,
+            "formatted": ""
+          },
+          "streak": {
+            "value": 0,
+            "formatted": ""
+          },
+          "waiverPosition": 0,
+          "waiverAcquisitionBudget": {
+            "value": 0,
+            "formatted": ""
+          },
+          "owners": null
+        }
+      }
+    },
     {
       "timeEpochMilli": "1795355619000",
       "transaction": {
@@ -471755,7 +471859,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472352,7 +472456,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472434,7 +472538,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472797,7 +472901,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -472879,7 +472983,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -473204,7 +473308,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -473318,7 +473422,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -473687,7 +473791,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -473801,7 +473905,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -474170,7 +474274,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -474284,7 +474388,7 @@
                 "value": -5,
                 "formatted": "L5"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -474609,7 +474713,7 @@
                 "value": -4,
                 "formatted": "L4"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -474767,7 +474871,7 @@
                 "value": -5,
                 "formatted": "L5"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475174,7 +475278,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475408,7 +475512,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475499,7 +475603,7 @@
                 "value": -3,
                 "formatted": "L3"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475619,7 +475723,7 @@
                 "value": 3,
                 "formatted": "W3"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475944,7 +476048,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -475982,7 +476086,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476427,7 +476531,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -476503,7 +476607,7 @@
                 "value": -2,
                 "formatted": "L2"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -477068,7 +477172,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -477144,7 +477248,7 @@
                 "value": 2,
                 "formatted": "W2"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -477551,7 +477655,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -477589,7 +477693,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -478110,7 +478214,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -478148,7 +478252,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -478517,7 +478621,7 @@
                 "value": -1,
                 "formatted": "L1"
               },
-              "waiverPosition": 12,
+              "waiverPosition": 11,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
@@ -478631,7 +478735,7 @@
                 "value": 1,
                 "formatted": "W1"
               },
-              "waiverPosition": 11,
+              "waiverPosition": 12,
               "waiverAcquisitionBudget": {
                 "value": 0,
                 "formatted": ""
