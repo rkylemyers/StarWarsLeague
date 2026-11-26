@@ -1,7 +1,7 @@
 {
   "league_id": 111626,
   "sport": "NFL",
-  "synced_at": "2026-11-25T18:25:58.920942996Z",
+  "synced_at": "2026-11-26T02:39:30.408701993Z",
   "items": [
     {
       "timeEpochMilli": "1795604400000",
@@ -5161,8 +5161,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -31266,8 +31266,8 @@
             "nameFull": "Brandon Aiyuk",
             "nameShort": "B. Aiyuk",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -34542,8 +34542,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -46970,8 +46970,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -47438,8 +47438,8 @@
             "nameFull": "Brandon Aiyuk",
             "nameShort": "B. Aiyuk",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -65171,8 +65171,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -66783,8 +66783,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -68239,8 +68239,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -69331,8 +69331,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -69851,8 +69851,8 @@
             "nameFull": "Dare Ogunbowale",
             "nameShort": "D. Ogunbowale",
             "position": "RB",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -70527,8 +70527,8 @@
             "nameFull": "Brandon Aiyuk",
             "nameShort": "B. Aiyuk",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -72503,8 +72503,8 @@
             "nameFull": "Dare Ogunbowale",
             "nameShort": "D. Ogunbowale",
             "position": "RB",
-            "proTeamAbbreviation": "HOU",
-            "nflByeWeek": 8,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "RB"
             ]
@@ -78275,8 +78275,8 @@
             "nameFull": "Brandon Aiyuk",
             "nameShort": "B. Aiyuk",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -83787,8 +83787,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -85139,8 +85139,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -91015,8 +91015,8 @@
             "nameFull": "Brandon Aiyuk",
             "nameShort": "B. Aiyuk",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -95591,8 +95591,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -96371,8 +96371,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -98815,8 +98815,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -104431,8 +104431,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -107655,8 +107655,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -108955,8 +108955,8 @@
             "nameFull": "Brandon Aiyuk",
             "nameShort": "B. Aiyuk",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -115767,8 +115767,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -120135,8 +120135,8 @@
             "nameFull": "Brandon Aiyuk",
             "nameShort": "B. Aiyuk",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -125595,8 +125595,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -126687,8 +126687,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -141195,8 +141195,8 @@
             "nameFull": "Brandon Aiyuk",
             "nameShort": "B. Aiyuk",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -148839,8 +148839,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -149047,8 +149047,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -151543,8 +151543,8 @@
             "nameFull": "Brandon Aiyuk",
             "nameShort": "B. Aiyuk",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -157991,8 +157991,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -159811,8 +159811,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -174631,8 +174631,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -175151,8 +175151,8 @@
             "nameFull": "Brandon Aiyuk",
             "nameShort": "B. Aiyuk",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "WAS",
+            "nflByeWeek": 7,
             "positionEligibility": [
               "WR"
             ]
@@ -178999,8 +178999,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -187839,8 +187839,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -190595,8 +190595,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -201983,8 +201983,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -213319,8 +213319,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -215555,8 +215555,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -222471,8 +222471,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -226111,8 +226111,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -242699,8 +242699,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -247899,8 +247899,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -252319,8 +252319,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -257363,8 +257363,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -272755,8 +272755,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -276655,8 +276655,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -280503,8 +280503,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -286119,8 +286119,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -298963,8 +298963,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -299899,8 +299899,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -309311,8 +309311,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -316123,8 +316123,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -328083,8 +328083,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -331827,8 +331827,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -332815,8 +332815,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -340667,8 +340667,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -348519,8 +348519,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -362507,8 +362507,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -366927,8 +366927,8 @@
             "nameFull": "Brandin Cooks",
             "nameShort": "B. Cooks",
             "position": "WR",
-            "proTeamAbbreviation": "FA",
-            "nflByeWeek": 0,
+            "proTeamAbbreviation": "SF",
+            "nflByeWeek": 8,
             "positionEligibility": [
               "WR"
             ]
@@ -368019,8 +368019,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -383307,8 +383307,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -402443,8 +402443,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -416795,8 +416795,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -436295,8 +436295,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -448515,8 +448515,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -466975,8 +466975,8 @@
             "nameFull": "Aaron Rodgers",
             "nameShort": "A. Rodgers",
             "position": "QB",
-            "proTeamAbbreviation": "PIT",
-            "nflByeWeek": 9,
+            "proTeamAbbreviation": "FA",
+            "nflByeWeek": 0,
             "positionEligibility": [
               "QB"
             ]
@@ -473596,972 +473596,6 @@
         }
       ],
       "season": 2014,
-      "league": {
-        "id": 111626,
-        "name": "Star Wars League"
-      }
-    },
-    "2015": {
-      "divisions": [
-        {
-          "id": 374296,
-          "name": "Jedi",
-          "teams": [
-            {
-              "id": 786874,
-              "name": "Jedi Mind Tricks",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 4,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.6923077,
-                  "formatted": ".692"
-                },
-                "rank": 1,
-                "formatted": "9-4"
-              },
-              "pointsFor": {
-                "value": 2137,
-                "formatted": "2,137"
-              },
-              "pointsAgainst": {
-                "value": 1806.05,
-                "formatted": "1,806.05"
-              },
-              "streak": {
-                "value": 4,
-                "formatted": "W4"
-              },
-              "waiverPosition": 3,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361249,
-                  "displayName": "rkylemyers"
-                }
-              ]
-            },
-            {
-              "id": 786929,
-              "name": "Gert Shot First",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.53846157,
-                  "formatted": ".538"
-                },
-                "rank": 4,
-                "formatted": "7-6"
-              },
-              "pointsFor": {
-                "value": 1850.4,
-                "formatted": "1,850.4"
-              },
-              "pointsAgainst": {
-                "value": 1772.85,
-                "formatted": "1,772.85"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 8,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361794,
-                  "displayName": "Hurricane_Gert"
-                }
-              ]
-            },
-            {
-              "id": 928665,
-              "name": "slim reapers",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.46153846,
-                  "formatted": ".462"
-                },
-                "rank": 8,
-                "formatted": "6-7"
-              },
-              "pointsFor": {
-                "value": 1614.4,
-                "formatted": "1,614.4"
-              },
-              "pointsAgainst": {
-                "value": 1737.45,
-                "formatted": "1,737.45"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 10,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 566862,
-                  "displayName": "jimnozzi"
-                }
-              ]
-            },
-            {
-              "id": 787863,
-              "name": "R2 DEEZ NUTS",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.3846154,
-                  "formatted": ".385"
-                },
-                "rank": 9,
-                "formatted": "5-8"
-              },
-              "pointsFor": {
-                "value": 1921.45,
-                "formatted": "1,921.45"
-              },
-              "pointsAgainst": {
-                "value": 1948.8,
-                "formatted": "1,948.8"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 1,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 484830,
-                  "displayName": "THELOVEMUSCLE"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374297,
-          "name": "Sith",
-          "teams": [
-            {
-              "id": 788025,
-              "name": "Darth Bane",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.61538464,
-                  "formatted": ".615"
-                },
-                "rank": 2,
-                "formatted": "8-5"
-              },
-              "pointsFor": {
-                "value": 1889.85,
-                "formatted": "1,889.85"
-              },
-              "pointsAgainst": {
-                "value": 1683.65,
-                "formatted": "1,683.65"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 12,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 362669,
-                  "displayName": "Zombiez"
-                }
-              ]
-            },
-            {
-              "id": 811297,
-              "name": "The Bossk",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.53846157,
-                  "formatted": ".538"
-                },
-                "rank": 5,
-                "formatted": "7-6"
-              },
-              "pointsFor": {
-                "value": 1752.5,
-                "formatted": "1,752.5"
-              },
-              "pointsAgainst": {
-                "value": 1597.8,
-                "formatted": "1,597.8"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 2,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 491427,
-                  "displayName": "WadesWarriors"
-                }
-              ]
-            },
-            {
-              "id": 873137,
-              "name": "Edward Saberhands",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.53846157,
-                  "formatted": ".538"
-                },
-                "rank": 6,
-                "formatted": "7-6"
-              },
-              "pointsFor": {
-                "value": 1780.3,
-                "formatted": "1,780.3"
-              },
-              "pointsAgainst": {
-                "value": 1669.35,
-                "formatted": "1,669.35"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 9,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 538568,
-                  "displayName": "UhOhMill3r"
-                }
-              ]
-            },
-            {
-              "id": 873124,
-              "name": "Rebel ScuM",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.3846154,
-                  "formatted": ".385"
-                },
-                "rank": 11,
-                "formatted": "5-8"
-              },
-              "pointsFor": {
-                "value": 1642.25,
-                "formatted": "1,642.25"
-              },
-              "pointsAgainst": {
-                "value": 1933.65,
-                "formatted": "1,933.65"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 11,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 538558,
-                  "displayName": "Deejers"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374298,
-          "name": "Ewoks",
-          "teams": [
-            {
-              "id": 802577,
-              "name": "Anakickin-yo-Ass",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.61538464,
-                  "formatted": ".615"
-                },
-                "rank": 3,
-                "formatted": "8-5"
-              },
-              "pointsFor": {
-                "value": 1949.95,
-                "formatted": "1,949.95"
-              },
-              "pointsAgainst": {
-                "value": 1672.9,
-                "formatted": "1,672.9"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 0,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 425763,
-                  "displayName": "Knepp"
-                }
-              ]
-            },
-            {
-              "id": 793918,
-              "name": "Darth Maddness",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.46153846,
-                  "formatted": ".462"
-                },
-                "rank": 7,
-                "formatted": "6-7"
-              },
-              "pointsFor": {
-                "value": 1803.8,
-                "formatted": "1,803.8"
-              },
-              "pointsAgainst": {
-                "value": 1838.6,
-                "formatted": "1,838.6"
-              },
-              "streak": {
-                "value": 3,
-                "formatted": "W3"
-              },
-              "waiverPosition": 5,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 358938,
-                  "displayName": "MrMaddness"
-                }
-              ]
-            },
-            {
-              "id": 807995,
-              "name": "macejaydu",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.3846154,
-                  "formatted": ".385"
-                },
-                "rank": 10,
-                "formatted": "5-8"
-              },
-              "pointsFor": {
-                "value": 1460.1,
-                "formatted": "1,460.1"
-              },
-              "pointsAgainst": {
-                "value": 1800.55,
-                "formatted": "1,800.55"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 6,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 425638,
-                  "displayName": "chefblade2"
-                }
-              ]
-            },
-            {
-              "id": 788878,
-              "name": "The Stormtroopers",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.3846154,
-                  "formatted": ".385"
-                },
-                "rank": 12,
-                "formatted": "5-8"
-              },
-              "pointsFor": {
-                "value": 1370.45,
-                "formatted": "1,370.45"
-              },
-              "pointsAgainst": {
-                "value": 1710.8,
-                "formatted": "1,710.8"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 4,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 485224,
-                  "displayName": "VonMiller2020"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "season": 2015,
-      "league": {
-        "id": 111626,
-        "name": "Star Wars League"
-      }
-    },
-    "2016": {
-      "divisions": [
-        {
-          "id": 374296,
-          "name": "Jedi",
-          "teams": [
-            {
-              "id": 787863,
-              "name": "GENITAL REAMIS",
-              "recordOverall": {
-                "wins": 10,
-                "losses": 3,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.7692308,
-                  "formatted": ".769"
-                },
-                "rank": 1,
-                "formatted": "10-3"
-              },
-              "pointsFor": {
-                "value": 2070.15,
-                "formatted": "2,070.15"
-              },
-              "pointsAgainst": {
-                "value": 1750.05,
-                "formatted": "1,750.05"
-              },
-              "streak": {
-                "value": 4,
-                "formatted": "W4"
-              },
-              "waiverPosition": 1,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 484830,
-                  "displayName": "THELOVEMUSCLE"
-                }
-              ]
-            },
-            {
-              "id": 928665,
-              "name": "Wasabi Kenobi",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.61538464,
-                  "formatted": ".615"
-                },
-                "rank": 4,
-                "formatted": "8-5"
-              },
-              "pointsFor": {
-                "value": 1752.7,
-                "formatted": "1,752.7"
-              },
-              "pointsAgainst": {
-                "value": 1706.7,
-                "formatted": "1,706.7"
-              },
-              "streak": {
-                "value": -3,
-                "formatted": "L3"
-              },
-              "waiverPosition": 10,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 605853,
-                  "displayName": "ram-da-man"
-                }
-              ]
-            },
-            {
-              "id": 807995,
-              "name": "macejaydu",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.53846157,
-                  "formatted": ".538"
-                },
-                "rank": 6,
-                "formatted": "7-6"
-              },
-              "pointsFor": {
-                "value": 1921.65,
-                "formatted": "1,921.65"
-              },
-              "pointsAgainst": {
-                "value": 1858,
-                "formatted": "1,858"
-              },
-              "streak": {
-                "value": -4,
-                "formatted": "L4"
-              },
-              "waiverPosition": 6,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 425638,
-                  "displayName": "chefblade2"
-                }
-              ]
-            },
-            {
-              "id": 786874,
-              "name": "Jedi Mind Tricks",
-              "recordOverall": {
-                "wins": 6,
-                "losses": 7,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.46153846,
-                  "formatted": ".462"
-                },
-                "rank": 8,
-                "formatted": "6-7"
-              },
-              "pointsFor": {
-                "value": 1952.1,
-                "formatted": "1,952.1"
-              },
-              "pointsAgainst": {
-                "value": 1873.05,
-                "formatted": "1,873.05"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 3,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361249,
-                  "displayName": "rkylemyers"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374297,
-          "name": "Sith",
-          "teams": [
-            {
-              "id": 788025,
-              "name": "Darth Bane",
-              "recordOverall": {
-                "wins": 9,
-                "losses": 4,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.6923077,
-                  "formatted": ".692"
-                },
-                "rank": 3,
-                "formatted": "9-4"
-              },
-              "pointsFor": {
-                "value": 1897.45,
-                "formatted": "1,897.45"
-              },
-              "pointsAgainst": {
-                "value": 1604.2,
-                "formatted": "1,604.2"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 12,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 362669,
-                  "displayName": "Zombiez"
-                }
-              ]
-            },
-            {
-              "id": 873137,
-              "name": "Edward Saberhands",
-              "recordOverall": {
-                "wins": 8,
-                "losses": 5,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.61538464,
-                  "formatted": ".615"
-                },
-                "rank": 5,
-                "formatted": "8-5"
-              },
-              "pointsFor": {
-                "value": 1831.3,
-                "formatted": "1,831.3"
-              },
-              "pointsAgainst": {
-                "value": 1673.7,
-                "formatted": "1,673.7"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 9,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 538568,
-                  "displayName": "UhOhMill3r"
-                }
-              ]
-            },
-            {
-              "id": 793918,
-              "name": "Big Darth Decker",
-              "recordOverall": {
-                "wins": 7,
-                "losses": 6,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.53846157,
-                  "formatted": ".538"
-                },
-                "rank": 7,
-                "formatted": "7-6"
-              },
-              "pointsFor": {
-                "value": 1863.95,
-                "formatted": "1,863.95"
-              },
-              "pointsAgainst": {
-                "value": 1812.8,
-                "formatted": "1,812.8"
-              },
-              "streak": {
-                "value": -2,
-                "formatted": "L2"
-              },
-              "waiverPosition": 5,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 358938,
-                  "displayName": "MrMaddness"
-                }
-              ]
-            },
-            {
-              "id": 873124,
-              "name": "Rebel ScuM",
-              "recordOverall": {
-                "wins": 2,
-                "losses": 11,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.15384616,
-                  "formatted": ".154"
-                },
-                "rank": 11,
-                "formatted": "2-11"
-              },
-              "pointsFor": {
-                "value": 1572.5,
-                "formatted": "1,572.5"
-              },
-              "pointsAgainst": {
-                "value": 1935.45,
-                "formatted": "1,935.45"
-              },
-              "streak": {
-                "value": -5,
-                "formatted": "L5"
-              },
-              "waiverPosition": 11,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 897317,
-                  "displayName": "DShoop"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 374298,
-          "name": "Ewoks",
-          "teams": [
-            {
-              "id": 786929,
-              "name": "Gert Shot First",
-              "recordOverall": {
-                "wins": 11,
-                "losses": 2,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.84615386,
-                  "formatted": ".846"
-                },
-                "rank": 2,
-                "formatted": "11-2"
-              },
-              "pointsFor": {
-                "value": 1811.65,
-                "formatted": "1,811.65"
-              },
-              "pointsAgainst": {
-                "value": 1546.45,
-                "formatted": "1,546.45"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 8,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 361794,
-                  "displayName": "Hurricane_Gert"
-                }
-              ]
-            },
-            {
-              "id": 802577,
-              "name": "That team that didn't know when the season started",
-              "recordOverall": {
-                "wins": 5,
-                "losses": 8,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.3846154,
-                  "formatted": ".385"
-                },
-                "rank": 9,
-                "formatted": "5-8"
-              },
-              "pointsFor": {
-                "value": 1629.6,
-                "formatted": "1,629.6"
-              },
-              "pointsAgainst": {
-                "value": 1926.95,
-                "formatted": "1,926.95"
-              },
-              "streak": {
-                "value": -1,
-                "formatted": "L1"
-              },
-              "waiverPosition": 0,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 425763,
-                  "displayName": "Knepp"
-                }
-              ]
-            },
-            {
-              "id": 788878,
-              "name": "TRUMP VADER",
-              "recordOverall": {
-                "wins": 4,
-                "losses": 9,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.30769232,
-                  "formatted": ".308"
-                },
-                "rank": 10,
-                "formatted": "4-9"
-              },
-              "pointsFor": {
-                "value": 1721.15,
-                "formatted": "1,721.15"
-              },
-              "pointsAgainst": {
-                "value": 1845.75,
-                "formatted": "1,845.75"
-              },
-              "streak": {
-                "value": 1,
-                "formatted": "W1"
-              },
-              "waiverPosition": 4,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 485224,
-                  "displayName": "VonMiller2020"
-                }
-              ]
-            },
-            {
-              "id": 811297,
-              "name": "You bent my wookie!",
-              "recordOverall": {
-                "wins": 1,
-                "losses": 12,
-                "ties": 0,
-                "winPercentage": {
-                  "value": 0.07692308,
-                  "formatted": ".077"
-                },
-                "rank": 12,
-                "formatted": "1-12"
-              },
-              "pointsFor": {
-                "value": 1437.05,
-                "formatted": "1,437.05"
-              },
-              "pointsAgainst": {
-                "value": 1928.15,
-                "formatted": "1,928.15"
-              },
-              "streak": {
-                "value": 3,
-                "formatted": "W3"
-              },
-              "waiverPosition": 2,
-              "waiverAcquisitionBudget": {
-                "value": 0,
-                "formatted": ""
-              },
-              "owners": [
-                {
-                  "id": 609545,
-                  "displayName": "jaythehipster"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "season": 2016,
       "league": {
         "id": 111626,
         "name": "Star Wars League"
